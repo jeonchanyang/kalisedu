@@ -287,13 +287,11 @@ input[type="date"]{max-width:15rem; width:100%; font-weight:400; font-size:var(-
 .card-type-list.new li .tit{justify-content:flex-start; gap:3rem; width:30%; height:100%; padding:3.3rem 3.5rem; font-size:var(--font-size-24); background-color:#1464FF; border-radius:1rem 0 0 1rem;}
 .card-type-list.new.tit-center li .tit{justify-content:center;}
 .card-type-list.new li .list-inner{width:70%; min-height:12rem; padding:3rem 5rem 2rem;}
-
 .card-type-list.new li .list-inner dl{gap:1.2rem 2.8rem; font-size:var(--font-size-18);}
 .card-type-list.new li .list-inner dl dt{font-weight:400;}
 .card-type-list.new li .list-inner dl dd{font-weight:600;}
 .card-type-list.new li .list-inner dl dd.half{display:flex; flex-wrap:wrap;}
 .card-type-list.new li .list-inner dl dd.half > p{width:50%;}
-
 .card-type-list.new li .list-inner dl .bullet::before{top:.9rem; width:.3rem; height:.3rem;}
 
 span.badge.type02{display:inline-flex; align-items:center; justify-content:center; min-width:8rem; padding:.2rem 1.2rem; text-align:center; background:rgba(138, 198, 80, 0.3); border-radius:5rem;}
@@ -747,8 +745,8 @@ ol.num-box li .sub-tit::before{content:counter(cnt); display:inline-flex; justif
 .step-grp + .membership-form{margin-top:5rem;}
 .membership-form{display:flex; column-gap:10rem; flex-wrap:wrap; padding:5rem; background:#fff;}
 .membership-form .info{width:calc(50% - 5rem);}
-.membership-form .info .info-tit{display:block; color:var(--primary-color); font-weight:700; line-height:2.6rem; font-size:var(--font-size-30);}
-.membership-form .info .info-tit + dl{margin-top:3rem;}
+.membership-form fieldset .info-tit{display:block; color:var(--primary-color); font-weight:700; line-height:2.6rem; font-size:var(--font-size-30);}
+.membership-form fieldset .info-tit + dl{margin-top:3rem;}
 .membership-form .info + .info dl{position:relative;}
 .membership-form .info + .info dl::before{content:''; display:inline-block; position:absolute; top:0; left:-5rem; width:.1rem; height:100%; background:#D9D9D9;}
 .membership-form fieldset dl{display:flex; flex-wrap:wrap; gap:1.5rem 2.5rem; align-items:center;}
@@ -763,7 +761,22 @@ ol.num-box li .sub-tit::before{content:counter(cnt); display:inline-flex; justif
 .membership-form .email-grp, .membership-form .confirm-grp{display:flex; gap:1.2rem; align-items:center; width:100%;}
 .membership-form .email-grp > span{font-weight:600; line-height:2.6rem; font-size:var(--font-size-20);}
 .membership-form .btn-area{margin-top:5rem;}
-.membership-form .btn-area .btn{width:30rem; height:6rem;}
+.membership-form .btn-area .btn{width:30rem; height:6rem; font-size:var(--font-size-24);}
+
+/* membership-form correction */
+.membership-form.correction{max-width:77rem; margin:0 auto;}
+.membership-form.correction .info2{margin-top:0;}
+.membership-form.correction fieldset .info-tit{display:flex; justify-content:space-between; align-items:center;}
+.membership-form.correction fieldset .info-tit strong{font-weight:inherit;}
+.membership-form.correction fieldset .info-tit .btn-secession{font-weight:400; font-size:var(--font-size-18); text-decoration:underline; text-underline-offset:.5rem;}
+.membership-form.correction fieldset dl dt{min-width:13.5rem;}
+.membership-form.correction fieldset dl dd{width:calc(100% - 18rem);}
+.membership-form.correction fieldset dl dd .ipt{max-width:36rem;}
+.membership-form.correction fieldset dl dd.cover .ipt[readonly]{border-color:#A6A8AB;}
+.membership-form.correction fieldset .new-pw,
+.membership-form.correction fieldset .chg-phone{display:none;}
+.membership-form.correction fieldset .new-pw.is-active,
+.membership-form.correction fieldset .chg-phone.is-active{display:flex;}
 
 /* edu-grp */
 .inner-wrap.edu{margin-bottom:11rem;}
@@ -782,14 +795,22 @@ ol.num-box li .sub-tit::before{content:counter(cnt); display:inline-flex; justif
 .edu-gen-list li .edu-txt .title + .list{margin-top:1.5rem;}
 .edu-gen-list li .edu-txt .list{display:flex; flex-wrap:wrap; gap:.3rem 1.5rem; line-height:2.6rem; font-size:var(--font-size-16);}
 .edu-gen-list li .edu-txt .list dt{min-width:5.6rem; font-weight:300;}
-.edu-gen-list li .edu-txt .list dd{flex-grow:1; width:calc(100% - 10rem); font-weight:500;}
-.edu-gen-list li .edu-txt .list dd .price{font-weight:600; font-size:var(--font-size-20);}
+.edu-gen-list li .edu-txt .list dd{flex-grow:1; display:inline-flex; align-items:center; width:calc(100% - 12rem); font-weight:500;}
+.edu-gen-list li .edu-txt .list dd strong{font-weight:600; font-size:var(--font-size-20);}
 
 .edu-gen-list li .btn-grp.topfix{gap:1rem; position:absolute; top:3.5rem; right:4.5rem;}
-.edu-gen-list li .btn-grp .btn{height:4rem; font-weight:700; font-size:var(--font-size-16); background-color:#fff; border-color:#6C6C6C;}
+.edu-gen-list li .btn-grp .btn{height:4rem; padding:0 3rem; color:#6C6C6C; font-weight:700; font-size:var(--font-size-16); background-color:#fff; border-color:#6C6C6C;}
 .edu-gen-list li .btn-grp .btn-normal.type2{color:#1D76BC; border-color:#1D76BC;}
 .edu-gen-list li .btn-grp .btn-normal.type3{font-weight:500; color:#f00; border-color:rgba(255, 0, 0, 0.5);}
 .edu-gen-list li .btn-grp .btn-normal.type4{font-weight:500; color:#1464FF; border-color:#1464FF;}
+
+/* edu record */
+.inner-wrap.edu.record .edu-gen-list li .edu-txt .list dt{min-width:9rem;}
+
+/* progress */
+.progress{position:relative; width:100%; height:1rem; background:#D9D9D9; border-radius:5rem;}
+.progress .bar{display:block; height:100%; width:0; background:var(--primary-color); border-radius:5rem;}
+.progress .text{position:absolute; top:2.1rem; right:0; color:var(--primary-color); font-weight:700; font-size:var(--font-size-16); line-height:2.6rem;}
 
 
 /* title */
@@ -806,6 +827,14 @@ ol.num-box li .sub-tit::before{content:counter(cnt); display:inline-flex; justif
 /* mo-drop */
 .mo-drop .mo-btn-dropdown{display:none;}
 
+/* modal */
+.cmp-modal .modal-container.secession{gap:3rem; max-width:77.6rem; padding-top:7.8rem;}
+.cmp-modal .modal-container .modal-footer .btn .ico.icon-eraser{width:1.9rem; height:1.6rem;}
+.cmp-modal .bg-gray-box{padding:2rem 1.5rem; background-color:rgba(223, 227, 235, 0.3); border-radius:1rem;}
+.cmp-modal .bg-gray-box + p{margin-top:3rem;}
+.cmp-modal .modal-container.secession .modal-body{padding:0;}
+
+
 /* etc */
 .icon-more{display:inline-flex; width:.8rem; height:1.3rem; background:url(/images/common/icon_more.svg) center center / 100% no-repeat;}
 .icon-bubble{background-image:url(/images/common/icon_bubble.svg);}
@@ -819,6 +848,7 @@ ol.num-box li .sub-tit::before{content:counter(cnt); display:inline-flex; justif
 .icon-attach::before{background-image:url(/images/common/icon_attach.svg);}
 .icon-answer::before{background-image:url(/images/common/icon_answer.svg);}
 .icon-req::before{background-image:url(/images/common/icon_req.svg);}
+.icon-eraser::before{background-image:url(/images/common/icon_eraser.svg);}
 
 .txt14{font-size:var(--font-size-14);}
 .txt16{font-weight:400; font-size:var(--font-size-16); line-height:2.2rem;}
@@ -1431,6 +1461,29 @@ ol.num-box li .sub-tit::before{content:counter(cnt); display:inline-flex; justif
     .edu-gen-list li .btn-grp .btn{flex:0 0 auto; flex-grow:1; min-width:unset; width:auto; padding:0 1.5rem;}
     .edu-gen-list li .btn-grp .btn-normal.type4{font-weight:700;}
 
+    .progress .text{top:1.8rem;}
+
+    .membership-form.correction fieldset .info-tit strong{font-size:var(--font-size-28);}
+    .membership-form.correction fieldset .info-tit + dl{margin-top:2rem;}
+    .membership-form.correction fieldset dl{flex-wrap:wrap;}
+    .membership-form.correction fieldset dl dd{gap:1rem; width:100%;}
+    .membership-form.correction fieldset dl dd .ipt{max-width:unset; flex-grow:1;}
+    .membership-form.correction fieldset dl dd .btn{height:5.2rem;}
+    .membership-form.correction fieldset dl dd.cover{position:relative;}
+    .membership-form.correction fieldset dl dd.cover .ipt{position:relative; padding-right:10rem;}
+    .membership-form.correction fieldset dl dd.cover .btn{position:absolute; top:0; right:0; min-width:unset; width:10rem; border-radius:0 1rem 1rem 0;}
+    .membership-form.correction fieldset dl dd.has-btn .ipt{width:calc(100% - 12rem);}
+    .membership-form.correction fieldset dl dd.has-btn .btn{width:10rem;}
+    .membership-form.correction fieldset dl dt.auth{margin:0;}
+
+    .cmp-modal .modal-container.secession{padding-top:7rem;}
+    .cmp-modal .modal-container.secession .h3-title{margin-bottom:2rem; font-size:var(--font-size-32);}
+    .cmp-modal .bg-gray-box{padding:2.5rem 1rem;}
+    .cmp-modal .bg-gray-box .txt18{font-size:var(--font-size-17);}
+    .cmp-modal .modal-container.secession .modal-footer .btn-cmn{order:0;}
+    .cmp-modal .bg-gray-box + p.txt20{font-size:var(--font-size-20);}
+
+
 }
 
 @media(max-width:768px){
@@ -1462,6 +1515,8 @@ ol.num-box li .sub-tit::before{content:counter(cnt); display:inline-flex; justif
     .step-grp li{font-size:var(--font-size-16);}
     .step-grp li:first-child{padding-right:3rem;}
     .step-grp li:last-child{padding:1rem .5rem 1rem 2rem;}
+
+    .edu-gen-list li .btn-grp .btn{padding:0 1rem; font-size:var(--font-size-15);}
 }
 
 @media(max-width:374px){

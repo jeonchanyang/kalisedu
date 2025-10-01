@@ -91,6 +91,7 @@ header .head-bottom{display:flex; flex-wrap:wrap; justify-content:space-between;
 .btn-cmn{min-width:14rem; height:5rem; color:#fff; font-weight:700; font-size:var(--font-size-18); background:var(--primary-color);}
 .btn-primary{color:#fff; background-color:var(--primary-color);}
 .btn-normal{color:var(--font-color-black); background-color:var(--normal-color); border:.1rem solid var(--font-color-gray);}
+.btn-normal.wh{background:#fff; border-color:#A6A8AB;}
 .btn-cmn.gray{background-color:var(--font-color-gray);}
 .btn-cmn.sec{background-color:#1D76BC;}
 .btn-cmn.green{background-color:#8AC650;}
