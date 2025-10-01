@@ -1,0 +1,1684 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>국토안전교육원 - KALIS</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+    <script src="/js/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <ul class="skip">
+            <li><a href="#content">본문내용 바로가기</a></li>
+            <li><a href="#gnb">주내용 바로가기</a></li>
+        </ul>
+        <header>
+            <div class="top-noti">
+                <p><a href="/국토안전교육원_04정보마당_05설문조사.html">국토안전교육원 홈페이지 리뉴얼 설문조사를 진행중입니다</a></p>
+                <i class="icon-toryani"></i>
+                <button class="btn-close" onclick="topClose();">닫기</button>
+            </div>
+            <div class="head-top">
+                <h1 class="logo"><a href="/index.html">국토안전관리원 국토안전교육원 로고</a></h1>
+                <div class="sch-area">
+                    <label for="searchInput" class="sr-only">검색어 입력</label>
+                    <input type="text" placeholder="검색어를 입력하세요" id="searchInput">
+                    <button type="button" class="btn-sch"></button>
+                </div>
+                <div class="mo-only mo-btn-grp">
+                    <button class="mo-btn-search btn-sch">검색버튼</button>
+                    <button class="mo-btn-mnu">메뉴열기</button>
+                </div>
+            </div>
+
+            <div class="head-bottom">
+                <nav id="gnb">
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">법정교육</a>
+                            <ul class="gnb-depth2">
+                                <li class="tit">법정교육</li>
+                                <li>
+                                    <a href="/국토안전교육원_01법정교육_01법정교육소개.html">법정교육 소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">교육안내 · 일정 · 신청</a>
+                                </li>
+                                <li>
+                                    <ul class="gnb-depth3">
+                                        <li><a href="/국토안전교육원_02교육안내일정신청_01시설물안전법.html">시설물안전법</a></li>
+                                        <li><a href="#">지하안전법</a></li>
+                                        <li><a href="#">건축물 관리법</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">대국민안전교육</a>
+                            <ul class="gnb-depth2">
+                                <li class="tit">대국민안전교육</li>
+                                <li>
+                                    <a href="/국토안전교육원_02대국민안전교육_01대국민안전교육소개.html">대국민안전교육 소개</a>    
+                                </li>
+                                <li>
+                                    <a href="#">교육안내 · 일정 · 신청</a>
+                                </li>
+                                <li>
+                                    <ul class="gnb-depth3">
+                                        <li><a href="/국토안전교육원_02대국민안전교육_02교육안내일정신청_01청소년안전교육.html">청소년 안전교육</a></li>
+                                        <li><a href="/국토안전교육원_02대국민안전교육_02교육안내일정신청_02KALIS맞춤형지역인재양성과정.html">지역인재양성과정</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">수강안내</a>
+                            <ul class="gnb-depth2">
+                                <li class="tit">수강안내</li>
+                                <li>
+                                    <a href="#">관계법령 바로가기</a>    
+                                </li>
+                                <li>
+                                    <a href="/국토안전교육원_03수강안내_01신청및입교안내_탭01접수및학사관리기준안내.html">신청 및 입교안내</a>
+                                </li>
+                                <li>
+                                    <a href="/국토안전교육원_03수강안내_02교육비안내.html">교육비 안내</a>
+                                </li>
+                                <li>
+                                    <a href="/국토안전교육원_03수강안내_03고용보험환급안내.html">고용보험환급 안내</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">정보마당</a>
+                            <ul class="gnb-depth2">
+                                <li class="tit">정보마당</li>
+                                <li>
+                                    <a href="/국토안전교육원_04정보마당_01공지사항.html">공지사항</a>    
+                                </li>    
+                                <li>
+                                    <a href="/국토안전교육원_04정보마당_02자주묻는질문.html">자주 묻는 질문</a>
+                                </li>
+                                <li>
+                                    <a href="/국토안전교육원_04정보마당_03자료실.html">자료실</a>
+                                </li>
+                                <li>
+                                    <a href="/국토안전교육원_04정보마당_04질의응답.html">교육생 모집안내</a>
+                                </li>
+                                <li>
+                                    <a href="/국토안전교육원_04정보마당_05설문조사.html">설문조사</a>
+                                </li>
+                                <li>
+                                    <a href="#">강사채용</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">국토안전교육원 소개</a>
+                            <ul class="gnb-depth2">
+                                <li class="tit">국토안전교육원 소개</li>
+                                <li>
+                                    <a href="#">교육원장 인사말</a>   
+                                </li>
+                                <li>
+                                    <a href="#">연혁</a>
+                                </li>
+                                <li>
+                                    <a href="#">미션 및 비전</a>
+                                </li>
+                                <li>
+                                    <a href="#">조직도</a>
+                                </li>
+                                <li>
+                                    <a href="#">찾아오시는 길</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mnu-info">
+                    <p><b>홍길동</b>님 안녕하세요</p>
+                    <a href="#" class="btn-mypage">마이페이지</a>
+                    <button type="button" class="btn-logout">로그아웃</button>
+                </div>
+            </div>
+        </header>
+        <main class="content-wrap" id="content">
+            <div class="location"> 
+                <ol>
+                    <li>
+                        <a href="/index.html" aria-label="메인화면으로 이동"><i class="ico icon-home"></i></a>
+                    </li>
+                    <li>
+                        <div class="dropdown-wrap dropdown-select">
+                            <button type="button" class="btn btn-dropdown">
+                                법정교육
+                            </button>
+                            <div class="dropdown-list is-up is-open">
+                                <button type="button" class="dropdown-item">법정교육</button>
+                                <button type="button" class="dropdown-item">대국민안전교육</button>
+                                <button type="button" class="dropdown-item">이용안내</button>
+                                <button type="button" class="dropdown-item">정보마당</button>
+                                <button type="button" class="dropdown-item">국토안전교육원 소개</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown-wrap dropdown-select">
+                            <button type="button" class="btn btn-dropdown">
+                                교육안내 · 일정 · 신청
+                            </button>
+                            <div class="dropdown-list is-up is-open">
+                                <button type="button" class="dropdown-item">법정교육 소개</button>
+                                <button type="button" class="dropdown-item">교육안내 · 일정 · 신청</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown-wrap dropdown-link">
+                            <button type="button" class="btn btn-dropdown">
+                                시설물안전법
+                            </button>
+                            <div class="dropdown-list is-up is-open">
+                                <a href="#" class="link" target="_blank">시설물안전법</a>
+                                <a href="#" class="link" target="_blank">지하안전법</a>
+                                <a href="#" class="link" target="_blank">건축물 관리법</a>
+                                <a href="#" class="link" target="_blank">법정교육7</a>
+                                <a href="#" class="link" target="_blank">법정교육8</a>
+                                <a href="#" class="link" target="_blank">법정교육9</a>
+                                <a href="#" class="link" target="_blank">법정교육10</a>           
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <section class="inner-wrap max-width mt-type2">
+                <h2 class="h2-title">시설물안전법</h2>
+
+                <div class="tab-container full">
+                    <div class="mo-drop tab">
+                        <button type="button" class="btn mo-btn-dropdown">정밀안전진단과정</button>
+                        <div class="mo-dropdown-list">
+                            <ul class="tab-head">
+                                <li><button type="button" class="tab-menu is-active" data-tab="tab1-con1">정밀안전진단과정</button></li>
+                                <li><button type="button" class="tab-menu" data-tab="tab1-con2">정기안전점검과정</button></li>
+                                <li><button type="button" class="tab-menu" data-tab="tab1-con3">성능평가과정</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-content-wrap">
+                        <div class="tab-content is-active" id="tab1-con1">
+                            <div class="acco-wrap search">
+                                <div class="item active">
+                                    <div class="tit">
+                                        <div class="left-grp">
+                                            <button type="button" class="icon-acco">교육과정 상세검색</button>
+                                        </div>
+                                        <div class="right-grp">
+                                            <span>교육대상<i class="tooltip icon-tooltip">상세보기</i></span>
+                                            <span>법적근거<i class="tooltip icon-tooltip">상세보기</i></span>
+                                        </div>
+                                    </div>
+                                    <div class="target">
+                                        <div class="tb-layout sch">
+                                            <table>
+                                                <caption>교육과정 상세검색표</caption>
+                                                <colgroup>
+                                                    <col>
+                                                    <col>
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>교육 과정 선택</th>
+                                                        <td>
+                                                            <div class="mo-drop mo-dropdown-wrap rdo">
+                                                                <button type="button" class="btn mo-btn-dropdown">선택하세요.</button>
+                                                                <div class="mo-dropdown-list">
+                                                                    <div class="radio-group rounded">
+                                                                        <label for="rdo1-1" class="radio-item">
+                                                                            <input type="radio" id="rdo1-1" name="radio1" >
+                                                                            <span class="custom-radio">전체</span>
+                                                                        </label>
+                                                                        <label for="rdo1-2" class="radio-item">
+                                                                            <input type="radio" id="rdo1-2" name="radio1">
+                                                                            <span class="custom-radio">신규교육</span>
+                                                                        </label>
+                                                                        <label for="rdo1-3" class="radio-item">
+                                                                            <input type="radio" id="rdo1-3" name="radio1" checked>
+                                                                            <span class="custom-radio">보수교육</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>분야(반) 선택</th>
+                                                        <td>
+                                                            <div class="mo-drop mo-dropdown-wrap rdo">
+                                                                <button type="button" class="btn mo-btn-dropdown">선택하세요.</button>
+                                                                <div class="mo-dropdown-list">
+                                                                    <div class="radio-group rounded">
+                                                                        <label for="rdo2-1" class="radio-item">
+                                                                            <input type="radio" id="rdo2-1" name="radio2" checked>
+                                                                            <span class="custom-radio">전체</span>
+                                                                        </label>
+                                                                        <label for="rdo2-2" class="radio-item">
+                                                                            <input type="radio" id="rdo2-2" name="radio2">
+                                                                            <span class="custom-radio">수리시설</span>
+                                                                        </label>
+                                                                        <label for="rdo2-3" class="radio-item">
+                                                                            <input type="radio" id="rdo2-3" name="radio2">
+                                                                            <span class="custom-radio">항만</span>
+                                                                        </label>
+                                                                        <label for="rdo2-4" class="radio-item">
+                                                                            <input type="radio" id="rdo2-4" name="radio2">
+                                                                            <span class="custom-radio">교량터널</span>
+                                                                        </label>
+                                                                        <label for="rdo2-5" class="radio-item">
+                                                                            <input type="radio" id="rdo2-5" name="radio2">
+                                                                            <span class="custom-radio">건축</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>교육구분<br class="pc-only">(온라인/집체)</th>
+                                                        <td>
+                                                            <div class="mo-drop mo-dropdown-wrap rdo">
+                                                                <button type="button" class="btn mo-btn-dropdown">선택하세요.</button>
+                                                                <div class="mo-dropdown-list">
+                                                                    <div class="radio-group rounded">
+                                                                        <label for="rdo3-1" class="radio-item">
+                                                                            <input type="radio" id="rdo3-1" name="radio3">
+                                                                            <span class="custom-radio">전체</span>
+                                                                        </label>
+                                                                        <label for="rdo3-2" class="radio-item">
+                                                                            <input type="radio" id="rdo3-2" name="radio3">
+                                                                            <span class="custom-radio">온라인 실시간(원격)</span>
+                                                                        </label>
+                                                                        <label for="rdo3-3" class="radio-item">
+                                                                            <input type="radio" id="rdo3-3" name="radio3">
+                                                                            <span class="custom-radio">온라인 동영상(VOD)</span>
+                                                                        </label>
+                                                                        <label for="rdo3-4" class="radio-item">
+                                                                            <input type="radio" id="rdo3-4" name="radio3" checked>
+                                                                            <span class="custom-radio">집체교육(진주)</span>
+                                                                        </label>
+                                                                        <label for="rdo3-5" class="radio-item">
+                                                                            <input type="radio" id="rdo3-5" name="radio3">
+                                                                            <span class="custom-radio">집체교육(일산)</span>
+                                                                        </label>
+                                                                        <label for="rdo3-6" class="radio-item">
+                                                                            <input type="radio" id="rdo3-6" name="radio3">
+                                                                            <span class="custom-radio">집체교육(광주)</span>
+                                                                        </label>
+                                                                        <label for="rdo3-7" class="radio-item">
+                                                                            <input type="radio" id="rdo3-7" name="radio3">
+                                                                            <span class="custom-radio">집체교육(대전)</span>
+                                                                        </label>
+                                                                        <label for="rdo3-8" class="radio-item">
+                                                                            <input type="radio" id="rdo3-8" name="radio3">
+                                                                            <span class="custom-radio">집체교육(대전)</span>
+                                                                        </label>
+                                                                    </div>
+                                                        
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>교육 기관 선택</th>
+                                                        <td>
+                                                            <div class="input-group">
+                                                                <div class="date-range">
+                                                                    <input type="date" class="start" name="start-date-1" value="2025-09-01">
+                                                                    <span class="desc">~</span>
+                                                                    <input type="date" class="end" name="end-date-1" value="2025-09-30">
+                                                                </div>
+                                                                <div class="radio-group rounded">
+                                                                    <label for="rdo4-1" class="radio-item">
+                                                                        <input type="radio" id="rdo4-1" name="radio4" checked>
+                                                                        <span class="custom-radio">1개월</span>
+                                                                    </label>
+                                                                    <label for="rdo4-2" class="radio-item">
+                                                                        <input type="radio" id="rdo4-2" name="radio4">
+                                                                        <span class="custom-radio">3개월</span>
+                                                                    </label>
+                                                                    <label for="rdo4-3" class="radio-item">
+                                                                        <input type="radio" id="rdo4-3" name="radio4">
+                                                                        <span class="custom-radio">6개월</span>
+                                                                    </label>
+                                                                    <label for="rdo4-4" class="radio-item">
+                                                                        <input type="radio" id="rdo4-4" name="radio4">
+                                                                        <span class="custom-radio">직접입력</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btn-search-area">
+                                            <button type="button" class="btn btn-reset btn-normal"><i class="ico icon-reset"></i>선택초기화</button>
+                                            <button type="button" class="btn btn-sch btn-primary"><i class="ico icon-search"></i>검색하기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-container sub">
+                                <ul class="tab-head">
+                                    <li><button type="button" class="tab-menu is-active" data-tab="tab1-sub1">년간 교육확정</button></li>
+                                    <li><button type="button" class="tab-menu" data-tab="tab1-sub2">교육안내</button></li>
+                                </ul>
+                                <div class="tab-content-wrap">
+                                    <div class="tab-content is-active" id="tab1-sub1">
+                                        <div class="card-wrap">
+                                            <ul class="card-list">
+                                                <li>
+                                                    <div class="card-inner">
+                                                        <strong class="tit">256기 수리시설반<br class="pc-only">(진단 보수)</strong>
+                                                        <b class="sub-tit">정밀안전진단 보수교육과정</b>
+                                                        <dl>
+                                                            <dt class="bullet">교육구분</dt>
+                                                            <dd>집체 교육(진주교육관)</dd>
+                                                            <dt class="bullet">모집정원</dt>
+                                                            <dd><span>12</span>/<span>64</span>명</dd>
+                                                            <dt class="bullet">접수기간</dt>
+                                                            <dd>2025-09-29~2025-10-17</dd>
+                                                            <dt class="bullet">교육기간</dt>
+                                                            <dd>2025-11-05~2025-11-06</dd>
+                                                            <dt class="bullet">납부기간</dt>
+                                                            <dd>2025-09-29~2-025-10-24</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div class="card-btn-area">
+                                                        <button type="button" class="btn-card type02">신청예정</button>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card-inner">
+                                                        <strong class="tit">256기 교량 및 터널반<br class="pc-only">(진단 보수)</strong>
+                                                        <b class="sub-tit">정밀안전진단 보수교육과정</b>
+                                                        <dl>
+                                                            <dt class="bullet">교육구분</dt>
+                                                            <dd>집체 교육(진주교육관)</dd>
+                                                            <dt class="bullet">모집정원</dt>
+                                                            <dd><span>05</span>/<span>64</span>명</dd>
+                                                            <dt class="bullet">접수기간</dt>
+                                                            <dd>2025-09-29~2025-10-17</dd>
+                                                            <dt class="bullet">교육기간</dt>
+                                                            <dd>2025-11-05~2025-11-06</dd>
+                                                            <dt class="bullet">납부기간</dt>
+                                                            <dd>2025-09-29~2-025-10-24</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div class="card-btn-area">
+                                                        <button type="button" class="btn-card type02">신청예정</button>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card-inner">
+                                                        <strong class="tit">256기 수리시설반<br class="pc-only">(진단 보수)</strong>
+                                                        <b class="sub-tit">정밀안전진단 보수교육과정</b>
+                                                        <dl>
+                                                            <dt class="bullet">교육구분</dt>
+                                                            <dd>집체 교육(진주교육관)</dd>
+                                                            <dt class="bullet">모집정원</dt>
+                                                            <dd><span>34</span>/<span>64</span>명</dd>
+                                                            <dt class="bullet">접수기간</dt>
+                                                            <dd>2025-09-29~2025-10-17</dd>
+                                                            <dt class="bullet">교육기간</dt>
+                                                            <dd>2025-11-05~2025-11-06</dd>
+                                                            <dt class="bullet">납부기간</dt>
+                                                            <dd>2025-09-29~2-025-10-24</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div class="card-btn-area">
+                                                        <button class="btn-card type01" onclick="openModal(event)" data-modal-id="modal000">신청하기</button>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card-inner">
+                                                        <strong class="tit">256기 교량 및 터널반<br class="pc-only">(진단 보수)</strong>
+                                                        <b class="sub-tit">정밀안전진단 보수교육과정</b>
+                                                        <dl>
+                                                            <dt class="bullet">교육구분</dt>
+                                                            <dd>집체 교육(진주교육관)</dd>
+                                                            <dt class="bullet">모집정원</dt>
+                                                            <dd><span>12</span>/<span>64</span>명</dd>
+                                                            <dt class="bullet">접수기간</dt>
+                                                            <dd>2025-09-29~2025-10-17</dd>
+                                                            <dt class="bullet">교육기간</dt>
+                                                            <dd>2025-11-05~2025-11-06</dd>
+                                                            <dt class="bullet">납부기간</dt>
+                                                            <dd>2025-09-29~2-025-10-24</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div class="card-btn-area">
+                                                        <button type="button" class="btn-card type03" onclick="openModal(event)" data-modal-id="modal001">접수대기</button>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card-inner">
+                                                        <strong class="tit">256기 수리시설반<br class="pc-only">(진단 보수)</strong>
+                                                        <b class="sub-tit">정밀안전진단 보수교육과정</b>
+                                                        <dl>
+                                                            <dt class="bullet">교육구분</dt>
+                                                            <dd>집체 교육(진주교육관)</dd>
+                                                            <dt class="bullet">모집정원</dt>
+                                                            <dd><span>64</span>/<span>64</span>명</dd>
+                                                            <dt class="bullet">접수기간</dt>
+                                                            <dd>2025-09-29~2025-10-17</dd>
+                                                            <dt class="bullet">교육기간</dt>
+                                                            <dd>2025-11-05~2025-11-06</dd>
+                                                            <dt class="bullet">납부기간</dt>
+                                                            <dd>2025-09-29~2-025-10-24</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div class="card-btn-area">
+                                                        <button type="button" class="btn-card type04">신청기간 만료</button>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card-inner">
+                                                        <strong class="tit">256기 건축반 (진단 보수)</strong>
+                                                        <b class="sub-tit">정밀안전진단 보수교육과정</b>
+                                                        <dl>
+                                                            <dt class="bullet">교육구분</dt>
+                                                            <dd>집체 교육(진주교육관)</dd>
+                                                            <dt class="bullet">모집정원</dt>
+                                                            <dd><span>60</span>/<span>60</span>명</dd>
+                                                            <dt class="bullet">접수기간</dt>
+                                                            <dd>2025-09-29~2025-10-17</dd>
+                                                            <dt class="bullet">교육기간</dt>
+                                                            <dd>2025-11-05~2025-11-06</dd>
+                                                            <dt class="bullet">납부기간</dt>
+                                                            <dd>2025-09-29~2-025-10-24</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div class="card-btn-area">
+                                                        <button type="button" class="btn-card type04">신청기간 만료</button>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card-inner">
+                                                        <strong class="tit">256기 항만반 (진단 보수)</strong>
+                                                        <b class="sub-tit">정밀안전진단 보수교육과정</b>
+                                                        <dl>
+                                                            <dt class="bullet">교육구분</dt>
+                                                            <dd>집체 교육(진주교육관)</dd>
+                                                            <dt class="bullet">모집정원</dt>
+                                                            <dd><span>60</span>/<span>60</span>명</dd>
+                                                            <dt class="bullet">접수기간</dt>
+                                                            <dd>2025-09-29~2025-10-17</dd>
+                                                            <dt class="bullet">교육기간</dt>
+                                                            <dd>2025-11-05~2025-11-06</dd>
+                                                            <dt class="bullet">납부기간</dt>
+                                                            <dd>2025-09-29~2-025-10-24</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div class="card-btn-area">
+                                                        <button type="button" class="btn-card type04">신청기간 만료</button>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="card-inner">
+                                                        <strong class="tit">256기 수리시설반<br class="pc-only">(진단 보수)</strong>
+                                                        <b class="sub-tit">정밀안전진단 보수교육과정</b>
+                                                        <dl>
+                                                            <dt class="bullet">교육구분</dt>
+                                                            <dd>집체 교육(진주교육관)</dd>
+                                                            <dt class="bullet">모집정원</dt>
+                                                            <dd><span>120</span>/<span>120</span>명</dd>
+                                                            <dt class="bullet">접수기간</dt>
+                                                            <dd>2025-09-29~2025-10-17</dd>
+                                                            <dt class="bullet">교육기간</dt>
+                                                            <dd>2025-11-05~2025-11-06</dd>
+                                                            <dt class="bullet">납부기간</dt>
+                                                            <dd>2025-09-29~2-025-10-24</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div class="card-btn-area">
+                                                        <button type="button" class="btn-card type04">신청기간 만료</button>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="btn-bottom-area"><button type="button" class="btn btn-normal">더보기 ↓</button></div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-content" id="tab1-sub2">
+                                        <div class="inner">
+                                            <h3 class="txt48 top-line">정밀안전진단과정 교육안내</h3>
+                                            <strong class="h3-title"><img src="/images/common/icon_h3_tit_logo.svg" alt="메뉴 타이틀 아이콘 이미지">교육정보</strong>
+                                            <div class="layout-half">
+                                                <div class="fl-grp">
+                                                    <strong class="sub-tit type2"><span class="txt-blue">신규교육</span></strong>
+                                                    <div class="bg-wh-box type04">
+                                                        <dl class="sm-list">
+                                                            <dt class="ic-type01">교육시간</dt>
+                                                            <dd>70시간 이상 (2주)</dd>
+                                                            <dt class="ic-type02">교육인원</dt>
+                                                            <dd>60명 (60명 초과 입교시 2개반 운영)</dd>
+                                                            <dt class="ic-type03">교육방법</dt>
+                                                            <dd>집체 교육 또는 온라인 원격 교육</dd>
+                                                            <dt class="ic-type04">교육분야</dt>
+                                                            <dd>토목분야 <span class="fwl">(교량 및 처널반, 수리시설반, 항만반)</span> / 건축분야 <span class="fwl">(건축반)</span></dd>
+                                                            <dt class="ic-type05">교육장소</dt>
+                                                            <dd>교육 불편해소를 위해 교육장 병행 실시</dd>
+                                                            <dt class="ic-type06">교육비</dt>
+                                                            <dd>
+                                                                집체 교육비 62만원 <span class="fwl">(비합숙, 교재 및 중식 포함, 환급)</span><br>
+                                                                온라인 교육비 58.6만원 <span class="fwl">(비합숙, 교재 포함, 중식 미포함, 환급 또는 비 환급)</span>
+                                                            </dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                                <div class="fr-grp">
+                                                    <strong class="sub-tit type2"><span class="txt-blue">보수교육</span></strong>
+                                                    <div class="bg-wh-box type04">
+                                                        <dl class="sm-list">
+                                                            <dt class="ic-type01">교육시간</dt>
+                                                            <dd>14시간 이상 (2일)</dd>
+                                                            <dt class="ic-type02">교육인원</dt>
+                                                            <dd>60명</dd>
+                                                            <dt class="ic-type03">교육방법</dt>
+                                                            <dd>집체 교육 또는 온라인 원격 교육</dd>
+                                                            <dt class="ic-type04">교육분야</dt>
+                                                            <dd>토목분야 <span class="fwl">(교량 및 처널반, 수리시설반, 항만반)</span> / 건축분야 <span class="fwl">(건축반)</span></dd>
+                                                            <dt class="ic-type05">교육장소</dt>
+                                                            <dd>교육 불편해소를 위해 교육장 병행 실시</dd>
+                                                            <dt class="ic-type06">교육비</dt>
+                                                            <dd>
+                                                                집체 교육비 15만원 <span class="fwl">(비합숙, 교재 및 중식 포함, 환급)</span><br>
+                                                                온라인 교육비 14만원 <span class="fwl">(비합숙, 교재 포함, 중식 미포함, 환급 또는 비 환급)</span>
+                                                            </dd>
+                                                        </dl>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="inner">
+                                            <h3 class="h3-title"><img src="/images/common/icon_h3_tit_logo.svg" alt="메뉴 타이틀 아이콘 이미지">학습구조</h3>
+                                            <strong class="sub-tit txt-blue">신규교육</strong>
+                                            <div class="division-box new">
+                                                <ul class="bg-wh-box division-type">
+                                                    <li>
+                                                        <b>공통</b>
+                                                        <span>법령해설 및 정책, 보고서 작성요령,<br class="pc-only"> 안전관리, 절토사면 및 옹벽 등</span>
+                                                    </li> 
+                                                    <li>
+                                                        <b>행정</b>
+                                                        <span>등록, 입교 및 수료, 설문조사, 평가, 분임토의 등</span>
+                                                    </li>
+                                                    <li>
+                                                        <b>교양</b>
+                                                        <span>건강, 생활상식, 기술인의 자세 등</span>
+                                                    </li>
+                                                    <li>
+                                                        <b>전문</b>
+                                                        <span>시설물별 세부지침, 현장조사,<br class="pc-only"> 종합평가 및 안전등급, 시설물의 구조 등</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="division-box new">
+                                                <strong class="sub-tit txt-blue">보수교육</strong>
+                                                <ul class="bg-wh-box division-type">
+                                                    <li>
+                                                        <b>행정</b>
+                                                        <span>등록, 입교 및 수료 등</span>
+                                                    </li>
+                                                    <li>
+                                                        <b>교과목</b>
+                                                        <span>법령해설, 시설물의 안전 및 유지관리 지침, 세부지침해설 등</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="inner">
+                                            <h3 class="h3-title"><img src="/images/common/icon_h3_tit_logo.svg" alt="메뉴 타이틀 아이콘 이미지">수료</h3>
+                                            <div class="tbl-box">
+                                                <strong class="sub-tit txt-blue mb10">신규교육</strong>
+                                                <p class="bullet txt18 fwr">교육훈련 총 수업시간의 100분의 80이상 이수한 자</p>
+                                                <p class="bullet txt18 fwr">종합성적 100분의 70이상 이수한 자</p>
+                                                <div class="tb-layout has-header">
+                                                    <table class="mo-tbl">
+                                                        <caption>근태평가표</caption>
+                                                        <colgroup class="mo-only">
+                                                            <col>
+                                                            <col>
+                                                        </colgroup>
+                                                        <tbody class="mo-only">
+                                                            <tr><th colspan="2" class="thead-bg">근태평가</th></tr>
+                                                            <tr><td colspan="2">20</td></tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table class="mo-tbl">
+                                                        <caption>학습평가표</caption>
+                                                        <colgroup class="mo-only">
+                                                            <col>
+                                                            <col>
+                                                        </colgroup>
+                                                        <tbody class="mo-only">
+                                                            <tr><th colspan="2" class="thead-bg">학습평가</th></tr>
+                                                            <tr><td colspan="2">60</td></tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <table class="mo-tbl">
+                                                        <caption>수료기준 평가표</caption>
+                                                        <colgroup class="pc-only">
+                                                            <col>
+                                                            <col>
+                                                            <col>
+                                                            <col>
+                                                            <col>
+                                                            <col>
+                                                            <col>
+                                                            <col>
+                                                        </colgroup>
+                                                        <colgroup class="mo-only">
+                                                            <col>
+                                                            <col>
+                                                        </colgroup>
+                                                        <thead class="pc-only">
+                                                            <tr>
+                                                                <th>근태평가</th>
+                                                                <th>학습평가</th>
+                                                                <th colspan="6">과제평가</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody class="pc-only">
+                                                            <tr>
+                                                                <td rowspan="3">20</td>
+                                                                <td rowspan="3">60</td>
+                                                                <th colspan="2">실습</th>
+                                                                <th colspan="2">사례</th>
+                                                                <th colspan="2">분임</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>토목</td>
+                                                                <td>6</td>
+                                                                <td>토목</td>
+                                                                <td>4</td>
+                                                                <td>토목</td>
+                                                                <td>10</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>건축</td>
+                                                                <td>-</td>
+                                                                <td>건축</td>
+                                                                <td>10</td>
+                                                                <td>건축</td>
+                                                                <td>10</td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tbody class="mo-only">
+                                                            <tr><th colspan="2" class="thead-bg">과제평가</th></tr>
+                                                            <tr><th colspan="2">실습</th></tr>
+                                                            <tr>
+                                                                <td>토목</td>
+                                                                <td>건축</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>6</td>
+                                                                <td>-</td>
+                                                            </tr>
+                                                            <tr><th colspan="2">사례</th></tr>
+                                                            <tr>
+                                                                <td>토목</td>
+                                                                <td>건축</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4</td>
+                                                                <td>10</td>
+                                                            </tr>
+                                                            <tr><th colspan="2"> 분임</th></tr>
+                                                            <tr>
+                                                                <td>토목</td>
+                                                                <td>건축</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>10</td>
+                                                                <td>10</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="txt-box">
+                                                <strong class="sub-tit txt-blue mb10">보수교육</strong>
+                                                <p class="bullet txt18 fwr">교육훈련 총 수업시간이 100분의 80이상 이수한 자</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="inner">
+                                            <h3 class="h3-title"><img src="/images/common/icon_h3_tit_logo.svg" alt="메뉴 타이틀 아이콘 이미지">포상</h3>
+                                            <div class="prize-box">
+                                                <strong class="sub-tit txt-blue mb10">신규교육</strong>
+                                                <p class="bullet txt18 fwr prize">
+                                                    <span>기수별 성적우수자에 대하여 국토교통부 장관상(국토부 요청) 및 이사장 상을 수여함으로서 교육에 대한 몰입도 및 교육효과 향상</span>
+                                                    <span>- <b>공로상</b> : 국토안전관리원 원장 상</span>
+                                                    <span>- <b>기수별 종합성적 우수자</b> : 1등상 국토교통부장관상, 2등, 공로상 원장상</span>
+                                                    <span>- 온라인 원격교육 시 포상 미 수여</span>
+                                                </p>
+                                                
+                                            </div>
+                                            <div class="txt-box">
+                                                <strong class="sub-tit txt-blue mb10">보수교육</strong>
+                                                <p class="bullet txt18 fwr">없음</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="inner">
+                                            <h3 class="h3-title"><img src="/images/common/icon_h3_tit_logo.svg" alt="메뉴 타이틀 아이콘 이미지">기타사항</h3>
+                                            <div class="txt-box">
+                                                <strong class="sub-tit txt-blue mb10">보수교육</strong>
+                                                <p class="bullet txt18 fwr">18년도 법 제정 이후 5년 유예기간으로 교육 수요자 저조 예상</p>
+                                                <p class="bullet txt18 fwr">21년도부터 보수교육 이수 필요성 적극 홍보</p>                                                
+                                            </div>
+                                            <div class="btn-grp">
+                                                <button type="button" class="btn btn-download">신규고객 자료 내려받기<i class="ico icon-download"></i></button>
+                                                <button type="button" class="btn btn-download">보수교육 자료 내려받기<i class="ico icon-download"></i></button>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="tab1-con2">
+                            <div class="acco-wrap search">
+                                <div class="item active">
+                                    <div class="tit">
+                                        <div class="left-grp">
+                                            <button type="button" class="icon-acco">교육과정 상세검색</button>
+                                        </div>
+                                        <div class="right-grp">
+                                            <span>교육대상<i class="tooltip icon-tooltip">상세보기</i></span>
+                                            <span>법적근거<i class="tooltip icon-tooltip">상세보기</i></span>
+                                        </div>
+                                    </div>
+                                    <div class="target">
+                                        <div class="tb-layout sch">
+                                            <table>
+                                                <caption>교육과정 상세검색표</caption>
+                                                <colgroup>
+                                                    <col>
+                                                    <col>
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>교육 과정 선택</th>
+                                                        <td>
+                                                            <div class="mo-drop mo-dropdown-wrap rdo">
+                                                                <button type="button" class="btn mo-btn-dropdown">선택하세요.</button>
+                                                                <div class="mo-dropdown-list">
+                                                                    <div class="radio-group rounded">
+                                                                        <label for="rdo2-1-1" class="radio-item">
+                                                                            <input type="radio" id="rdo2-1-1" name="radio2-1">
+                                                                            <span class="custom-radio">전체</span>
+                                                                        </label>
+                                                                        <label for="rdo2-1-2" class="radio-item">
+                                                                            <input type="radio" id="rdo2-1-2" name="radio2-1" checked>
+                                                                            <span class="custom-radio">신규교육</span>
+                                                                        </label>
+                                                                        <label for="rdo2-1-3" class="radio-item">
+                                                                            <input type="radio" id="rdo2-1-3" name="radio2-1" >
+                                                                            <span class="custom-radio">보수교육</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>분야(반) 선택</th>
+                                                        <td>
+                                                            <div class="mo-drop mo-dropdown-wrap rdo">
+                                                                <button type="button" class="btn mo-btn-dropdown">선택하세요.</button>
+                                                                <div class="mo-dropdown-list">
+                                                                    <div class="radio-group rounded">
+                                                                        <label for="rdo2-2-1" class="radio-item">
+                                                                            <input type="radio" id="rdo2-2-1" name="radio2-2" >
+                                                                            <span class="custom-radio">전체</span>
+                                                                        </label>
+                                                                        <label for="rdo2-2-2" class="radio-item">
+                                                                            <input type="radio" id="rdo2-2-2" name="radio2-2">
+                                                                            <span class="custom-radio">수리시설</span>
+                                                                        </label>
+                                                                        <label for="rdo2-2-3" class="radio-item">
+                                                                            <input type="radio" id="rdo2-2-3" name="radio2-2">
+                                                                            <span class="custom-radio">항만</span>
+                                                                        </label>
+                                                                        <label for="rdo2-2-4" class="radio-item">
+                                                                            <input type="radio" id="rdo2-2-4" name="radio-2-2" checked>
+                                                                            <span class="custom-radio">교량터널</span>
+                                                                        </label>
+                                                                        <label for="rdo2-2-5" class="radio-item">
+                                                                            <input type="radio" id="rdo2-2-5" name="radio2-2">
+                                                                            <span class="custom-radio">건축</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>교육구분<br class="pc-only">(온라인/집체)</th>
+                                                        <td>
+                                                            <div class="mo-drop mo-dropdown-wrap rdo">
+                                                                <button type="button" class="btn mo-btn-dropdown">선택하세요.</button>
+                                                                <div class="mo-dropdown-list">
+                                                                    <div class="radio-group rounded">
+                                                                        <label for="rdo2-3-1" class="radio-item">
+                                                                            <input type="radio" id="rdo2-3-1" name="radio2-3">
+                                                                            <span class="custom-radio">전체</span>
+                                                                        </label>
+                                                                        <label for="rdo2-3-2" class="radio-item">
+                                                                            <input type="radio" id="rdo2-3-2" name="radio2-3">
+                                                                            <span class="custom-radio">온라인 실시간(원격)</span>
+                                                                        </label>
+                                                                        <label for="rdo2-3-3" class="radio-item">
+                                                                            <input type="radio" id="rdo2-3-3" name="radio2-3">
+                                                                            <span class="custom-radio">온라인 동영상(VOD)</span>
+                                                                        </label>
+                                                                        <label for="rdo2-3-4" class="radio-item">
+                                                                            <input type="radio" id="rdo2-3-4" name="radio2-3" >
+                                                                            <span class="custom-radio">집체교육(진주)</span>
+                                                                        </label>
+                                                                        <label for="rdo2-3-5" class="radio-item">
+                                                                            <input type="radio" id="rdo2-3-5" name="radio2-3">
+                                                                            <span class="custom-radio">집체교육(일산)</span>
+                                                                        </label>
+                                                                        <label for="rdo2-3-6" class="radio-item">
+                                                                            <input type="radio" id="rdo2-3-6" name="radio2-3">
+                                                                            <span class="custom-radio">집체교육(광주)</span>
+                                                                        </label>
+                                                                        <label for="rdo2-3-7" class="radio-item">
+                                                                            <input type="radio" id="rdo2-3-7" name="radio2-3" checked>
+                                                                            <span class="custom-radio">집체교육(대전)</span>
+                                                                        </label>
+                                                                        <label for="rdo2-3-8" class="radio-item">
+                                                                            <input type="radio" id="rdo2-3-8" name="radio2-3">
+                                                                            <span class="custom-radio">집체교육(대전)</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>교육 기관 선택</th>
+                                                        <td>
+                                                            <div class="input-group">
+                                                                <div class="date-range">
+                                                                    <input type="date" class="start1" name="start-date-2" value="2025-09-01">
+                                                                    <span class="desc">~</span>
+                                                                    <input type="date" class="end1" name="end-date-2" value="2025-09-30">
+                                                                </div>
+                                                                <div class="radio-group rounded">
+                                                                    <label for="rdo2-4-1" class="radio-item">
+                                                                        <input type="radio" id="rdo2-4-1" name="radio2-4">
+                                                                        <span class="custom-radio">1개월</span>
+                                                                    </label>
+                                                                    <label for="rdo2-4-2" class="radio-item">
+                                                                        <input type="radio" id="rdo2-4-2" name="radio2-4" checked>
+                                                                        <span class="custom-radio">3개월</span>
+                                                                    </label>
+                                                                    <label for="rdo2-4-3" class="radio-item">
+                                                                        <input type="radio" id="rdo2-4-3" name="radio2-4">
+                                                                        <span class="custom-radio">6개월</span>
+                                                                    </label>
+                                                                    <label for="rdo2-4-4" class="radio-item">
+                                                                        <input type="radio" id="rdo2-4-4" name="radio2-4">
+                                                                        <span class="custom-radio">직접입력</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btn-search-area">
+                                            <button type="button" class="btn btn-reset btn-normal"><i class="ico icon-reset"></i>선택초기화</button>
+                                            <button type="button" class="btn btn-sch btn-primary"><i class="ico icon-search"></i>검색하기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-wrap">
+                                <ul class="card-list">
+                                    <li>
+                                        <div class="card-inner">
+                                            <strong class="tit">256기 수리시설반<br class="pc-only">(진단 보수)</strong>
+                                            <b class="sub-tit">정밀안전진단 보수교육과정</b>
+                                            <dl>
+                                                <dt class="bullet">교육구분</dt>
+                                                <dd>집체 교육(진주교육관)</dd>
+                                                <dt class="bullet">모집정원</dt>
+                                                <dd><span>12</span>/<span>64</span>명</dd>
+                                                <dt class="bullet">접수기간</dt>
+                                                <dd>2025-09-29~2025-10-17</dd>
+                                                <dt class="bullet">교육기간</dt>
+                                                <dd>2025-11-05~2025-11-06</dd>
+                                                <dt class="bullet">납부기간</dt>
+                                                <dd>2025-09-29~2-025-10-24</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="card-btn-area">
+                                            <button type="button" class="btn-card type02">신청예정</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card-inner">
+                                            <strong class="tit">256기 수리시설반<br class="pc-only">(진단 보수)</strong>
+                                            <b class="sub-tit">정밀안전진단 보수교육과정</b>
+                                            <dl>
+                                                <dt class="bullet">교육구분</dt>
+                                                <dd>집체 교육(진주교육관)</dd>
+                                                <dt class="bullet">모집정원</dt>
+                                                <dd><span>64</span>/<span>64</span>명</dd>
+                                                <dt class="bullet">접수기간</dt>
+                                                <dd>2025-09-29~2025-10-17</dd>
+                                                <dt class="bullet">교육기간</dt>
+                                                <dd>2025-11-05~2025-11-06</dd>
+                                                <dt class="bullet">납부기간</dt>
+                                                <dd>2025-09-29~2-025-10-24</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="card-btn-area">
+                                            <button type="button" class="btn-card type04">신청기간 만료</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card-inner">
+                                            <strong class="tit">256기 건축반 (진단 보수)</strong>
+                                            <b class="sub-tit">정밀안전진단 보수교육과정</b>
+                                            <dl>
+                                                <dt class="bullet">교육구분</dt>
+                                                <dd>집체 교육(진주교육관)</dd>
+                                                <dt class="bullet">모집정원</dt>
+                                                <dd><span>60</span>/<span>60</span>명</dd>
+                                                <dt class="bullet">접수기간</dt>
+                                                <dd>2025-09-29~2025-10-17</dd>
+                                                <dt class="bullet">교육기간</dt>
+                                                <dd>2025-11-05~2025-11-06</dd>
+                                                <dt class="bullet">납부기간</dt>
+                                                <dd>2025-09-29~2-025-10-24</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="card-btn-area">
+                                            <button type="button" class="btn-card type04">신청기간 만료</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card-inner">
+                                            <strong class="tit">256기 항만반 (진단 보수)</strong>
+                                            <b class="sub-tit">정밀안전진단 보수교육과정</b>
+                                            <dl>
+                                                <dt class="bullet">교육구분</dt>
+                                                <dd>집체 교육(진주교육관)</dd>
+                                                <dt class="bullet">모집정원</dt>
+                                                <dd><span>60</span>/<span>60</span>명</dd>
+                                                <dt class="bullet">접수기간</dt>
+                                                <dd>2025-09-29~2025-10-17</dd>
+                                                <dt class="bullet">교육기간</dt>
+                                                <dd>2025-11-05~2025-11-06</dd>
+                                                <dt class="bullet">납부기간</dt>
+                                                <dd>2025-09-29~2-025-10-24</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="card-btn-area">
+                                            <button type="button" class="btn-card type04">신청기간 만료</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card-inner">
+                                            <strong class="tit">256기 교량 및 터널반<br class="pc-only">(진단 보수)</strong>
+                                            <b class="sub-tit">정밀안전진단 보수교육과정</b>
+                                            <dl>
+                                                <dt class="bullet">교육구분</dt>
+                                                <dd>집체 교육(진주교육관)</dd>
+                                                <dt class="bullet">모집정원</dt>
+                                                <dd><span>05</span>/<span>64</span>명</dd>
+                                                <dt class="bullet">접수기간</dt>
+                                                <dd>2025-09-29~2025-10-17</dd>
+                                                <dt class="bullet">교육기간</dt>
+                                                <dd>2025-11-05~2025-11-06</dd>
+                                                <dt class="bullet">납부기간</dt>
+                                                <dd>2025-09-29~2-025-10-24</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="card-btn-area">
+                                            <button type="button" class="btn-card type02">신청예정</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card-inner">
+                                            <strong class="tit">256기 수리시설반<br class="pc-only">(진단 보수)</strong>
+                                            <b class="sub-tit">정밀안전진단 보수교육과정</b>
+                                            <dl>
+                                                <dt class="bullet">교육구분</dt>
+                                                <dd>집체 교육(진주교육관)</dd>
+                                                <dt class="bullet">모집정원</dt>
+                                                <dd><span>34</span>/<span>64</span>명</dd>
+                                                <dt class="bullet">접수기간</dt>
+                                                <dd>2025-09-29~2025-10-17</dd>
+                                                <dt class="bullet">교육기간</dt>
+                                                <dd>2025-11-05~2025-11-06</dd>
+                                                <dt class="bullet">납부기간</dt>
+                                                <dd>2025-09-29~2-025-10-24</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="card-btn-area">
+                                            <button type="button" class="btn-card type01">신청하기</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card-inner">
+                                            <strong class="tit">256기 교량 및 터널반<br class="pc-only">(진단 보수)</strong>
+                                            <b class="sub-tit">정밀안전진단 보수교육과정</b>
+                                            <dl>
+                                                <dt class="bullet">교육구분</dt>
+                                                <dd>집체 교육(진주교육관)</dd>
+                                                <dt class="bullet">모집정원</dt>
+                                                <dd><span>12</span>/<span>64</span>명</dd>
+                                                <dt class="bullet">접수기간</dt>
+                                                <dd>2025-09-29~2025-10-17</dd>
+                                                <dt class="bullet">교육기간</dt>
+                                                <dd>2025-11-05~2025-11-06</dd>
+                                                <dt class="bullet">납부기간</dt>
+                                                <dd>2025-09-29~2-025-10-24</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="card-btn-area">
+                                            <button type="button" class="btn-card type03">접수대기</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card-inner">
+                                            <strong class="tit">256기 수리시설반<br class="pc-only">(진단 보수)</strong>
+                                            <b class="sub-tit">정밀안전진단 보수교육과정</b>
+                                            <dl>
+                                                <dt class="bullet">교육구분</dt>
+                                                <dd>집체 교육(진주교육관)</dd>
+                                                <dt class="bullet">모집정원</dt>
+                                                <dd><span>120</span>/<span>120</span>명</dd>
+                                                <dt class="bullet">접수기간</dt>
+                                                <dd>2025-09-29~2025-10-17</dd>
+                                                <dt class="bullet">교육기간</dt>
+                                                <dd>2025-11-05~2025-11-06</dd>
+                                                <dt class="bullet">납부기간</dt>
+                                                <dd>2025-09-29~2-025-10-24</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="card-btn-area">
+                                            <button type="button" class="btn-card type04">신청기간 만료</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-bottom-area"><button type="button" class="btn btn-normal">더보기 ↓</button></div>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="tab1-con3">
+                            <div class="acco-wrap search">
+                                <div class="item active">
+                                    <div class="tit">
+                                        <div class="left-grp">
+                                            <button type="button" class="icon-acco">교육과정 상세검색</button>
+                                        </div>
+                                        <div class="right-grp">
+                                            <span>교육대상<i class="tooltip icon-tooltip">상세보기</i></span>
+                                            <span>법적근거<i class="tooltip icon-tooltip">상세보기</i></span>
+                                        </div>
+                                    </div>
+                                    <div class="target">
+                                        <div class="tb-layout sch">
+                                            <table>
+                                                <caption>교육과정 상세검색표</caption>
+                                                <colgroup>
+                                                    <col>
+                                                    <col>
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>교육 과정 선택</th>
+                                                        <td>
+                                                            <div class="mo-drop mo-dropdown-wrap rdo">
+                                                                <button type="button" class="btn mo-btn-dropdown">선택하세요.</button>
+                                                                <div class="mo-dropdown-list">
+                                                                    <div class="radio-group rounded">
+                                                                        <label for="rdo3-1-1" class="radio-item">
+                                                                            <input type="radio" id="rdo3-1-1" name="radio3-1" >
+                                                                            <span class="custom-radio">전체</span>
+                                                                        </label>
+                                                                        <label for="rdo3-1-2" class="radio-item">
+                                                                            <input type="radio" id="rdo3-1-2" name="radio3-1" checked>
+                                                                            <span class="custom-radio">신규교육</span>
+                                                                        </label>
+                                                                        <label for="rdo3-1-3" class="radio-item">
+                                                                            <input type="radio" id="rdo3-1-3" name="radio1" >
+                                                                            <span class="custom-radio">보수교육</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>분야(반) 선택</th>
+                                                        <td>
+                                                            <div class="mo-drop mo-dropdown-wrap rdo">
+                                                                <button type="button" class="btn mo-btn-dropdown">선택하세요.</button>
+                                                                <div class="mo-dropdown-list">
+                                                                    <div class="radio-group rounded">
+                                                                        <label for="rdo3-2-1" class="radio-item">
+                                                                            <input type="radio" id="rdo3-2-1" name="radio3-2" >
+                                                                            <span class="custom-radio">전체</span>
+                                                                        </label>
+                                                                        <label for="rdo3-2-2" class="radio-item">
+                                                                            <input type="radio" id="rdo3-2-2" name="radio3-2" checked>
+                                                                            <span class="custom-radio">수리시설</span>
+                                                                        </label>
+                                                                        <label for="rdo3-2-3" class="radio-item">
+                                                                            <input type="radio" id="rdo3-2-3" name="radio3-2">
+                                                                            <span class="custom-radio">항만</span>
+                                                                        </label>
+                                                                        <label for="rdo3-2-4" class="radio-item">
+                                                                            <input type="radio" id="rdo3-2-4" name="radio3-2">
+                                                                            <span class="custom-radio">교량터널</span>
+                                                                        </label>
+                                                                        <label for="rdo3-2-5" class="radio-item">
+                                                                            <input type="radio" id="rdo3-2-5" name="radio3-2">
+                                                                            <span class="custom-radio">건축</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>교육구분<br class="pc-only">(온라인/집체)</th>
+                                                        <td>
+                                                            <div class="mo-drop mo-dropdown-wrap rdo">
+                                                                <button type="button" class="btn mo-btn-dropdown">선택하세요.</button>
+                                                                <div class="mo-dropdown-list">
+                                                                    <div class="radio-group rounded">
+                                                                        <label for="rdo3-3-1" class="radio-item">
+                                                                            <input type="radio" id="rdo3-3-1" name="radio3-3">
+                                                                            <span class="custom-radio">전체</span>
+                                                                        </label>
+                                                                        <label for="rdo3-3-2" class="radio-item">
+                                                                            <input type="radio" id="rdo3-3-2" name="radio3-3">
+                                                                            <span class="custom-radio">온라인 실시간(원격)</span>
+                                                                        </label>
+                                                                        <label for="rdo3-3-3" class="radio-item">
+                                                                            <input type="radio" id="rdo3-3-3" name="radio3-3" checked>
+                                                                            <span class="custom-radio">온라인 동영상(VOD)</span>
+                                                                        </label>
+                                                                        <label for="rdo3-3-4" class="radio-item">
+                                                                            <input type="radio" id="rdo3-3-4" name="radio3-3" >
+                                                                            <span class="custom-radio">집체교육(진주)</span>
+                                                                        </label>
+                                                                        <label for="rdo3-3-5" class="radio-item">
+                                                                            <input type="radio" id="rdo3-3-5" name="radio3-3">
+                                                                            <span class="custom-radio">집체교육(일산)</span>
+                                                                        </label>
+                                                                        <label for="rdo3-3-6" class="radio-item">
+                                                                            <input type="radio" id="rdo3-3-6" name="radio3-3">
+                                                                            <span class="custom-radio">집체교육(광주)</span>
+                                                                        </label>
+                                                                        <label for="rdo3-3-7" class="radio-item">
+                                                                            <input type="radio" id="rdo3-3-7" name="radio3-3">
+                                                                            <span class="custom-radio">집체교육(대전)</span>
+                                                                        </label>
+                                                                        <label for="rdo3-3-8" class="radio-item">
+                                                                            <input type="radio" id="rdo3-3-8" name="radio3-3">
+                                                                            <span class="custom-radio">집체교육(대전)</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>교육 기관 선택</th>
+                                                        <td>
+                                                            <div class="input-group">
+                                                                <div class="date-range">
+                                                                    <input type="date" class="start2" name="start-date-3" value="2025-09-01">
+                                                                    <span class="desc">~</span>
+                                                                    <input type="date" class="end2" name="end-date-3" value="2025-09-30">
+                                                                </div>
+                                                                <div class="radio-group rounded">
+                                                                    <label for="rdo3-4-1" class="radio-item">
+                                                                        <input type="radio" id="rdo3-4-1" name="radio3-4" >
+                                                                        <span class="custom-radio">1개월</span>
+                                                                    </label>
+                                                                    <label for="rdo3-4-2" class="radio-item">
+                                                                        <input type="radio" id="rdo3-4-2" name="radio3-4">
+                                                                        <span class="custom-radio">3개월</span>
+                                                                    </label>
+                                                                    <label for="rdo3-4-3" class="radio-item">
+                                                                        <input type="radio" id="rdo3-4-3" name="radio3-4" checked>
+                                                                        <span class="custom-radio">6개월</span>
+                                                                    </label>
+                                                                    <label for="rdo3-4-4" class="radio-item">
+                                                                        <input type="radio" id="rdo3-4-4" name="radio3-4">
+                                                                        <span class="custom-radio">직접입력</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="btn-search-area">
+                                            <button type="button" class="btn btn-reset btn-normal"><i class="ico icon-reset"></i>선택초기화</button>
+                                            <button type="button" class="btn btn-sch btn-primary"><i class="ico icon-search"></i>검색하기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-wrap">
+                                <ul class="card-list">
+                                    <li>
+                                        <div class="card-inner">
+                                            <strong class="tit">256기 건축반 (진단 보수)</strong>
+                                            <b class="sub-tit">정밀안전진단 보수교육과정</b>
+                                            <dl>
+                                                <dt class="bullet">교육구분</dt>
+                                                <dd>집체 교육(진주교육관)</dd>
+                                                <dt class="bullet">모집정원</dt>
+                                                <dd><span>60</span>/<span>60</span>명</dd>
+                                                <dt class="bullet">접수기간</dt>
+                                                <dd>2025-09-29~2025-10-17</dd>
+                                                <dt class="bullet">교육기간</dt>
+                                                <dd>2025-11-05~2025-11-06</dd>
+                                                <dt class="bullet">납부기간</dt>
+                                                <dd>2025-09-29~2-025-10-24</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="card-btn-area">
+                                            <button type="button" class="btn-card type04">신청기간 만료</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card-inner">
+                                            <strong class="tit">256기 항만반 (진단 보수)</strong>
+                                            <b class="sub-tit">정밀안전진단 보수교육과정</b>
+                                            <dl>
+                                                <dt class="bullet">교육구분</dt>
+                                                <dd>집체 교육(진주교육관)</dd>
+                                                <dt class="bullet">모집정원</dt>
+                                                <dd><span>60</span>/<span>60</span>명</dd>
+                                                <dt class="bullet">접수기간</dt>
+                                                <dd>2025-09-29~2025-10-17</dd>
+                                                <dt class="bullet">교육기간</dt>
+                                                <dd>2025-11-05~2025-11-06</dd>
+                                                <dt class="bullet">납부기간</dt>
+                                                <dd>2025-09-29~2-025-10-24</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="card-btn-area">
+                                            <button type="button" class="btn-card type04">신청기간 만료</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card-inner">
+                                            <strong class="tit">256기 수리시설반<br class="pc-only">(진단 보수)</strong>
+                                            <b class="sub-tit">정밀안전진단 보수교육과정</b>
+                                            <dl>
+                                                <dt class="bullet">교육구분</dt>
+                                                <dd>집체 교육(진주교육관)</dd>
+                                                <dt class="bullet">모집정원</dt>
+                                                <dd><span>120</span>/<span>120</span>명</dd>
+                                                <dt class="bullet">접수기간</dt>
+                                                <dd>2025-09-29~2025-10-17</dd>
+                                                <dt class="bullet">교육기간</dt>
+                                                <dd>2025-11-05~2025-11-06</dd>
+                                                <dt class="bullet">납부기간</dt>
+                                                <dd>2025-09-29~2-025-10-24</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="card-btn-area">
+                                            <button type="button" class="btn-card type04">신청기간 만료</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card-inner">
+                                            <strong class="tit">256기 수리시설반<br class="pc-only">(진단 보수)</strong>
+                                            <b class="sub-tit">정밀안전진단 보수교육과정</b>
+                                            <dl>
+                                                <dt class="bullet">교육구분</dt>
+                                                <dd>집체 교육(진주교육관)</dd>
+                                                <dt class="bullet">모집정원</dt>
+                                                <dd><span>12</span>/<span>64</span>명</dd>
+                                                <dt class="bullet">접수기간</dt>
+                                                <dd>2025-09-29~2025-10-17</dd>
+                                                <dt class="bullet">교육기간</dt>
+                                                <dd>2025-11-05~2025-11-06</dd>
+                                                <dt class="bullet">납부기간</dt>
+                                                <dd>2025-09-29~2-025-10-24</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="card-btn-area">
+                                            <button type="button" class="btn-card type02">신청예정</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card-inner">
+                                            <strong class="tit">256기 교량 및 터널반<br class="pc-only">(진단 보수)</strong>
+                                            <b class="sub-tit">정밀안전진단 보수교육과정</b>
+                                            <dl>
+                                                <dt class="bullet">교육구분</dt>
+                                                <dd>집체 교육(진주교육관)</dd>
+                                                <dt class="bullet">모집정원</dt>
+                                                <dd><span>05</span>/<span>64</span>명</dd>
+                                                <dt class="bullet">접수기간</dt>
+                                                <dd>2025-09-29~2025-10-17</dd>
+                                                <dt class="bullet">교육기간</dt>
+                                                <dd>2025-11-05~2025-11-06</dd>
+                                                <dt class="bullet">납부기간</dt>
+                                                <dd>2025-09-29~2-025-10-24</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="card-btn-area">
+                                            <button type="button" class="btn-card type02">신청예정</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card-inner">
+                                            <strong class="tit">256기 수리시설반<br class="pc-only">(진단 보수)</strong>
+                                            <b class="sub-tit">정밀안전진단 보수교육과정</b>
+                                            <dl>
+                                                <dt class="bullet">교육구분</dt>
+                                                <dd>집체 교육(진주교육관)</dd>
+                                                <dt class="bullet">모집정원</dt>
+                                                <dd><span>34</span>/<span>64</span>명</dd>
+                                                <dt class="bullet">접수기간</dt>
+                                                <dd>2025-09-29~2025-10-17</dd>
+                                                <dt class="bullet">교육기간</dt>
+                                                <dd>2025-11-05~2025-11-06</dd>
+                                                <dt class="bullet">납부기간</dt>
+                                                <dd>2025-09-29~2-025-10-24</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="card-btn-area">
+                                            <button type="button" class="btn-card type01">신청하기</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card-inner">
+                                            <strong class="tit">256기 교량 및 터널반<br class="pc-only">(진단 보수)</strong>
+                                            <b class="sub-tit">정밀안전진단 보수교육과정</b>
+                                            <dl>
+                                                <dt class="bullet">교육구분</dt>
+                                                <dd>집체 교육(진주교육관)</dd>
+                                                <dt class="bullet">모집정원</dt>
+                                                <dd><span>12</span>/<span>64</span>명</dd>
+                                                <dt class="bullet">접수기간</dt>
+                                                <dd>2025-09-29~2025-10-17</dd>
+                                                <dt class="bullet">교육기간</dt>
+                                                <dd>2025-11-05~2025-11-06</dd>
+                                                <dt class="bullet">납부기간</dt>
+                                                <dd>2025-09-29~2-025-10-24</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="card-btn-area">
+                                            <button type="button" class="btn-card type03">접수대기</button>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="card-inner">
+                                            <strong class="tit">256기 수리시설반<br class="pc-only">(진단 보수)</strong>
+                                            <b class="sub-tit">정밀안전진단 보수교육과정</b>
+                                            <dl>
+                                                <dt class="bullet">교육구분</dt>
+                                                <dd>집체 교육(진주교육관)</dd>
+                                                <dt class="bullet">모집정원</dt>
+                                                <dd><span>64</span>/<span>64</span>명</dd>
+                                                <dt class="bullet">접수기간</dt>
+                                                <dd>2025-09-29~2025-10-17</dd>
+                                                <dt class="bullet">교육기간</dt>
+                                                <dd>2025-11-05~2025-11-06</dd>
+                                                <dt class="bullet">납부기간</dt>
+                                                <dd>2025-09-29~2-025-10-24</dd>
+                                            </dl>
+                                        </div>
+                                        <div class="card-btn-area">
+                                            <button type="button" class="btn-card type04">신청기간 만료</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="btn-bottom-area"><button type="button" class="btn btn-normal">더보기 ↓</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <!-- 협력기관 배너 슬라이더 -->
+            <div class="bd-line-grp">
+                <div class="footer-banner-slider max-width-inner">
+                    <div class="swiper mySwiper type02">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn01.svg" alt="국토안전관리원">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn02.svg" alt="시설물통합정보관리시스템">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn03.svg" alt="한국건설기술인협회">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn01.svg" alt="국토안전관리원">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn02.svg" alt="시설물통합정보관리시스템">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn03.svg" alt="한국건설기술인협회">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn01.svg" alt="국토안전관리원">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn02.svg" alt="시설물통합정보관리시스템">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn03.svg" alt="한국건설기술인협회">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn01.svg" alt="국토안전관리원">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-button">
+                        <button type="button" class="swiper-button-next"><img src="/images/common/icon_footer_btn_next.svg" alt="다음버튼 아이콘"></button>
+                        <button type="button" class="swiper-button-prev"><img src="/images/common/icon_footer_btn_prev.svg" alt="이전버튼 아이콘"></button>
+                    </div>
+                    <script>
+                    const swiper2 = new Swiper(".mySwiper.type02", {
+                        slidesPerView: "auto", // 한번에 보여지는 슬라이드 숫자
+                        slidesPerGroup: 1, // 한번에 이동되는 슬라이드 숫자
+                        loop: true,
+                        breakpoints: {
+                            0: {
+                                spaceBetween: 14,
+                            },
+                            1024: {
+                                spaceBetween: 28
+                            }
+                        },
+                        navigation: {
+                            nextEl: ".footer-banner-slider .swiper-button-next",
+                            prevEl: ".footer-banner-slider .swiper-button-prev",
+                        },
+                    });
+                    /* 자동재생 추후 적용 여부 확인 후 추가해서 적용
+                    // 정지 버튼 
+                    document.querySelector(".mySwiper.type02 .swiper-autoplay-button .pause").addEventListener("click", function() {
+                        swiper2.autoplay.stop();
+                        this.style.display = "none";
+                        document.querySelector(".mySwiper.type02 .swiper-autoplay-button .play").style.display = "block";
+                    });
+    
+                    // 재생 버튼
+                    document.querySelector(".mySwiper.type02 .swiper-autoplay-button .play").addEventListener("click", function() {
+                        swiper2.autoplay.start();
+                        this.style.display = "none";
+                        document.querySelector(".mySwiper.type02 .swiper-autoplay-button .pause").style.display = "block";
+                    });
+                    */
+                    </script>
+                </div>
+            </div>
+            <!-- 약관/패밀리사이트 등 상단 정보 -->
+            <div class="footer-cont max-width-inner">
+                <div class="logo-grp">
+                    <h3><a href="/index.html" class="footer-logo"><img src="/images/common/icon_footer_logo.svg" alt="국토안전관리원"></a></h3>
+                </div>
+                <div class="address-grp">
+                    <div class="link-area">
+                        <a href="#">이용약관</a>
+                        <a href="#">개인정보처리방침</a>
+                        <a href="#">저작권정책</a>
+                        <a href="#">고정형 영상정보처리기기 운영관리방침</a>
+                        <a href="#">찾아오시는길</a>
+                    </div>
+                    <ul class="txt-list">
+                        <li>
+                            <p class="tit icon-location">교육원소재지</p>
+                            <dl>
+                                <dt>진주교육장</dt>
+                                <dd>(52852) 경상남도 진주시 사들로 131 인재교육관</dd>
+                                <dt>김천교육장</dt>
+                                <dd>(39660) 경상북도 김천시 혁신6로 12</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <p class="tit icon-counsel">교육 문의</p>
+                            <dl>
+                                <dt>대표전화</dt>
+                                <dd>1588-8788(6, 기술자 교육훈련)  |  055-771-1905</dd>
+                                <dt>팩스</dt>
+                                <dd>055-771-1915</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <address>Copyrightⓒ2025 KALIS. All right Reserved.</address>
+                </div>
+                <div class="family-grp">
+                    <div class="dropdown-wrap">
+                        <button type="button" class="btn btn-dropdown">
+                            패밀리사이트
+                        </button>
+                        <div class="dropdown-list is-up is-open">
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트1</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트2</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트3</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트4</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트5</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트6</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트7</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트8</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트9</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트10</a>           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- modal -->
+
+    <!-- 접수신청 -->
+    <div class="cmp-modal" id="modal000"> 
+        <div class="dimmed"></div>
+        <div class="modal-container">
+            <div class="modal-body">
+                <div class="img-frame write">
+                    <img src="/images/common/icon_write.svg" alt="작성하기 아이콘 이미지">
+                </div>
+                <div class="txt-grp">
+                    <strong class="txt24">정밀안전진단 보수교육과정</strong>
+                    <b class="txt32">253기 건축반(성능신규) <span class="txt-blue">교육 신청서를 작성</span>해주세요.</b>
+                    <span class="txt18 fwr">신청하기 상태에서도 동시 신청자가 많을 시에는 대기자로 등록될 수 있습니다.</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-normal close-modal" onclick="closeModal(event)"><i class="ico icon-reset"></i>취소</button>
+            <button type="button" class="btn btn-cmn"><i class="ico icon-pencil"></i>신청서 작성하기</button>
+            </div>
+
+            <!-- modal 우측 상단 닫기 아이콘 -->
+            <button type="button" class="btn-close close-modal" onclick="closeModal(event)">닫기 버튼</button>
+        </div>
+    </div>
+
+    <!-- 접수대기 -->
+    <div class="cmp-modal" id="modal001"> 
+        <div class="dimmed"></div>
+        <div class="modal-container">
+            <div class="modal-body">
+                <div class="img-frame write">
+                    <img src="/images/common/icon_wait.svg" alt="접수대기 아이콘 이미지">
+                </div>
+                <div class="txt-grp">
+                    <strong class="txt24">정밀안전진단 보수교육과정</strong>
+                    <b class="txt32">253기 건축반(성능신규) <span class="txt-blue">10번째 대기자</span>입니다.</b>
+                    <span class="txt18 fwr">접수대기를 신청하시겠어요?</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-normal close-modal" onclick="closeModal(event)"><i class="ico icon-reset"></i>취소</button>
+            <button type="button" class="btn btn-cmn"><i class="ico icon-pencil"></i>접수대기 신청하기</button>
+            </div>
+
+            <!-- modal 우측 상단 닫기 아이콘 -->
+            <button type="button" class="btn-close close-modal" onclick="closeModal(event)">닫기 버튼</button>
+        </div>
+    </div>
+
+    <script src="/js/common.js"></script>
+</body>
+</html>

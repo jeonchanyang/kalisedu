@@ -1,0 +1,11 @@
+<svg width="50" height="60" viewBox="0 0 50 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.826 43.74C9.121 43.709 9.421 43.83 9.671 44H49V6H10.5C7.462 6 5 8.462 5 11.5V44.934C5.409 44.69 5.845 44.487 6.289 44.31C7.101 43.984 7.959 43.829 8.826 43.74Z" fill="#8AC650"/>
+<path d="M38 14H16V25H38V14Z" fill="white"/>
+<path d="M46 55H22" stroke="#262728" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M2.00001 50V8.5C2.00001 5.462 4.46201 3 7.50001 3H46V44H7.50001C4.09101 44 1.40601 47.102 2.11401 50.637C2.63301 53.229 5.063 55 7.70701 55H8.00001" stroke="#262728" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M19 58L15 56.715L11 58V49H19V58Z" fill="#8AC650"/>
+<path d="M7 3V44" stroke="#262728" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M38 14H16V25H38V14Z" stroke="#262728" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M9 49H46" stroke="#8AC650" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round"/>
+<path d="M16 34H38" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linejoin="round" stroke-dasharray="3 3"/>
+</svg>

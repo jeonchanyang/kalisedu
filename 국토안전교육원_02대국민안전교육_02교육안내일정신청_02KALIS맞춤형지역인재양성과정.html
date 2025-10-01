@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>국토안전교육원 - KALIS</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+    <script src="/js/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <ul class="skip">
+            <li><a href="#content">본문내용 바로가기</a></li>
+            <li><a href="#gnb">주내용 바로가기</a></li>
+        </ul>
+        <header>
+            <div class="top-noti">
+                <p><a href="/국토안전교육원_04정보마당_05설문조사.html">국토안전교육원 홈페이지 리뉴얼 설문조사를 진행중입니다</a></p>
+                <i class="icon-toryani"></i>
+                <button class="btn-close" onclick="topClose();">닫기</button>
+            </div>
+            <div class="head-top">
+                <h1 class="logo"><a href="/index.html">국토안전관리원 국토안전교육원 로고</a></h1>
+                <div class="sch-area">
+                    <label for="searchInput" class="sr-only">검색어 입력</label>
+                    <input type="text" placeholder="검색어를 입력하세요" id="searchInput">
+                    <button type="button" class="btn-sch"></button>
+                </div>
+                <div class="mo-only mo-btn-grp">
+                    <button class="mo-btn-search btn-sch">검색버튼</button>
+                    <button class="mo-btn-mnu">메뉴열기</button>
+                </div>
+            </div>
+
+            <div class="head-bottom">
+                <nav id="gnb">
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">법정교육</a>
+                            <ul class="gnb-depth2">
+                                <li class="tit">법정교육</li>
+                                <li>
+                                    <a href="/국토안전교육원_01법정교육_01법정교육소개.html">법정교육 소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">교육안내 · 일정 · 신청</a>
+                                </li>
+                                <li>
+                                    <ul class="gnb-depth3">
+                                        <li><a href="/국토안전교육원_02교육안내일정신청_01시설물안전법.html">시설물안전법</a></li>
+                                        <li><a href="#">지하안전법</a></li>
+                                        <li><a href="#">건축물 관리법</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">대국민안전교육</a>
+                            <ul class="gnb-depth2">
+                                <li class="tit">대국민안전교육</li>
+                                <li>
+                                    <a href="/국토안전교육원_02대국민안전교육_01대국민안전교육소개.html">대국민안전교육 소개</a>    
+                                </li>
+                                <li>
+                                    <a href="#">교육안내 · 일정 · 신청</a>
+                                </li>
+                                <li>
+                                    <ul class="gnb-depth3">
+                                        <li><a href="/국토안전교육원_02대국민안전교육_02교육안내일정신청_01청소년안전교육.html">청소년 안전교육</a></li>
+                                        <li><a href="/국토안전교육원_02대국민안전교육_02교육안내일정신청_02KALIS맞춤형지역인재양성과정.html">지역인재양성과정</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">수강안내</a>
+                            <ul class="gnb-depth2">
+                                <li class="tit">수강안내</li>
+                                <li>
+                                    <a href="/국토안전교육원_03수강안내_01신청및입교안내_탭01접수및학사관리기준안내.html">신청 및 입교안내</a>
+                                </li>
+                                <li>
+                                    <a href="/국토안전교육원_03수강안내_02교육비안내.html">교육비 안내</a>
+                                </li>
+                                <li>
+                                    <a href="/국토안전교육원_03수강안내_03고용보험환급안내.html">고용보험환급 안내</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">정보마당</a>
+                            <ul class="gnb-depth2">
+                                <li class="tit">정보마당</li>
+                                <li>
+                                    <a href="/국토안전교육원_04정보마당_01공지사항.html">공지사항</a>    
+                                </li>    
+                                <li>
+                                    <a href="/국토안전교육원_04정보마당_02자주묻는질문.html">자주 묻는 질문</a>
+                                </li>
+                                <li>
+                                    <a href="/국토안전교육원_04정보마당_03자료실.html">자료실</a>
+                                </li>
+                                <li>
+                                    <a href="/국토안전교육원_04정보마당_04질의응답.html">질의응답</a>
+                                </li>
+                                <li>
+                                    <a href="/국토안전교육원_04정보마당_05설문조사.html">설문조사</a>
+                                </li>
+                                <li>
+                                    <a href="#">강사채널</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">국토안전교육원 소개</a>
+                            <ul class="gnb-depth2">
+                                <li class="tit">국토안전교육원 소개</li>
+                                <li>
+                                    <a href="#">교육원장 인사말</a>   
+                                </li>
+                                <li>
+                                    <a href="#">연혁</a>
+                                </li>
+                                <li>
+                                    <a href="#">미션 및 비전</a>
+                                </li>
+                                <li>
+                                    <a href="#">조직도</a>
+                                </li>
+                                <li>
+                                    <a href="#">찾아오시는 길</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mnu-info">
+                    <!-- 기존 html에서 div로 묶어서 변수명.style.display="none", "flex"로 활용 -->
+                    <div class="before" style="display:none;">
+                        <p><b>홍길동</b>님 안녕하세요</p>
+                        <a href="#" class="btn-mypage">마이페이지</a>
+                        <button type="button" class="btn-logout">로그아웃</button>
+                    </div>
+                    <div class="after" style="display:flex;">
+                        <a href="/회원가입.html" class="btn-mypage access">회원가입</a>
+                        <a href="/아이디_로그인.html" class="btn-logout login">로그인</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="content-wrap" id="content">
+            <div class="location"> 
+                <ol>
+                    <li>
+                        <a href="/index.html" aria-label="메인화면으로 이동"><i class="ico icon-home"></i></a>
+                    </li>
+                    <li>
+                        <div class="dropdown-wrap dropdown-select">
+                            <button type="button" class="btn btn-dropdown">
+                                대국민안전교육
+                            </button>
+                            <div class="dropdown-list is-up is-open">
+                                <button type="button" class="dropdown-item">법정교육</button>
+                                <button type="button" class="dropdown-item">대국민안전교육</button>
+                                <button type="button" class="dropdown-item">이용안내</button>
+                                <button type="button" class="dropdown-item">정보마당</button>
+                                <button type="button" class="dropdown-item">국토안전교육원 소개</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown-wrap dropdown-select">
+                            <button type="button" class="btn btn-dropdown">
+                                교육안내 · 일정 · 신청
+                            </button>
+                            <div class="dropdown-list is-up is-open">
+                                <button type="button" class="dropdown-item">대국민안전교육 소개</button>
+                                <button type="button" class="dropdown-item">교육안내 · 일정 · 신청</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown-wrap dropdown-link">
+                            <button type="button" class="btn btn-dropdown">
+                                지역인재 양성과정
+                            </button>
+                            <div class="dropdown-list is-up is-open">
+                                <a href="/국토안전교육원_02대국민안전교육_02교육안내일정신청_01청소년안전교육.html" class="link" target="_blank">청소년 안전교육</a>
+                                <a href="/국토안전교육원_02대국민안전교육_02교육안내일정신청_02KALIS맞춤형지역인재양성과정.html" class="link" target="_blank">지역인재양성과정</a>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <section class="inner-wrap max-width">
+                <h2 class="h2-title">KALIS 맞춤형<br class="mo-only"> 지역인재 양성과정</h2>
+
+                <div class="inner">
+                    <h3 class="h3-title"><img src="/images/common/icon_h3_tit_logo.svg" alt="메뉴타이틀 로고">추진배경</h3>
+                    <div class="bg-wh-box">
+                        <img src="/images/common/icon_hand_people.svg" alt="추진배경이미지" class="icon-safe">
+                        <div>
+                            <p class="txt18 fwm bullet">국토안전관리원에서 수행중인 업무 및 역할에 대한 직무체험 교육과정을 지역대학에 개설, 지역인재를 양성하여 지역상생협력의 사회적 가치 실현 및 국토안전관리원에 적합한 맞춤형 인재개발</p>
+                            <p class="txt18 fwm bullet">지역인재의 취업분야 경험 확대 및 취업의 질 제고</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="inner">
+                    <h3 class="h3-title"><img src="/images/common/icon_h3_tit_logo.svg" alt="메뉴타이틀 로고">추진내용</h3>
+                    <div class="topBottom-line-box">
+                        <dl class="half">
+                            <dt class="bullet">교육명</dt>
+                            <dd>KALIS 맞춤형 지역인재 양성과정</dd>
+                            <dt class="bullet">교육내용</dt>
+                            <dd>건설안전, 시설안전, 지하안전, 지진 등 안전관련 이론 및 실무</dd>
+                            <dt class="bullet">교육대상</dt>
+                            <dd>협력 대학 재학생</dd>
+                            <dt class="bullet">운영기간</dt>
+                            <dd>정규과정(1, 2학기)/계절학기(하계, 동계)</dd>
+                            <dt class="bullet">추진체계</dt>
+                            <dd>국토안전관리원과 경상국립대학교 등 지역대학과 협업<br>
+                                - 대학 : 운영총괄 및 예산지원<br>
+                                - 기간(국토안전관리원) : 교육내용구성, 강사선정, 강의, 평가
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="inner">
+                    <h3 class="h3-title"><img src="/images/common/icon_h3_tit_logo.svg" alt="메뉴타이틀 로고">교육과정 개설대학 현황</h3>
+                    <ul class="card-type-list new tit-center">
+                        <li>
+                            <strong class="tit">KALIS 맞춤형 융합전공</strong>
+                            <div class="list-inner">
+                                <dl>
+                                    <dt><span class="bullet">교육과정</span></dt>
+                                    <dd>시설·건설안전개론  <span class="pc-only">|</span><br class="mo-only">  시설·건설안전심화</dd>
+                                    <dt><span class="bullet">협력대학</span></dt>
+                                    <dd>경상국립대</dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <strong class="tit">KALIS 직무 이해과정</strong>
+                            <div class="list-inner">
+                                <dl>
+                                    <dt><span class="bullet">교육과정</span></dt>
+                                    <dd>시설·건설안전</dd>
+                                    <dt><span class="bullet">협력대학</span></dt>
+                                    <dd>경상국립대</dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <strong class="tit">KALIS 직무 체험과정</strong>
+                            <div class="list-inner">
+                                <dl>
+                                    <dt><span class="bullet">교육과정</span></dt>
+                                    <dd>직무체험</dd>
+                                    <dt><span class="bullet">협력대학</span></dt>
+                                    <dd>경상국립대</dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li>
+                            <strong class="tit">KALIS 현장 체험과정</strong>
+                            <div class="list-inner">
+                                <dl>
+                                    <dt><span class="bullet">교육과정</span></dt>
+                                    <dd>현장실무체험(계절학기)</dd>
+                                    <dt><span class="bullet">협력대학</span></dt>
+                                    <dd>경상국립대, 창원대</dd>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="inner">
+                    <div class="rating-list">
+                        <dl class="top-grp">
+                            <dt class="bullet">콘텐츠 담당자 : </dt>
+                            <dd><span class="txt-blue">인재교육실</span></dd>
+                            <dt class="bullet">전화번호 : </dt>
+                            <dd><span class="txt-blue">055-771-1906</span></dd> 
+                        </dl>
+                        <div class="rating-choice">
+                            <p class="has-icon txt18"><i class="ico icon-bubble"></i>열람하신 정보에 대해 만족하셨습니까?</p>
+                            <div class="choice-item">
+                                <div class="radio-group">
+                                    <label for="rdo1" class="radio-item">
+                                        <input type="radio" id="rdo1" name="radio1" checked>
+                                        <span class="custom-radio"></span>
+                                        매우만족
+                                    </label>
+                                    <label for="rdo2" class="radio-item">
+                                        <input type="radio" id="rdo2" name="radio1">
+                                        <span class="custom-radio"></span>
+                                        만족
+                                    </label>
+                                    <label for="rdo3" class="radio-item">
+                                        <input type="radio" id="rdo3" name="radio1">
+                                        <span class="custom-radio"></span>
+                                        보통
+                                    </label>
+                                    <label for="rdo4" class="radio-item">
+                                        <input type="radio" id="rdo4" name="radio1">
+                                        <span class="custom-radio"></span>
+                                        불만족
+                                    </label>
+                                    <label for="rdo5" class="radio-item">
+                                        <input type="radio" id="rdo5" name="radio1">
+                                        <span class="custom-radio"></span>
+                                        매우불만족
+                                    </label>
+                                </div>
+                                <div class="btn-grp">
+                                    <button class="btn btn-cmn">평점주기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer>
+            <!-- 협력기관 배너 슬라이더 -->
+            <div class="bd-line-grp">
+                <div class="footer-banner-slider max-width-inner">
+                    <div class="swiper mySwiper type02">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn01.svg" alt="국토안전관리원">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn02.svg" alt="시설물통합정보관리시스템">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn03.svg" alt="한국건설기술인협회">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn01.svg" alt="국토안전관리원">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn02.svg" alt="시설물통합정보관리시스템">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn03.svg" alt="한국건설기술인협회">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn01.svg" alt="국토안전관리원">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn02.svg" alt="시설물통합정보관리시스템">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn03.svg" alt="한국건설기술인협회">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn01.svg" alt="국토안전관리원">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-button">
+                        <button type="button" class="swiper-button-next"><img src="/images/common/icon_footer_btn_next.svg" alt="다음버튼 아이콘"></button>
+                        <button type="button" class="swiper-button-prev"><img src="/images/common/icon_footer_btn_prev.svg" alt="이전버튼 아이콘"></button>
+                    </div>
+                    <script>
+                    const swiper2 = new Swiper(".mySwiper.type02", {
+                        slidesPerView: "auto", // 한번에 보여지는 슬라이드 숫자
+                        slidesPerGroup: 1, // 한번에 이동되는 슬라이드 숫자
+                        loop: true,
+                        breakpoints: {
+                            0: {
+                                spaceBetween: 14,
+                            },
+                            1024: {
+                                spaceBetween: 28
+                            }
+                        },
+                        navigation: {
+                            nextEl: ".footer-banner-slider .swiper-button-next",
+                            prevEl: ".footer-banner-slider .swiper-button-prev",
+                        },
+                    });
+                    /* 자동재생 추후 적용 여부 확인 후 추가해서 적용
+                    // 정지 버튼 
+                    document.querySelector(".mySwiper.type02 .swiper-autoplay-button .pause").addEventListener("click", function() {
+                        swiper2.autoplay.stop();
+                        this.style.display = "none";
+                        document.querySelector(".mySwiper.type02 .swiper-autoplay-button .play").style.display = "block";
+                    });
+    
+                    // 재생 버튼
+                    document.querySelector(".mySwiper.type02 .swiper-autoplay-button .play").addEventListener("click", function() {
+                        swiper2.autoplay.start();
+                        this.style.display = "none";
+                        document.querySelector(".mySwiper.type02 .swiper-autoplay-button .pause").style.display = "block";
+                    });
+                    */
+                    </script>
+                </div>
+            </div>
+            <!-- 약관/패밀리사이트 등 상단 정보 -->
+            <div class="footer-cont max-width-inner">
+                <div class="logo-grp">
+                    <h3><a href="/index.html" class="footer-logo"><img src="/images/common/icon_footer_logo.svg" alt="국토안전관리원"></a></h3>
+                </div>
+                <div class="address-grp">
+                    <div class="link-area">
+                        <a href="#">이용약관</a>
+                        <a href="#">개인정보처리방침</a>
+                        <a href="#">저작권정책</a>
+                        <a href="#">고정형 영상정보처리기기 운영관리방침</a>
+                        <a href="#">찾아오시는길</a>
+                    </div>
+                    <ul class="txt-list">
+                        <li>
+                            <p class="tit icon-location">교육원소재지</p>
+                            <dl>
+                                <dt>진주교육장</dt>
+                                <dd>(52852) 경상남도 진주시 사들로 131 인재교육관</dd>
+                                <dt>김천교육장</dt>
+                                <dd>(39660) 경상북도 김천시 혁신6로 12</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <p class="tit icon-counsel">교육 문의</p>
+                            <dl>
+                                <dt>대표전화</dt>
+                                <dd>1588-8788(6, 기술자 교육훈련)  |  055-771-1905</dd>
+                                <dt>팩스</dt>
+                                <dd>055-771-1915</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <address>Copyrightⓒ2025 KALIS. All right Reserved.</address>
+                </div>
+                <div class="family-grp">
+                    <div class="dropdown-wrap">
+                        <button type="button" class="btn btn-dropdown">
+                            패밀리사이트
+                        </button>
+                        <div class="dropdown-list is-up is-open">
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트1</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트2</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트3</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트4</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트5</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트6</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트7</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트8</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트9</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트10</a>           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/js/common.js"></script>
+</body>
+</html>

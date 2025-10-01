@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>국토안전교육원 - KALIS</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/content.css">
+    <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+    <script src="/js/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <ul class="skip">
+            <li><a href="#content">본문내용 바로가기</a></li>
+            <li><a href="#gnb">주내용 바로가기</a></li>
+        </ul>
+        <header>
+            <div class="top-noti">
+                <p><a href="/국토안전교육원_04정보마당_05설문조사.html">국토안전교육원 홈페이지 리뉴얼 설문조사를 진행중입니다</a></p>
+                <i class="icon-toryani"></i>
+                <button class="btn-close" onclick="topClose();">닫기</button>
+            </div>
+            <div class="head-top">
+                <h1 class="logo"><a href="/index.html">국토안전관리원 국토안전교육원 로고</a></h1>
+                <div class="sch-area">
+                    <label for="searchInput" class="sr-only">검색어 입력</label>
+                    <input type="text" placeholder="검색어를 입력하세요" id="searchInput">
+                    <button type="button" class="btn-sch"></button>
+                </div>
+                <div class="mo-only mo-btn-grp">
+                    <button class="mo-btn-search btn-sch">검색버튼</button>
+                    <button class="mo-btn-mnu">메뉴열기</button>
+                </div>
+            </div>
+
+            <div class="head-bottom">
+                <nav id="gnb">
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">법정교육</a>
+                            <ul class="gnb-depth2">
+                                <li class="tit">법정교육</li>
+                                <li>
+                                    <a href="/국토안전교육원_01법정교육_01법정교육소개.html">법정교육 소개</a>
+                                </li>
+                                <li>
+                                    <a href="#">교육안내 · 일정 · 신청</a>
+                                </li>
+                                <li>
+                                    <ul class="gnb-depth3">
+                                        <li><a href="/국토안전교육원_02교육안내일정신청_01시설물안전법.html">시설물안전법</a></li>
+                                        <li><a href="#">지하안전법</a></li>
+                                        <li><a href="#">건축물 관리법</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">대국민안전교육</a>
+                            <ul class="gnb-depth2">
+                                <li class="tit">대국민안전교육</li>
+                                <li>
+                                    <a href="/국토안전교육원_02대국민안전교육_01대국민안전교육소개.html">대국민안전교육 소개</a>    
+                                </li>
+                                <li>
+                                    <a href="#">교육안내 · 일정 · 신청</a>
+                                </li>
+                                <li>
+                                    <ul class="gnb-depth3">
+                                        <li><a href="/국토안전교육원_02대국민안전교육_02교육안내일정신청_01청소년안전교육.html">청소년 안전교육</a></li>
+                                        <li><a href="/국토안전교육원_02대국민안전교육_02교육안내일정신청_02KALIS맞춤형지역인재양성과정.html">지역인재양성과정</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">수강안내</a>
+                            <ul class="gnb-depth2">
+                                <li class="tit">수강안내</li>
+                                <li>
+                                    <a href="/국토안전교육원_03수강안내_01신청및입교안내_탭01접수및학사관리기준안내.html">신청 및 입교안내</a>
+                                </li>
+                                <li>
+                                    <a href="/국토안전교육원_03수강안내_02교육비안내.html">교육비 안내</a>
+                                </li>
+                                <li>
+                                    <a href="/국토안전교육원_03수강안내_03고용보험환급안내.html">고용보험환급 안내</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">정보마당</a>
+                            <ul class="gnb-depth2">
+                                <li class="tit">정보마당</li>
+                                <li>
+                                    <a href="/국토안전교육원_04정보마당_01공지사항.html">공지사항</a>    
+                                </li>    
+                                <li>
+                                    <a href="/국토안전교육원_04정보마당_02자주묻는질문.html">자주 묻는 질문</a>
+                                </li>
+                                <li>
+                                    <a href="/국토안전교육원_04정보마당_03자료실.html">자료실</a>
+                                </li>
+                                <li>
+                                    <a href="/국토안전교육원_04정보마당_04질의응답.html">질의응답</a>
+                                </li>
+                                <li>
+                                    <a href="/국토안전교육원_04정보마당_05설문조사.html">설문조사</a>
+                                </li>
+                                <li>
+                                    <a href="#">강사채널</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="#">국토안전교육원 소개</a>
+                            <ul class="gnb-depth2">
+                                <li class="tit">국토안전교육원 소개</li>
+                                <li>
+                                    <a href="#">교육원장 인사말</a>   
+                                </li>
+                                <li>
+                                    <a href="#">연혁</a>
+                                </li>
+                                <li>
+                                    <a href="#">미션 및 비전</a>
+                                </li>
+                                <li>
+                                    <a href="#">조직도</a>
+                                </li>
+                                <li>
+                                    <a href="#">찾아오시는 길</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="mnu-info">
+                    <!-- 기존 html에서 div로 묶어서 변수명.style.display="none", "flex"로 활용 -->
+                    <div class="before" style="display:none;">
+                        <p><b>홍길동</b>님 안녕하세요</p>
+                        <a href="#" class="btn-mypage">마이페이지</a>
+                        <button type="button" class="btn-logout">로그아웃</button>
+                    </div>
+                    <div class="after" style="display:flex;">
+                        <a href="/회원가입.html" class="btn-mypage access">회원가입</a>
+                        <a href="/아이디_로그인.html" class="btn-logout login">로그인</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="content-wrap" id="content">
+            <div class="location"> 
+                <ol>
+                    <li>
+                        <a href="/index.html" aria-label="메인화면으로 이동"><i class="ico icon-home"></i></a>
+                    </li>
+                    <li>
+                        <div class="dropdown-wrap dropdown-select">
+                            <button type="button" class="btn btn-dropdown">
+                                수강안내
+                            </button>
+                            <div class="dropdown-list is-up is-open">
+                                <button type="button" class="dropdown-item">신청 및 입교안내</button>
+                                <button type="button" class="dropdown-item">교육비 안내</button>
+                                <button type="button" class="dropdown-item">고용보험환급 안내</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="dropdown-wrap dropdown-link">
+                            <button type="button" class="btn btn-dropdown">
+                                신청 및 입교안내
+                            </button>
+                            <div class="dropdown-list is-up is-open">
+                                <a href="/국토안전교육원_03수강안내_01신청및입교안내_탭01접수및학사관리기준안내.html" class="link" target="_blank">신청 및 입교안내</a>
+                                <a href="/국토안전교육원_03수강안내_02교육비안내.html" class="link" target="_blank">교육비 안내</a>
+                                <a href="/국토안전교육원_03수강안내_03고용보험환급안내.html" class="link" target="_blank">고용보험환급 안내</a>
+                            </div>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+            <section class="inner-wrap max-width">
+                <h2 class="h2-title">신청 및 입교안내</h2>
+                <div class="inner">
+                    <ul class="step-info">
+                        <li>
+                            <div class="img"><img src="/images/common/icon_step_info01.svg" alt="교육접수 아이콘"></div>
+                            Step 1.
+                            <strong>교육접수</strong>
+                        </li>
+                        <li>
+                            <div class="img"><img src="/images/common/icon_step_info02.svg" alt="교육신청서 작성 아이콘"></div>
+                            Step 2.
+                            <strong>교육신청서 작성</strong>
+                        </li>
+                        <li>
+                            <div class="img"><img src="/images/common/icon_step_info03.svg" alt="교육수강 아이콘"></div>
+                            Step 3.
+                            <strong>교육수강</strong>
+                        </li>
+                        <li>
+                            <div class="img"><img src="/images/common/icon_step_info04.svg" alt="설문참여 아이콘"></div>
+                            Step 4.
+                            <strong>설문참여 작성</strong>
+                        </li>
+                        <li>
+                            <div class="img"><img src="/images/common/icon_step_info05.svg" alt="수강완료 아이콘"></div>
+                            Step 5.
+                            <strong>수강완료 작성</strong>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-container full">
+                    <div class="mo-drop tab">
+                        <button type="button" class="btn mo-btn-dropdown">접수 및 학사관리기준 안내</button>
+                        <div class="mo-dropdown-list">
+                            <ul class="tab-head">
+                                <li><button type="button" class="tab-menu is-active" data-tab="tab1-con1">접수 및 학사관리기준 안내</button></li>
+                                <li><button type="button" class="tab-menu" data-tab="tab1-con2">수강방법(VOD)</button></li>
+                                <li><button type="button" class="tab-menu" data-tab="tab1-con3">수강방법(실시간 온라인)</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-content-wrap">
+                        <div class="tab-content is-active" id="tab1-con1">
+                            <div class="inner">
+                                <h3 class="h3-title"><img src="/images/common/icon_h3_tit_logo.svg" alt="메뉴타이틀 로고">접수안내</h3>
+                                <div class="txt-box">
+                                    <p class="bullet txt18 fwr">접수개시일 오전부터 온라인으로 선착순 접수되고, 정원 초과부터는 대기자로 접수됩니다.</p>
+                                    <p class="bullet txt18 fwr">교육대상자로 선정이 되면 교육신청서(위탁계약서) 작성 및 교육비 결제를 실시합니다.</p>
+                                    <p class="bullet txt18 fwr">입교 관련 SMS 문자를 발송하오니 신청 시 전화번호에 오류가 없는지 확인해주세요.</p>
+                                    <p class="bullet txt18 fwr">교육접수 후 교육신청서(위탁계약서) 작성 및 교육비 납부가 완료된 경우 교육대상자가 되며, 상기 대상자의 교육 취소는 가능하나 다른 사람으로 대체할 수 없습니다.</p>
+                                    <p class="bullet txt18 fwr">온라인 접수 후 정상적으로 신청되었는지 반드시 확인해주세요. <a href="#" target="_blank" class="txt-blue btn-link">(접수확인 바로가기) <i class="ico ico-link"></i></a> </p>
+                                </div>
+                            </div>
+                            <div class="sub-inner">
+                                <strong class="sub-tit txt-blue">문의사항</strong>
+                                <div class="txt-box">
+                                    <p class="bullet txt18 fwr"><span>교육관련 대표전화 :</span> <i class="ico icon-call sm" style="position:relative; top:.3rem; margin-right:.5rem;"></i><span>1588-8788 (6번 기술자교육)</span></p>
+                                    <p class="bullet txt18 fwr">환불신청서 접수 : FAX 055-771-1915</p>
+                                </div>
+                            </div>
+                            <div class="inner">
+                                <h3 class="h3-title"><img src="/images/common/icon_h3_tit_logo.svg" alt="메뉴타이틀 로고">학사관리기준</h3>
+                                <strong class="sub-tit txt-blue">근태관리</strong>
+                                <div class="tb-layout">
+                                    <table>
+                                        <caption>근태관리 표</caption>
+                                        <colgroup class="pc-only">
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <colgroup class="mo-only">
+                                            <col style="width:63%;">
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>사고유형</th>
+                                                <th>조치</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="tac">
+                                            <tr>
+                                                <td>다른 사람이 대리수업을 한 경우</td>
+                                                <td class="txt-primary fwsb">즉시</td>
+                                            </tr>
+                                            <tr>
+                                                <td>무단결석을 한 경우</td>
+                                                <td class="txt-primary fwsb">2회째</td>
+                                            </tr>
+                                            <tr>
+                                                <td>무단조퇴ㆍ무단외출(결강) 및 무단이석을 한 경우</td>
+                                                <td class="txt-primary fwsb">3회째<br class="mo-only">(1회당 30분 이상)</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="sub-inner">
+                                <strong class="sub-tit txt-blue">교육질서</strong>
+                                <div class="tb-layout">
+                                    <table>
+                                        <caption>교육질서 표</caption>
+                                        <colgroup class="pc-only">
+                                            <col>
+                                            <col>
+                                        </colgroup>
+                                        <colgroup class="mo-only">
+                                            <col style="width:63%;">
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>사고유형</th>
+                                                <th>조치</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="tac">
+                                            <tr>
+                                                <td>다른 사람이 대리시험을<br class="mo-only"> 응시한 경우</td>
+                                                <td class="txt-primary fwsb">즉시</td>
+                                            </tr>
+                                            <tr>
+                                                <td>시험 중 감독자의 지시ㆍ제재를 불응한 경우</td>
+                                                <td class="txt-primary fwsb">2회 적발</td>
+                                            </tr>
+                                            <tr>
+                                                <td>난동ㆍ행패 및 성희롱 등으로 교육질서를 해친 경우</td>
+                                                <td class="txt-primary fwsb">즉시(고의 또는 중과실)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>수강 태도가 심히 불량<br class="mo-only">(음주상태, 소란 등)한 경우</td>
+                                                <td class="txt-primary fwsb">2회 적발</td>
+                                            </tr>
+                                            <tr>
+                                                <td>교수 및 교육담당 등에게 폭행ㆍ욕설 및 폭언한 경우</td>
+                                                <td class="txt-primary fwsb">즉시</td>
+                                            </tr>
+                                            <tr>
+                                                <td>기물파손을 한 경우</td>
+                                                <td class="txt-primary fwsb">2회 적발(고의)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>교육질서 문란하게 한 경우<br class="mo-only">(경미한 경우)</td>
+                                                <td class="txt-primary fwsb">3회 적발</td>
+                                            </tr>
+                                            <tr>
+                                                <td>교육담당자의 요구ㆍ제재 시항을 위반한 경우</td>
+                                                <td class="txt-primary fwsb">3회 적발</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tab-content " id="tab1-con2">
+                            <div class="inner">
+                                <h3 class="h3-title"><img src="/images/common/icon_h3_tit_logo.svg" alt="메뉴타이틀 로고">수강방법(VOD)</h3>
+                                <ol class="num-box">
+                                    <li>
+                                        <strong class="sub-tit txt-blue">VOD 원격교육 시스템 접속</strong>
+                                        <div class="bg-wh-box">
+                                            <p class="txt18 w100p tac fwr">국토안전관리원 인재교육원 홈페이지 통해 접속 포털 검색창(네이버, 다음 등)에 ‘국토안전관리원 인재교육원’ 검색 후 접속 또는 주소창에 https://www.kalisedu.or.kr 직접 입력하여 접속</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong class="sub-tit txt-blue">좌측 ‘동영상 강의’ 바로가기 클릭</strong>
+                                        <p class="bullet txt18 fwr">설명이 있으면 설명입력하기</p>
+                                        <div class="img" style="height:36.8rem;"><span style="position:absolute; top:50%; left:50%; color:rgba(255, 0, 0, 0.5); font-weight:700; font-size:2.4rem; transform:translate(-50%, -50%);">변경된 홈페이지에 맞추어 이미지 등록 예정 </span><img src="" alt=""></div>
+                                    </li>
+                                    <li>
+                                        <strong class="sub-tit txt-blue">동영상 수강창에 교육생 아이디, 비밀번호 입력</strong>
+                                        <p class="bullet txt18 fwr">아이디 : 국토안전관리원 인재교육원 홈페이지 교육생 회원 ID와 동일</p>
+                                        <p class="bullet txt18 fwr">비밀번호 : <span class="txt-primary">kalis + 기수</span>(전과정 동일)</p>
+                                        <div class="line-box type02">
+                                            <p class="txt18 fwr">예시</p>
+                                            <p class="txt18 fwr">- 정밀안전진단과정 제22-1기 교량 및 터널반 : <span class="txt-primary">kalis221</span></p>
+                                            <p class="txt18 fwr">- 정기안전점검과정 제22-2기 건축반 : <span class="txt-primary">kalis222</span></p>
+                                            <p class="txt18 fwr">- 성능평가과정 제22-3기 : <span class="txt-primary">kalis223</span></p>
+                                            <p class="txt18 fwr txt-gray">※ 국토안전관리원 인재교육원 홈페이지 공지사항 ‘해당 과정 기수명’ 참고</p>
+                                        </div>
+                                        <div class="img" style="height:33.4rem;"><span style="position:absolute; top:50%; left:50%; color:rgba(255, 0, 0, 0.5); font-weight:700; font-size:2.4rem; transform:translate(-50%, -50%);">변경된 홈페이지에 맞추어 이미지 등록 예정 </span><img src="" alt=""></div>
+                                    </li>
+                                    <li>
+                                        <strong class="sub-tit txt-blue">로그인 후 화면 “직무교육과정 온라인교육수강” 클릭</strong>
+                                        <div class="img" style="height:33.4rem;"><span style="position:absolute; top:50%; left:50%; color:rgba(255, 0, 0, 0.5); font-weight:700; font-size:2.4rem; transform:translate(-50%, -50%);">변경된 홈페이지에 맞추어 이미지 등록 예정 </span><img src="" alt=""></div>
+                                    </li>
+                                    <li>
+                                        <strong class="sub-tit txt-blue">우측 하단 “온라인교육장 입장” 클릭</strong>
+                                        <div class="img" style="height:33.4rem;"><span style="position:absolute; top:50%; left:50%; color:rgba(255, 0, 0, 0.5); font-weight:700; font-size:2.4rem; transform:translate(-50%, -50%);">변경된 홈페이지에 맞추어 이미지 등록 예정 </span><img src="" alt=""></div>
+                                    </li>
+                                    <li>
+                                        <strong class="sub-tit txt-blue">순차적으로 VOD 원격교육 강의 수강 및 설문 참여</strong>
+                                        <div class="line-box type02">
+                                            <span class="badge pri">강의 수강</span>
+                                            <p class="bullet txt18 fwr">VOD 원격교육 수강은 교육 기간내 24시간 수강가능</p>
+                                            <p class="txt-gray txt18 fwr">ex) VOD 원격교육 수강기간이 4월 11일 ~ 4월 15일인 경우 ⇒ 4월 11일 09:00 ~ 4월15일 24:00 까지 수강 가능</p>
+                                            <p class="bullet txt18 fwr">처음부터 순차적으로 수강</p>
+                                            <p class="bullet txt18 fwr">빨리 보기 및 배속 수강 등은 불가</p>
+                                            <p class="bullet txt18 fwr">교육 기간 내 90%이상 수강 시 수료 가능</p>
+                                        </div>
+                                        <div class="line-box type02">
+                                            <span class="badge pri">설문 참여</span>
+                                            <p class="bullet txt18 fwr">차시별 강의 수강 후 해당과목 강사 설문참여 시 다음 차시 수강 가능</p>
+                                            <p class="bullet txt18 fwr">마지막 차시 강의수강 전 해당과정 설문조사 참여 시 수강 완료</p>
+                                            <ul class="step-list">
+                                                <li>1차시 강의수강</li>
+                                                <li>1차시 강사 설문참여</li>
+                                                <li>2차시 강의수강</li>
+                                                <li>2차시 강사 설문참여</li>
+                                                <li>...</li>
+                                                <li>해당과정 설문참여</li>
+                                                <li>마지막 차시 강의수강</li>
+                                            </ul>
+                                        </div>
+                                        <div class="img" style="height:33.4rem;"><span style="position:absolute; top:50%; left:50%; color:rgba(255, 0, 0, 0.5); font-weight:700; font-size:2.4rem; transform:translate(-50%, -50%);">변경된 홈페이지에 맞추어 이미지 등록 예정 </span><img src="" alt=""></div>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="tab-content" id="tab1-con3">
+                            <div class="inner">
+                                <h3 class="h3-title"><img src="/images/common/icon_h3_tit_logo.svg" alt="메뉴타이틀 로고">수강방법(실시간 온라인)</h3>
+                                <ol class="num-box">
+                                    <li>
+                                        <strong class="sub-tit txt-blue">사전준비 사항</strong>
+                                        <div class="line-box type02">
+                                            <p class="txt18 bullet fwl">카메라가 설치된 데스크탑 PC나 노트북 필요</p>
+                                            <p class="txt18 bullet fwl">가급적 기가바이트급 인터넷 사용 권장</p>
+                                            <p class="txt18 bullet fwl">
+                                                인터넷 접속 프로그램은 반드시 Google Chrome(구글 크롬)이나, Microsoft Edge(마이크로소프트 엣지) 설치<br>
+                                                <span class="txt-gray">※ Internet Explorer(인터넷 익스플로러)는 수강 어려움</span>
+                                            </p>
+                                            <p class="txt18 bullet fwl">PC나 인터넷 사용이 어려우신 분들은 사전에 접속 방법 등 숙지 필요</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <strong class="sub-tit txt-blue">원격교육 사이트 접속</strong>
+                                        <div class="bg-wh-box"><p class="txt18 fwl w100p tac">주소 https://zoom.us 접속 후 SMS 혹은 이메일로 받은 회의장 주소와 암호 입력</p></div>
+                                    </li>
+                                    <li>
+                                        <strong class="sub-tit txt-blue">참여자 화면에 본인 얼굴이 보이면 정상접속</strong>
+                                        <div class="img" style="height:34.5rem;"><span style="position:absolute; top:50%; left:50%; color:rgba(255, 0, 0, 0.5); font-weight:700; font-size:2.4rem; transform:translate(-50%, -50%);">변경된 홈페이지에 맞추어 이미지 등록 예정 </span><img src="" alt=""></div>
+                                    </li>
+                                    <li>
+                                        <strong class="sub-tit txt-blue">실시간 원격교육(재택형) 주의사항</strong>
+                                        <div class="line-box type02">
+                                            <p class="txt18 bullet fwl">인터넷 접속 불량 등에 따른 <span class="txt-red">수업 미참여와 얼굴 미인식시 결석</span>으로 처리</p>
+                                            <p class="txt18 bullet fwl">수업 중 <span class="txt-red">자리 이석은 감점</span>처리(10분 이내, 1회에 한함)</p>
+                                            <p class="txt18 bullet fwl">차량운행, 차량탑승, <span class="txt-red">이동중 수업수강은 퇴장</span> 처리하며, 정상 접속시까지 결석처리</p>
+                                            <p class="txt18 bullet fwl">근태 신청 없이 <span class="txt-red">무단 수업 불참 시 자동 퇴교</span>처리</p>
+                                        </div>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <!-- 협력기관 배너 슬라이더 -->
+            <div class="bd-line-grp">
+                <div class="footer-banner-slider max-width-inner">
+                    <div class="swiper mySwiper type02">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn01.svg" alt="국토안전관리원">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn02.svg" alt="시설물통합정보관리시스템">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn03.svg" alt="한국건설기술인협회">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn01.svg" alt="국토안전관리원">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn02.svg" alt="시설물통합정보관리시스템">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn03.svg" alt="한국건설기술인협회">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn01.svg" alt="국토안전관리원">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn02.svg" alt="시설물통합정보관리시스템">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn03.svg" alt="한국건설기술인협회">
+                                </a>
+                            </li>
+                            <li class="swiper-slide">
+                                <a href="#" target="_blank">
+                                    <img src="/images/common/img_footer_bn01.svg" alt="국토안전관리원">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="swiper-button">
+                        <button type="button" class="swiper-button-next"><img src="/images/common/icon_footer_btn_next.svg" alt="다음버튼 아이콘"></button>
+                        <button type="button" class="swiper-button-prev"><img src="/images/common/icon_footer_btn_prev.svg" alt="이전버튼 아이콘"></button>
+                    </div>
+                    <script>
+                    const swiper2 = new Swiper(".mySwiper.type02", {
+                        slidesPerView: "auto", // 한번에 보여지는 슬라이드 숫자
+                        slidesPerGroup: 1, // 한번에 이동되는 슬라이드 숫자
+                        loop: true,
+                        breakpoints: {
+                            0: {
+                                spaceBetween: 14,
+                            },
+                            1024: {
+                                spaceBetween: 28
+                            }
+                        },
+                        navigation: {
+                            nextEl: ".footer-banner-slider .swiper-button-next",
+                            prevEl: ".footer-banner-slider .swiper-button-prev",
+                        },
+                    });
+                    /* 자동재생 추후 적용 여부 확인 후 추가해서 적용
+                    // 정지 버튼 
+                    document.querySelector(".mySwiper.type02 .swiper-autoplay-button .pause").addEventListener("click", function() {
+                        swiper2.autoplay.stop();
+                        this.style.display = "none";
+                        document.querySelector(".mySwiper.type02 .swiper-autoplay-button .play").style.display = "block";
+                    });
+    
+                    // 재생 버튼
+                    document.querySelector(".mySwiper.type02 .swiper-autoplay-button .play").addEventListener("click", function() {
+                        swiper2.autoplay.start();
+                        this.style.display = "none";
+                        document.querySelector(".mySwiper.type02 .swiper-autoplay-button .pause").style.display = "block";
+                    });
+                    */
+                    </script>
+                </div>
+            </div>
+            <!-- 약관/패밀리사이트 등 상단 정보 -->
+            <div class="footer-cont max-width-inner">
+                <div class="logo-grp">
+                    <h3><a href="/index.html" class="footer-logo"><img src="/images/common/icon_footer_logo.svg" alt="국토안전관리원"></a></h3>
+                </div>
+                <div class="address-grp">
+                    <div class="link-area">
+                        <a href="#">이용약관</a>
+                        <a href="#">개인정보처리방침</a>
+                        <a href="#">저작권정책</a>
+                        <a href="#">고정형 영상정보처리기기 운영관리방침</a>
+                        <a href="#">찾아오시는길</a>
+                    </div>
+                    <ul class="txt-list">
+                        <li>
+                            <p class="tit icon-location">교육원소재지</p>
+                            <dl>
+                                <dt>진주교육장</dt>
+                                <dd>(52852) 경상남도 진주시 사들로 131 인재교육관</dd>
+                                <dt>김천교육장</dt>
+                                <dd>(39660) 경상북도 김천시 혁신6로 12</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <p class="tit icon-counsel">교육 문의</p>
+                            <dl>
+                                <dt>대표전화</dt>
+                                <dd>1588-8788(6, 기술자 교육훈련)  |  055-771-1905</dd>
+                                <dt>팩스</dt>
+                                <dd>055-771-1915</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                    <address>Copyrightⓒ2025 KALIS. All right Reserved.</address>
+                </div>
+                <div class="family-grp">
+                    <div class="dropdown-wrap">
+                        <button type="button" class="btn btn-dropdown">
+                            패밀리사이트
+                        </button>
+                        <div class="dropdown-list is-up is-open">
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트1</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트2</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트3</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트4</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트5</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트6</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트7</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트8</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트9</a>
+                            <a href="#" class="footer-link" target="_blank">패밀리사이트10</a>           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="/js/common.js"></script>
+</body>
+</html>
