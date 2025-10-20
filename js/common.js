@@ -417,6 +417,15 @@ function bbsAccoFn() {
     });
 }
 
+function bgRandomFn(){
+    const banner = document.querySelector('.main-bn');
+    if(!banner) return;
+
+    const randomBg = Math.random() < 0.5 ? 'bg1' : 'bg2';
+    if(randomBg) banner.classList.add(randomBg);
+    requestAnimationFrame(() => banner.classList.add('show'));
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     DropdownMenus();
     bnToggle();
@@ -425,6 +434,8 @@ document.addEventListener('DOMContentLoaded', () => {
     initTabs('.tab-container.notice-wrap');
     accoSch();
     bbsAccoFn();
+    bgRandomFn();
+
      //mobile
     if (window.innerWidth > 1024) {
         gnbOpen();

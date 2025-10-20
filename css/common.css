@@ -231,7 +231,7 @@ body.modal-open{height:100vh; overflow:hidden;}
     thead.mo-only{display:table-row-group;}
     .pc-only, tbody.pc-only, thead.pc-only, colgroup.pc-only{display:none;}
 
-    .content-wrap{padding-bottom:10rem;}
+    .content-wrap{padding-bottom:7rem;}
 
     header .head-top{height:7rem;}
     header .head-top .logo a{width:16.1rem; height:3.9rem;}
