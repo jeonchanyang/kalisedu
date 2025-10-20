@@ -121,7 +121,7 @@ const closeModal = (event, openButton) => {
 };
 window.closeModal = closeModal;
 
-/* gnb */
+/* gnb - pc */
 const gnbOpen = () => {
     const gnbList = document.querySelector(".gnb");
     const listItem = gnbList.querySelectorAll(".gnb > li > a");
@@ -148,6 +148,8 @@ const topClose = () => {
 
 // 메인배너 우측 Accordion list 토글
 const bnToggle = () => {
+    const isMobile = window.innerWidth < 1024;
+
     const setLiHeight = (li) => {
         li.style.height = li.scrollHeight / 10 + 'rem';
     };
@@ -172,7 +174,11 @@ const bnToggle = () => {
             }else{
                 document.querySelectorAll(".acco-wrap li").forEach((el)=>{
                     el.classList.remove('active');
-                    el.style.height = 11 + 'rem';
+                    if(!isMobile){
+                        el.style.height = 11 + 'rem';
+                    }else{
+                        el.style.height = 9 + 'rem';
+                    }
                 });
                 li.classList.add('active');
                 setLiHeight(li);
@@ -397,6 +403,7 @@ function initMoDropdown() {
     });
 }
 
+// bbs - accodion
 function bbsAccoFn() {
     const accoBtn = document.querySelectorAll('.bbs-list.acco li .btn-acco');
     if (!accoBtn) return;
@@ -417,6 +424,7 @@ function bbsAccoFn() {
     });
 }
 
+// main intro bg(random)
 function bgRandomFn(){
     const banner = document.querySelector('.main-bn');
     if(!banner) return;
@@ -425,6 +433,67 @@ function bgRandomFn(){
     if(randomBg) banner.classList.add(randomBg);
     requestAnimationFrame(() => banner.classList.add('show'));
 }
+
+// mobile - 상단 검색버튼
+function moBtnSchFn(){
+    const btn = document.querySelector('.mo-btn-grp .mo-btn-search');
+    const target = document.querySelector('.head-top .sch-area');
+
+    btn.addEventListener('click', (e)=>{
+        e.currentTarget.classList.toggle('close');
+
+        if(e.currentTarget.classList.contains('close')){
+            e.currentTarget.textContent = "닫기버튼";
+            target.classList.add('active');
+        }else{
+            e.currentTarget.textContent = "검색버튼";
+            target.classList.remove('active');
+        }
+    });
+}
+
+// mobile - 상단 전체메뉴
+function allMnuFn(){
+    const header = document.querySelector('header');
+    const btn = document.querySelector('.mo-btn-grp .mo-btn-mnu');
+    const btnSch = document.querySelector('.mo-btn-grp .mo-btn-search');
+    const target = document.querySelector('header .head-bottom');
+    const gnbBtn = target.querySelectorAll('.gnb > li');
+
+    btn.addEventListener('click', (e)=>{
+        target.classList.toggle('mo-open');
+        if(target.classList.contains('mo-open')){
+            header.classList.add('bg');
+        }else{
+            header.classList.remove('bg');
+        }
+        e.currentTarget.classList.toggle('close');
+
+        if(e.currentTarget.classList.contains('close')){
+            e.currentTarget.textContent = "메뉴닫기";
+            btnSch.style.display = 'none';
+        }else{
+            e.currentTarget.textContent = "메뉴열기";
+            btnSch.style.display = 'block';
+        }
+    });
+
+    gnbBtn.forEach((el)=>{
+        el.addEventListener('click', (e)=>{
+            const isActive = e.currentTarget.classList.contains('active');
+
+            // 모든 li의 active 제거
+            gnbBtn.forEach(li => li.classList.remove('active'));
+
+            // active 추가
+            if (!isActive) {
+                e.currentTarget.classList.add('active');
+            }
+        });
+    });
+}
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
     DropdownMenus();
@@ -436,12 +505,15 @@ document.addEventListener('DOMContentLoaded', () => {
     bbsAccoFn();
     bgRandomFn();
 
-     //mobile
+    // pc
     if (window.innerWidth > 1024) {
         gnbOpen();
     }
+    // mobile
     if (window.innerWidth < 1024) {
         initMoDropdown();
+        moBtnSchFn();
+        allMnuFn();
     }
 });
 
