@@ -57,7 +57,7 @@ span.bn-badge{display:inline-flex; align-items:center; padding:.8rem 2rem; color
 /* tab */
 .tab-content{display:none;}
 .tab-content.is-active{display:block;}
-.tab-container.full .tab-head{display:flex;}
+.tab-container.full .tab-head{display:flex; overflow:hidden; border-radius:1rem 1rem 0 0;}
 .tab-container.full .tab-head li{flex-grow:1; width:100%;}
 .tab-container.full .tab-head li button{width:100%; padding:2rem 0; color:#A6A8AB;  font-weight:400; font-size:var(--font-size-24); background:#0F2A43; transition:all .3s;}
 .tab-container.full > .tab-head li button.is-active,
@@ -218,6 +218,14 @@ span.bn-badge{display:inline-flex; align-items:center; padding:.8rem 2rem; color
 .full-calendar.fc .fc-h-event .fc-event-title{padding-left:.8rem; color:var(--font-color-black); font-size:1.2rem;}
 .full-calendar.fc .fc-daygrid-event{margin:.1rem 0 0; border-radius:0;}
 .full-calendar.fc .fc-col-header-cell-cushion{margin-bottom:.8rem; padding:0; font-weight:400; font-size:var(--font-size-12); text-transform: uppercase;}
+
+.full-calendar.fc .fc-col-header-cell-cushion[aria-label="Saturday"],
+.full-calendar.fc .fc-day-sat .fc-daygrid-day-number{color:#0080C5;}
+
+.full-calendar.fc .fc-col-header-cell-cushion[aria-label="Sunday"],
+.full-calendar.fc .fc-day-sun .fc-daygrid-day-number{color:#f00;}
+
+
 .full-calendar.fc .fc-h-event .fc-event-title-container{min-height:1.8rem;}
 /* 시설물안전법 */
 .full-calendar.fc .event-facility{ background-color: #50AAFF; border-color:#50AAFF;}
