@@ -124,6 +124,9 @@ window.closeModal = closeModal;
 /* gnb - pc */
 const gnbOpen = () => {
     const gnbList = document.querySelector(".gnb");
+    
+    if(!gnbList) return;
+    
     const listItem = gnbList.querySelectorAll(".gnb > li > a");
 
     listItem.forEach((el)=>{
