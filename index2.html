@@ -18,9 +18,91 @@
             <li><a href="#gnb">주내용 바로가기</a></li>
         </ul>
         <div class="top-noti">
-            <p><a href="/국토안전교육원_04정보마당_05설문조사.html">국토안전교육원 홈페이지 리뉴얼 설문조사를 진행중입니다</a></p>
-            <i class="icon-toryani"></i>
-            <button class="btn-close" onclick="topClose();">닫기</button>
+            <i class="img-noti"><img src="/images/common/icon_info_tory.webp" alt="공지 아이콘 이미지"></i>
+            <div class="swiper noti-swiper">
+                <ul class="swiper-wrapper">
+                    <li class="swiper-slide">
+                        <a href="/국토안전교육원_04정보마당_05설문조사.html">
+                            <p class="tit">국토안전교육원 홈페이지 리뉴얼 설문조사 진행중</p>
+                            <p class="date">설문기간 : 2025년 9월 1일 ~ 9월 12일</p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="/국토안전교육원_04정보마당_05설문조사.html">
+                            <p class="tit">11111국토안전교육원 홈페이지 리뉴얼 설문조사 진행중</p>
+                            <p class="date">설문기간 : 2025년 7월 1일 ~ 10월 12일</p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="/국토안전교육원_04정보마당_05설문조사.html">
+                            <p class="tit">22222국토안전교육원 홈페이지 리뉴얼 설문조사 진행중</p>
+                            <p class="date">설문기간 : 2025년 3월 1일 ~ 11월 12일</p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="/국토안전교육원_04정보마당_05설문조사.html">
+                            <p class="tit">33333국토안전교육원 홈페이지 리뉴얼 설문조사 진행중</p>
+                            <p class="date">설문기간 : 2025년 5월 1일 ~ 12월 12일</p>
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="/국토안전교육원_04정보마당_05설문조사.html">
+                            <p class="tit">44444국토안전교육원 홈페이지 리뉴얼 설문조사 진행중</p>
+                            <p class="date">설문기간 : 2025년 1월 1일 ~ 12월 31일</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="control-wrap noti">
+                <div class="count">
+                    <span class="current"></span>/<span class="total"></span>
+                </div>
+                <div class="indicator">
+                    <button type="button" class="btn-prev"><img src="/images/common/icon_noti_slide_prev.svg" alt="이전 이미지 보기"></button>
+                    <button type="button" class="swiper-autoplay-button">
+                        <img src="/images/common/icon_noti_slide_pause.svg" alt="영상 자동재생 정지 버튼이미지" class="pause">
+                        <img src="/images/common/icon_slide_play.svg" alt="영상 자동재생 시작 버튼이미지" class="play" style="display:none;">
+                    </button>
+                    <button type="button" class="btn-next"><img src="/images/common/icon_noti_slide_next.svg" alt="다음 이미지 보기"></button>
+                </div>
+                <button class="btn-close" onclick="topClose();">닫기</button>
+            </div>
+
+            <script>
+                // const pad2 = (n) => String(n).padStart(2, "0");
+                const notiSwiper = new Swiper(".swiper.noti-swiper", {
+                    slidesPerView: 1,
+                    slidesPerGroup: 1,
+                    loop: true,
+                    autoplay: true,
+                    speed: 700,
+                    navigation: {
+                        nextEl: ".control-wrap.noti .btn-next",
+                        prevEl: ".control-wrap.noti .btn-prev",
+                    },
+                    on: {
+                        init() { //전체 갯수
+                            const total = this.slides.length;
+                            document.querySelector(".count .total").textContent = total;
+                            document.querySelector(".count .current").textContent = this.realIndex + 1;},
+                        slideChange() { //count
+                            document.querySelector(".count .current").textContent = this.realIndex + 1;},
+                    },
+                });
+
+                document.querySelector(".control-wrap.noti .swiper-autoplay-button .pause").addEventListener("click", function() {
+                    notiSwiper.autoplay.stop();
+                    this.style.display = "none";
+                    document.querySelector(".control-wrap.noti .swiper-autoplay-button .play").style.display = "block";
+                });
+
+                // 재생 버튼
+                document.querySelector(".control-wrap.noti .swiper-autoplay-button .play").addEventListener("click", function() {
+                    notiSwiper.autoplay.start();
+                    this.style.display = "none";
+                    document.querySelector(".control-wrap.noti .swiper-autoplay-button .pause").style.display = "block";
+                });
+            </script>
         </div>
         <header>
             <div class="head-top">
