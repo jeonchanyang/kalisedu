@@ -141,7 +141,7 @@ const gnbOpen = () => {
 
 // 상단 설문 종료버튼
 const topClose = () => {
-    const targetLayer = document.querySelector(".top-noti");
+    const targetLayer = document.querySelector(".noti-wrap");
     const closeBtn = targetLayer.querySelector(".btn-close");
     targetLayer.remove();
 }
