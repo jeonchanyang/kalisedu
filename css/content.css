@@ -658,6 +658,15 @@ ol.num-box li .sub-tit::before{content:counter(cnt); display:inline-flex; justif
 .bbs-list.qna .bbs-gen-list li .list-answer.complete{color:var(--primary-color);}
 .bbs-list.qna .page-list + .btn-area{margin-top:5rem; text-align:center;}
 
+/* bbs-top */
+.bbs-top{display:flex; justify-content:space-between; align-items:flex-end; margin-top:-.5rem;}
+.bbs-top .left-area .btn-kakao{display:inline-flex; justify-content:space-between; align-items:center; width:29.1rem; height:6.7rem; padding-left:2rem; background:#FFCC00; border-radius:1rem;}
+.bbs-top .left-area .btn-kakao b{font-weight:700; font-size:1.8rem;}
+.bbs-top .left-area .btn-kakao b span{font-size:1.6rem;}
+.bbs-top .left-area .btn-kakao img{align-self:flex-end; display:block; width:11.9rem;}
+.bbs-top .search-area{height:5.2rem; margin-bottom:0;}
+.bbs-top + .bbs-list{margin-top:3rem;}
+
 /* bbs-list survey */
 .bbs-list.survey .bbs-gen-list li > a{height:8rem;}
 .bbs-list.survey .bbs-gen-list li > a .list-num{width:8%;}
@@ -1199,7 +1208,7 @@ ol.num-box li .sub-tit::before{content:counter(cnt); display:inline-flex; justif
     .mo-drop .mo-btn-dropdown{display:block; width:100%; height:6rem; padding:0 2rem; color:#fff; font-weight:700; font-size:var(--font-size-20); text-align:left; background:#8AC650 url(/images/mo/mo_icon_arrow_down.svg) right 1.5rem center / 2rem 1.2rem no-repeat; transition:all .3s; border-radius:1rem;}
     .mo-drop.is-open .mo-btn-dropdown{background-image:url(/images/mo/mo_icon_arrow_up.svg);}
     .mo-drop .mo-dropdown-list{max-height:0; transition:all .3s;}
-    .mo-drop.is-open .mo-dropdown-list{overflow-y:auto; max-height:32rem; margin-top:1rem;}
+    .mo-drop.is-open .mo-dropdown-list{overflow-y:auto; max-height:40rem; margin-top:1rem;}
     .tab-container.full .mo-drop.tab .tab-head{flex-direction:column;}
     .tab-container.full .mo-drop.tab .tab-head li:first-child button{border-radius:1rem 1rem 0 0;}
     .tab-container.full .mo-drop.tab .tab-head li:last-child button{border-radius:0 0 1rem 1rem;}
@@ -1464,6 +1473,12 @@ ol.num-box li .sub-tit::before{content:counter(cnt); display:inline-flex; justif
     .bbs-view .answer-grp .answer-tit{justify-content:flex-start; padding:0 1rem;}
     .bbs-view .answer-grp .answer-tit strong{font-size:var(--font-size-20);}
     .bbs-view .answer-grp + .btn-area, .tb-layout + .btn-area{margin-top:4rem;}
+
+    .bbs-top{flex-direction:column-reverse;}
+    .bbs-top .search-area{width:100%; height:auto;}
+    .bbs-top .left-area{margin-top:4rem; width:100%;}
+    .bbs-top .left-area .btn-kakao{width:100%;}
+    .bbs-top .left-area a{display:block; width:100%;}
 
     .bbs-sch{flex-wrap:wrap; gap:4rem;}
     .bbs-sch dt{width:100%; height:6rem; font-size:var(--font-size-22); border-radius:1rem;}
