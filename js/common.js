@@ -442,6 +442,8 @@ function moBtnSchFn(){
     const btn = document.querySelector('.mo-btn-grp .mo-btn-search');
     const target = document.querySelector('.head-top .sch-area');
 
+    if(!btn || !target) return
+
     btn.addEventListener('click', (e)=>{
         e.currentTarget.classList.toggle('close');
 
@@ -461,8 +463,11 @@ function allMnuFn(){
     const btn = document.querySelector('.mo-btn-grp .mo-btn-mnu');
     const btnSch = document.querySelector('.mo-btn-grp .mo-btn-search');
     const target = document.querySelector('header .head-bottom');
+    
+    if (!header || !btn || !btnSch || !target) return;
+    
     const gnbBtn = target.querySelectorAll('.gnb > li');
-
+    
     btn.addEventListener('click', (e)=>{
         target.classList.toggle('mo-open');
         if(target.classList.contains('mo-open')){
