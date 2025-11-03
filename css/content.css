@@ -743,7 +743,10 @@ ol.num-box li .sub-tit::before{content:counter(cnt); display:inline-flex; justif
 .inner-wrap.join.integration .family-grp a{width:28rem;}
 .inner-wrap.join.integration .terms-list{margin-top:6rem;} 
 
-
+/* required */
+span.required{display:none; gap:1rem; width:100%; color:#f00; font-weight:400; font-size:1.8rem; line-height:2.6rem;}
+span.required.on{display:inline-flex;}
+span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
 
 /* join-step */
 .step-grp{display:flex;}
@@ -792,6 +795,11 @@ ol.num-box li .sub-tit::before{content:counter(cnt); display:inline-flex; justif
 .membership-form .email-grp > span{font-weight:600; line-height:2.6rem; font-size:var(--font-size-20);}
 .membership-form .btn-area{margin-top:5rem;}
 .membership-form .btn-area .btn{width:30rem; height:6rem; font-size:var(--font-size-24);}
+.membership-form .info2 dl dd .checkbox-group{margin-top:1.5rem;}
+.membership-form .info2 .req-wrap{width:100%;}
+.membership-form .info2 .req-wrap .required{justify-content:center; margin-top:1rem;}
+
+
 
 /* membership-form correction */
 .membership-form.correction{max-width:77rem; margin:0 auto;}
@@ -1572,6 +1580,8 @@ ol.num-box li .sub-tit::before{content:counter(cnt); display:inline-flex; justif
     .membership-form .info2{padding-bottom:3rem;}
     .membership-form .btn-area{margin-top:3rem;}
     .membership-form .btn-area .btn{width:100%;}
+
+    .membership-form .info2 .req-wrap .required{margin-top:2rem;}
 
     .inner-wrap.edu{margin-bottom:3rem;}
     .edu-gen-list li{padding:2.5rem 1.5rem;}

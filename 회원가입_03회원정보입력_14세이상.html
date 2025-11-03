@@ -219,8 +219,10 @@
                             <dl>
                                 <dt><label for="userId">아이디</label></dt>
                                 <dd>
-                                    <input type="text" id="userId" name="userId" class="ipt">
-                                    <button type="button" class="btn btn-cmn">중복확인</button>
+                                    <div class="confirm-grp">
+                                        <input type="text" id="userId" name="userId" class="ipt">
+                                        <button type="button" class="btn btn-cmn">중복확인</button>
+                                    </div>
                                 </dd>
                                 <dt><label for="userPw">비밀번호</label></dt>
                                 <dd>
@@ -245,7 +247,20 @@
                                         </select>
                                     </div>
                                 </dd>
+                                <dd>
+                                    <div class="checkbox-group">
+                                        <label for="chkAgree" class="checkbox-item fwb">
+                                            <input type="checkbox" id="chkAgree" name="chkAgree">
+                                            <span class="custom-check"></span>
+                                            마케팅 수신 동의
+                                        </label>
+                                    </div>
+                                </dd>
                             </dl>
+                            <div class="req-wrap">
+                                <!-- 국토안전교육원_04정보마당_05설문조사_상세.html validation sample 참조 -->
+                                <span id="req-q1" class="required on" aria-live="assertive"><i class="ico icon-req"></i>이미 가입된 회원입니다. 수정할 정보가 있는지 확인해주세요.</span>
+                            </div>
                         </fieldset>
                         <div class="btn-area"><button type="submit" class="btn btn-cmn">가입완료</button></div>
                     </form>
