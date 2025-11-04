@@ -631,7 +631,7 @@ ol.num-box li .sub-tit::before{content:counter(cnt); display:inline-flex; justif
 .bbs-list.acco .bbs-gen-list li{overflow:hidden; height:6.8rem;}
 .bbs-list.acco .bbs-gen-list .btn-acco{display:flex; align-items:flex-start; position:relative; width:100%; min-height:6.8rem; padding:1.8rem 0;}
 .bbs-list.acco .bbs-gen-list .btn-acco .list-division{width:15%; margin-top:.3rem; font-weight:300; line-height:2.6rem; font-size:var(--font-size-18);}
-.bbs-list.acco .bbs-gen-list .list-txt{display:inline-flex; gap:1.5rem; align-items:flex-start; width:calc(85% - 13rem); font-size:var(--font-size-18);}
+.bbs-list.acco .bbs-gen-list .list-txt{display:inline-flex; gap:1.5rem; align-items:flex-start; width:calc(85% - 5.5rem); font-size:var(--font-size-18);}
 .bbs-list.acco .bbs-gen-list .list-txt p{margin-top:.3rem; line-height:2.6rem;}
 .bbs-list.acco .bbs-gen-list .list-txt > i{flex:0 0 auto; display:inline-flex; justify-content:center; align-items:center; width:3.2rem; height:3.2rem; color:#fff; font-weight:700; text-align:center; border-radius:50%;}
 .bbs-list.acco .bbs-gen-list .list-txt > i.question{background-color:#1464FF;}
@@ -643,6 +643,14 @@ ol.num-box li .sub-tit::before{content:counter(cnt); display:inline-flex; justif
 .bbs-list.acco .bbs-gen-list li.on{overflow:unset; height:auto; background:#fff;}
 .bbs-list.acco .bbs-gen-list li.on .icon-arrow{transform:rotate(180deg);}
 .bbs-list.acco .bbs-gen-list li.on .list-txt p{white-space:normal;}
+
+/* 답변 내부 동적 컨텐츠 */
+.list-answer .list-txt table{width:100%;}
+.list-answer .list-txt table th,
+.list-answer .list-txt table td{padding:10px; vertical-align:middle; border:1px solid #ededed;}
+.list-answer .list-txt .contents{display:block; width:100%;}
+
+
 
 /* bbs-list qna */
 .bbs-list.qna .bbs-title .answer,
@@ -1536,7 +1544,8 @@ span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
     .step-grp li + li::before{left:-1.7rem; width:3.2rem; height:3.2rem;}
     .step-grp li .txt, .step-grp li .level{width:100%; text-align:center;}
     .step-grp + p{margin-top:4rem; margin-bottom:1rem;}
-    .terms-list .tit{padding:1.2rem 2.4rem; font-size:var(--font-size-18);}    
+    .terms-list .tit{align-items:flex-start; padding:1.2rem 2.4rem; font-size:var(--font-size-18);}    
+    .terms-list .tit .req{flex:0 0 auto;}
     .terms-list .txt-grp{padding:2rem 1.3rem 2.8rem 2rem;}
     .terms-list .txt-area{padding-right:1rem;}
     .terms-list .txt-grp + p{margin:1rem 0 1.5rem; text-align:center;}
