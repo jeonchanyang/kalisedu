@@ -631,7 +631,7 @@ ol.num-box li .sub-tit::before{content:counter(cnt); display:inline-flex; justif
 .bbs-list.acco .bbs-gen-list li{overflow:hidden; height:6.8rem;}
 .bbs-list.acco .bbs-gen-list .btn-acco{display:flex; align-items:flex-start; position:relative; width:100%; min-height:6.8rem; padding:1.8rem 0;}
 .bbs-list.acco .bbs-gen-list .btn-acco .list-division{width:15%; margin-top:.3rem; font-weight:300; line-height:2.6rem; font-size:var(--font-size-18);}
-.bbs-list.acco .bbs-gen-list .list-txt{display:inline-flex; gap:1.5rem; align-items:flex-start; width:calc(85% - 5.5rem); font-size:var(--font-size-18);}
+.bbs-list.acco .bbs-gen-list .list-txt{display:inline-flex; gap:1.5rem; align-items:flex-start; width:calc(85% - 7.5rem); font-size:var(--font-size-18);}
 .bbs-list.acco .bbs-gen-list .list-txt p{margin-top:.3rem; line-height:2.6rem;}
 .bbs-list.acco .bbs-gen-list .list-txt > i{flex:0 0 auto; display:inline-flex; justify-content:center; align-items:center; width:3.2rem; height:3.2rem; color:#fff; font-weight:700; text-align:center; border-radius:50%;}
 .bbs-list.acco .bbs-gen-list .list-txt > i.question{background-color:#1464FF;}
@@ -807,8 +807,6 @@ span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
 .membership-form .info2 .req-wrap{width:100%;}
 .membership-form .info2 .req-wrap .required{justify-content:center; margin-top:1rem;}
 
-
-
 /* membership-form correction */
 .membership-form.correction{max-width:77rem; margin:0 auto;}
 .membership-form.correction .info2{margin-top:0;}
@@ -816,8 +814,9 @@ span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
 .membership-form.correction fieldset .info-tit strong{font-weight:inherit;}
 .membership-form.correction fieldset .info-tit .btn-secession{font-weight:400; font-size:var(--font-size-18); text-decoration:underline; text-underline-offset:.5rem;}
 .membership-form.correction fieldset dl dt{min-width:13.5rem;}
-.membership-form.correction fieldset dl dd{width:calc(100% - 18rem);}
+.membership-form.correction fieldset dl dd{width:calc(100% - 18rem); line-height:2.4rem; font-size:var(--font-size-18);}
 .membership-form.correction fieldset dl dd .ipt{max-width:36rem;}
+.membership-form.correction fieldset dl dd .ipt.readonly{border-color:#D9D9D9;}
 .membership-form.correction fieldset dl dd.cover .ipt[readonly]{border-color:#A6A8AB;}
 .membership-form.correction fieldset .new-pw,
 .membership-form.correction fieldset .chg-phone{display:none;}
