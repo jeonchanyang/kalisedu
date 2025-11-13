@@ -501,6 +501,21 @@ function allMnuFn(){
     });
 }
 
+function tooltipFn(){
+    const btn = document.querySelectorAll(".tooltip-grp .btn-tooltip");
+    if(!btn) return;
+
+    btn.forEach((el)=>{
+        el.addEventListener('click', (e)=>{
+
+            if(e.currentTarget.classList.contains('on')){
+                e.currentTarget.classList.remove('on');
+            }else{
+                e.currentTarget.classList.add('on');
+            }
+        });
+    });
+}
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -512,6 +527,7 @@ document.addEventListener('DOMContentLoaded', () => {
     accoSch();
     bbsAccoFn();
     bgRandomFn();
+    tooltipFn();
 
     // pc
     if (window.innerWidth > 1024) {
