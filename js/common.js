@@ -517,6 +517,25 @@ function tooltipFn(){
     });
 }
 
+function btnTopFn(){
+    const btnTop = document.querySelector("#btnTop");;
+
+    window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+            btnTop.classList.add("show");
+        } else {
+            btnTop.classList.remove("show");
+        }
+    });
+
+    btnTop.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+}
+
 
 document.addEventListener('DOMContentLoaded', () => {
     DropdownMenus();
@@ -528,7 +547,7 @@ document.addEventListener('DOMContentLoaded', () => {
     bbsAccoFn();
     bgRandomFn();
     tooltipFn();
-
+    btnTopFn();
     // pc
     if (window.innerWidth > 1024) {
         gnbOpen();

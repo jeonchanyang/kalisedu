@@ -225,6 +225,10 @@ body.modal-open{height:100vh; overflow:hidden;}
 .cmp-modal .modal-container.find .modal-footer{justify-content:center;}
 .cmp-modal .modal-container.find .modal-footer .btn{max-width:32rem;}
 
+/* btn-top */
+.btn-top{position:fixed; bottom:11rem; right:8rem; width:6rem; height:6rem; text-indent:-9999px; background:url(/images/common/icon_btn_top.webp) center center / 100% no-repeat; transition:all .3s ease; opacity:0; z-index:-100;}
+.btn-top.show{opacity:1; z-index:510;}
+
 @media screen and (max-width:1600px) {
     .gnb > li a{padding:0 3rem;}    
 }
@@ -325,6 +329,8 @@ body.modal-open{height:100vh; overflow:hidden;}
     .cmp-modal .modal-container.find{min-width:unset;}
 
     .ipt, .btn-cmn{min-width:unset;}
+
+    .btn-top{bottom:2rem; right:2rem; width:5rem; height:5rem;}
 }
 
 @media screen and (max-width:768px){
