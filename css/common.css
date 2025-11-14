@@ -225,6 +225,19 @@ body.modal-open{height:100vh; overflow:hidden;}
 .cmp-modal .modal-container.find .modal-footer{justify-content:center;}
 .cmp-modal .modal-container.find .modal-footer .btn{max-width:32rem;}
 
+
+.cmp-modal .modal-container.pw .modal-body .txt-grp strong{font-size:3rem;}
+.cmp-modal .modal-container.pw .modal-body .txt-grp{text-align:left;}
+.cmp-modal .modal-container.pw .modal-body .txt-grp > strong + .membership-form{margin-top:4rem;}
+.cmp-modal .modal-container.pw .membership-form{padding:0;}
+.cmp-modal .modal-container.pw .membership-form fieldset dl{width:65rem; align-items:flex-start;}
+.cmp-modal .modal-container.pw .membership-form fieldset dl dt label{text-align:left;}
+.cmp-modal .modal-container.pw .membership-form fieldset dl dd{flex-wrap:wrap;}
+.cmp-modal .modal-container.pw .membership-form .disc{width:100%;}
+.cmp-modal .modal-container.pw .membership-form fieldset dl dt label{display:block; margin-top:1.2rem;}
+.cmp-modal .modal-container.pw .modal-footer{justify-content:center;}
+.cmp-modal .modal-container.pw .modal-footer .btn{max-width:32rem;}
+
 /* btn-top */
 .btn-top{position:fixed; bottom:11rem; right:8rem; width:6rem; height:6rem; text-indent:-9999px; background:url(/images/common/icon_btn_top.webp) center center / 100% no-repeat; transition:all .3s ease; opacity:0; z-index:-100;}
 .btn-top.show{opacity:1; z-index:1110;}
@@ -327,6 +340,7 @@ body.modal-open{height:100vh; overflow:hidden;}
     .cmp-modal .btn-close.close-modal{width:5rem; height:5rem;}
 
     .cmp-modal .modal-container.find{min-width:unset;}
+    .cmp-modal .modal-container.pw .membership-form fieldset dl{width:100%;}
 
     .ipt, .btn-cmn{min-width:unset;}
 

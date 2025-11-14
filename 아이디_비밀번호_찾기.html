@@ -203,7 +203,7 @@
                                     </dl>
                                 </fieldset>
                                 <div class="btn-area">
-                                    <a href="#" class="btn btn-cmn w100p" onclick="openModal(event)" data-modal-id="modal001">비밀번호 찾기</a>
+                                    <a href="#" class="btn btn-cmn w100p" onclick="openModal(event)" data-modal-id="modal002">비밀번호 찾기</a>
                                 </div>
                             </form>
                         </div>
@@ -406,6 +406,39 @@
             </div>
             <div class="modal-footer">
                 <a href="/회원가입.html" class="btn btn-cmn join">회원가입하기</a>
+            </div>
+
+            <!-- modal 우측 상단 닫기 아이콘 -->
+            <button type="button" class="btn-close close-modal" onclick="closeModal(event)">닫기 버튼</button>
+        </div>
+    </div>
+
+    <!-- 비밀번호찾기 -->
+    <div class="cmp-modal" id="modal002"> 
+        <div class="dimmed"></div>
+        <div class="modal-container pw">
+            <div class="modal-body">
+                <div class="txt-grp">
+                    <strong>비밀번호 찾기</strong>
+                    <form action="#" class="membership-form">
+                        <fieldset>
+                            <legend class="sr-only">비밀번호 변경</legend>
+                            <dl>
+                                <dt><label for="userPw">비밀번호</label></dt>
+                                <dd>
+                                    <input type="password" id="userPw" name="userPw" class="ipt password" autocomplete="new-password">
+                                    <span class="disc pw">※ 비밀번호는 9자리 이상, 영문/숫자/특수문자가 1개 이상 포함 되어야 합니다.</span>
+                                </dd>
+                                <dt><label for="userPwChk">비밀번호 확인</label></dt>
+                                <dd><input type="password" id="userPwChk" name="userPwChk" class="ipt password" autocomplete="new-password"></dd>
+                                
+                            </dl>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-cmn">비밀번호 변경</a>
             </div>
 
             <!-- modal 우측 상단 닫기 아이콘 -->
