@@ -286,7 +286,7 @@ body.modal-open{height:100vh; overflow:hidden;}
 
     header .head-bottom.mo-open .mnu-info{margin:4rem auto 0;}
 
-    .gnb > li .gnb-depth2{position:static; width:100%; height:auto; padding:1.2rem 2.5rem 2rem;}
+    .gnb > li .gnb-depth2{position:static; width:100%; height:auto; padding:1.2rem 2.5rem 2rem; background:#F7F8FB;}
     .gnb > li.active .gnb-depth2{display:block;}
     .gnb > li .gnb-depth2:after,
     .gnb > li .gnb-depth2 .tit{display:none;}
