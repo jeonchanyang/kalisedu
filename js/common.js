@@ -520,6 +520,8 @@ function tooltipFn(){
 function btnTopFn(){
     const btnTop = document.querySelector("#btnTop");;
 
+    if(!btnTop) return;
+
     window.addEventListener("scroll", () => {
         if (window.scrollY > 300) {
             btnTop.classList.add("show");
