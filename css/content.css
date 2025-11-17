@@ -60,6 +60,7 @@ span.bn-badge{display:inline-flex; align-items:center; padding:.8rem 2rem; color
 .tab-container.full .tab-head{display:flex; overflow:hidden; border-radius:1rem 1rem 0 0;}
 .tab-container.full .tab-head li{flex-grow:1; width:100%;}
 .tab-container.full .tab-head li button{width:100%; padding:2rem 0; color:#A6A8AB;  font-weight:400; font-size:var(--font-size-24); background:#0F2A43; transition:all .3s;}
+.tab-container.full .tab-head li:hover button{color:#fff;}
 .tab-container.full > .tab-head li button.is-active,
 .tab-container.full .mo-dropdown-list .tab-head li button.is-active{color:#fff; font-weight:700; background:#8AC650;}
 .tab-container.full .tab-head li:first-child button{border-radius:1rem 0 0 0;}
