@@ -838,6 +838,7 @@ span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
 .terms-list .tit{display:flex; align-items:center; gap:.5rem; padding:1.7rem 3rem; font-weight:700; font-size:var(--font-size-20); background:#DFE3EB; border-radius:1rem 1rem 0 0; border:.1rem solid #D9D9D9;}
 .terms-list .tit .req{color:#f00;}
 .terms-list .txt-grp{height:30rem; padding:3rem 2.2rem 3rem 3rem; background:#fff; border:.1rem solid #D9D9D9; border-top:none; border-radius:0 0 1rem 1rem;}
+.terms-list .txt-grp + .radio-group{margin-top:2rem;}
 .terms-list .txt-area{overflow-y:auto; height:100%; font-size:var(--font-size-16); line-height:2.4rem;}
 .terms-list .txt-area::-webkit-scrollbar{width:.4rem;}
 .terms-list .txt-area::-webkit-scrollbar-track{background:#D9D9D9; border-radius:5rem;}
@@ -1195,7 +1196,6 @@ span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
     .cap-list ul li .txt-grp .txt dl{gap:1rem;}
     .cap-list ul li .txt-grp .txt dl dd + dt{margin-left:1.5rem;}
     .cap-list ul li .txt-grp .txt .title{font-size:var(--font-size-18);}
-    .cap-list ul.type02 li .txt-grp .txt .price{font-size:var(--font-size-16);}
 
     .int-wrap .popular-wrap > .inner h3{flex:0 0 auto;}
     .int-wrap .popular-wrap > .inner .list{flex-wrap:wrap; row-gap:1.5rem;}
