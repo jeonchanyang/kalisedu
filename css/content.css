@@ -440,6 +440,23 @@ span.badge.pri{display:inline-block; min-width:16rem; padding:.8rem 0; color:#ff
 
 .index-list + .bbs-list{margin-top:4rem;}
 
+.bbs-list.acco.type02{border-top:.1rem solid #A6A8AB;}
+.bbs-list.acco.type02 .bbs-gen-list li{height:auto; border-color:#A6A8AB;}
+.bbs-list.acco.type02 .bbs-gen-list li .btn-acco{gap:2rem; align-items:center; padding:2rem; background:url(/images/common/icon_acco_arrow_down.svg) right 2rem center / 2rem 1.2rem no-repeat;}
+.bbs-list.acco.type02 .bbs-gen-list li .btn-acco .tit{font-size:2.2rem;}
+.bbs-list.acco.type02 .bbs-gen-list .list-answer{display:none; padding:2rem; line-height:2.4rem; font-size:1.6rem; background:#fff;}
+.bbs-list.acco.type02 .bbs-gen-list li.on{background:transparent;}
+.bbs-list.acco.type02 .bbs-gen-list li.on .btn-acco{background-image:url(/images/common/icon_acco_arrow_up.svg);}
+.bbs-list.acco.type02 .bbs-gen-list li.on .btn-acco .tit{color:#1464FF;}
+.bbs-list.acco.type02 .bbs-gen-list li.on .list-answer{display:block;}
+.bbs-list.acco.type02 .bbs-gen-list .list-answer .num{counter-reset:num;}
+.bbs-list.acco.type02 .bbs-gen-list .list-answer .num li{position:relative; counter-increment:num; width:95%; padding-left:1.5rem; border:none;}
+.bbs-list.acco.type02 .bbs-gen-list .list-answer .num li::before{content:counter(num) "."; position:absolute; left:0;}
+
+.privacy .num + .bd-box{margin-top:1rem;}
+.privacy .bd-box{padding:1.6rem 2.4rem; border:.2rem solid #D9D9D9;}
+.privacy .bd-box p + .btn-move{margin-top:1rem;}
+.privacy .bd-box .btn-move{display:inline-block; padding:.7rem 2rem; color:#1D76BC; font-weight:700; border:.1rem solid #1D76BC; border-radius:1rem;}
 
 
 .way-box.col-type dl{width:100%; font-size:var(--font-size-18);}
