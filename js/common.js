@@ -192,7 +192,9 @@ const bnToggle = () => {
 
 const accoSch = () => {
     const setItemHeight = (item) => {
-        item.style.height = item.scrollHeight / 10 + 0.1 + 'rem';
+        item.style.height = 'auto'; // height reset
+        const targetHeight = item.scrollHeight; // 다시 scrollHeight 계산
+        item.style.height = targetHeight / 10 + 0.1 + 'rem';
     };
 
     const activeList = document.querySelector(".acco-wrap.search .item.active");
@@ -406,7 +408,7 @@ function initMoDropdown() {
     });
 }
 
-// bbs - accodion
+// bbs - accordion
 function bbsAccoFn() {
     const accoBtn = document.querySelectorAll('.bbs-list.acco li .btn-acco');
     if (!accoBtn) return;
@@ -415,13 +417,17 @@ function bbsAccoFn() {
         el.addEventListener('click', (e) => {
             const targetItem = e.currentTarget.closest("li");
             const list = targetItem.parentElement.querySelectorAll("li");
+            const isOpen = targetItem.classList.contains('on'); // 이미 열려있는지 체크
 
             // 모든 형제 li에서 on 제거
             list.forEach(li => {
                 li.classList.remove('on');
             });
 
-            // 클릭한 li만 toggle
+            // 이미 열려 있었다면 닫기만 하고 종료
+            if (isOpen) return;
+
+            // 닫혀 있었다면 열기
             targetItem.classList.add('on');
         });
     });
