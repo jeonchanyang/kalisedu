@@ -144,10 +144,26 @@ const gnbOpen = () => {
 
 // 상단 설문 종료버튼
 const topClose = () => {
-    const targetLayer = document.querySelector(".noti-wrap");
-    const closeBtn = targetLayer.querySelector(".btn-close");
-    targetLayer.remove();
-}
+    const wrap = document.querySelector('.noti-wrap');
+    const btn = document.querySelector('.btn-noti-close');
+
+    if (!wrap.classList.contains('open')) {
+        // 열기
+        wrap.style.height = wrap.scrollHeight + 'px';
+        wrap.classList.add('open');
+        btn.textContent = '팝업닫기';
+        btn.classList.add('close');
+    } else {
+        // 닫기
+        wrap.style.height = wrap.scrollHeight + 'px';
+        requestAnimationFrame(() => {
+            wrap.style.height = '0';
+        });
+        wrap.classList.remove('open');
+        btn.textContent = '팝업열기';
+        btn.classList.remove('close');
+    }
+};
 
 // 메인배너 우측 Accordion list 토글
 const bnToggle = () => {
