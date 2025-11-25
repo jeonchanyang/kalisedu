@@ -208,9 +208,9 @@ const bnToggle = () => {
 
 const accoSch = () => {
     const setItemHeight = (item) => {
-        item.style.height = 'auto'; // height reset
+        item.style.minHeight = 'auto'; // height reset
         const targetHeight = item.scrollHeight; // 다시 scrollHeight 계산
-        item.style.height = targetHeight / 10 + 0.1 + 'rem';
+        item.style.minHeight = targetHeight / 10 + 0.1 + 'rem';
     };
 
     const activeList = document.querySelector(".acco-wrap.search .item.active");
@@ -230,7 +230,7 @@ const accoSch = () => {
 
             if(isActive){
                 targetItem.classList.remove('active');
-                targetItem.style.height = 6.5 + 'rem';
+                targetItem.style.minHeight = 6.5 + 'rem';
             }else{
                 targetItem.classList.add('active');
                 setItemHeight(targetItem);

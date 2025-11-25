@@ -68,6 +68,7 @@ header .head-bottom{display:flex; flex-wrap:wrap; justify-content:space-between;
 
 .mnu-info{display:flex; gap:2rem; align-items:center; color:var(--font-color-gray);; font-size:var(--font-size-16);}
 .mnu-info > div{display:flex; gap:2rem;}
+.mnu-info > *:not(.after, .before){position:absolute;}
 .mnu-info *{color:inherit; font-size:inherit;}
 .mnu-info b{color:var(--font-color-black);}
 .mnu-info [class*='btn-']{position:relative; padding-left:2.4rem;}
