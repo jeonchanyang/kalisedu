@@ -560,6 +560,33 @@ function btnTopFn(){
     });
 }
 
+function accoOpenByAnchor() {
+    const anchorLinks = document.querySelectorAll('a[href^="#cont"]');
+
+    if(!anchorLinks) return;
+
+    anchorLinks.forEach(a => {
+        a.addEventListener("click", (e) => {
+            const targetId = a.getAttribute("href"); // #cont1
+            const targetLi = document.querySelector(targetId);
+
+            if (!targetLi) return;
+
+            // 기본 앵커 스크롤 작동 전에 아코디언 열어주기
+            setTimeout(() => {
+                // 동일 리스트 내의 모든 .on 제거
+                const parentList = targetLi.parentElement.querySelectorAll("li");
+                parentList.forEach(li => li.classList.remove("on"));
+
+                // 해당 li만 ON
+                targetLi.classList.add("on");
+
+                // 아코디언 열리고 난 뒤 정확한 위치로 스크롤 재조정
+                targetLi.scrollIntoView({ behavior: "smooth", block: "start" });
+            }, 50);
+        });
+    });
+}
 
 document.addEventListener('DOMContentLoaded', () => {
     DropdownMenus();
@@ -572,6 +599,7 @@ document.addEventListener('DOMContentLoaded', () => {
     bgRandomFn();
     tooltipFn();
     btnTopFn();
+    accoOpenByAnchor();
     // pc
     if (window.innerWidth > 1024) {
         gnbOpen();
