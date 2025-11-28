@@ -321,6 +321,10 @@ const initTabs = (containerSelector) => {
             if (!clickedTab || !tabMenuWrap.contains(clickedTab)) return;
             event.stopPropagation();
 
+            if(clickedTab.classList.contains('is-active')){
+                return;
+            }
+
             // 현재 컨테이너의 탭만 활성화
             tabMenus.forEach(tab => removeClass(tab, 'is-active'));
             addClass(clickedTab, 'is-active');
@@ -588,6 +592,44 @@ function accoOpenByAnchor() {
     });
 }
 
+//pc에서도 drag하여 scroll처리
+const tabScrollFn = function(){
+    const slider = document.querySelectorAll('.notice-wrap .tab-head');
+    if(slider){
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+    
+        slider.forEach((el)=>{
+            el.addEventListener('mousedown', (e) => {
+                isDown = true;
+                el.classList.add('active');
+                startX = e.pageX - el.offsetLeft;
+                scrollLeft = el.scrollLeft;
+            });
+            
+    
+            el.addEventListener('mouseleave', () => {
+                isDown = false;
+                el.classList.remove('active');
+            });
+    
+            el.addEventListener('mouseup', () => {
+                isDown = false;
+                el.classList.remove('active');
+            });
+    
+            el.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - el.offsetLeft;
+                const walk = (x - startX) * 1.5; // 속도 조절
+                el.scrollLeft = scrollLeft - walk;
+            });
+        });
+    }
+};
+
 document.addEventListener('DOMContentLoaded', () => {
     DropdownMenus();
     bnToggle();
@@ -603,6 +645,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // pc
     if (window.innerWidth > 1024) {
         gnbOpen();
+        tabScrollFn();
     }
     // mobile
     if (window.innerWidth < 1024) {

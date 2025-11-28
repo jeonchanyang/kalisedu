@@ -181,8 +181,9 @@ span.bn-badge{display:inline-flex; align-items:center; padding:.8rem 2rem; color
 
 /* notice-wrap */
 .notice-wrap{display:flex; flex-direction:column; gap:1.7rem; width:50rem;}
-.notice-wrap .tab-head{display:flex; align-items:flex-end; height:3.8rem;}
-.notice-wrap .tab-head li button{display:inline-flex; padding:0 1.8rem; color:var(--font-color-gray); font-size:var(--font-size-16); transition:all .2s;}
+.notice-wrap .tab-head{display:flex; align-items:flex-end; overflow-x:auto; height:3.8rem;}
+.notice-wrap .tab-head::-webkit-scrollbar{display:none;}
+.notice-wrap .tab-head li button{display:inline-flex; padding:0 1.8rem; color:var(--font-color-gray); font-size:var(--font-size-16); white-space:nowrap; transition:all .2s;}
 .notice-wrap .tab-head li:first-child button{padding-left:0;}
 .notice-wrap .tab-head li:last-child button{padding-right:0;}
 .notice-wrap .tab-head li button.is-active{color:var(--font-color-black) ;font-size:var(--font-size-32); font-weight:700;}
