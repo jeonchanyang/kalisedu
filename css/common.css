@@ -363,4 +363,6 @@ body.modal-open{height:100vh; overflow:hidden;}
     .address-grp address{position:absolute; bottom:6.5rem;}
     .footer-cont .link-area{position:absolute; top:2.7rem; padding-right:2rem;}
     .footer-cont .logo-grp{margin-top:10rem;}
+
+    .btn-noti-close{right:9rem;}
 }
