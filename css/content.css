@@ -263,7 +263,7 @@ span.bn-badge{display:inline-flex; align-items:center; padding:.8rem 2rem; color
 
 /* input calendar */
 input[type="date"]::-webkit-calendar-picker-indicator{opacity:0;}
-input[type="date"]{max-width:15rem; width:100%; font-weight:400; font-size:var(--font-size-20); line-height:3.2rem; background:transparent url(/images/common/icon_calendar.svg) right center / 2.4rem 2.4rem no-repeat; border:none; outline:none;}
+input[type="date"]{max-width:15rem; width:100%; font-weight:400; font-size:var(--font-size-20); line-height:3.2rem; background:transparent url(/images/common/icon_calendar.svg) right center / 2.4rem 2.4rem no-repeat; border:none; outline:none; appearance:none;}
 
 /* date-raange */
 .date-range{display:flex; align-items:center; gap:1rem;}
@@ -1787,8 +1787,10 @@ span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
 
     .bbs-list.acco .bbs-gen-list .btn-acco{flex-wrap:wrap; padding:2rem 1.5rem;}
     .bbs-list.acco .bbs-gen-list .btn-acco .list-division{width:100%; margin-top:.1rem; padding-left:3.8rem; font-size:var(--font-size-16); text-align:left;}
-    .bbs-list.acco .bbs-gen-list .list-txt{width:100%; font-size:var(--font-size-16);}
-    .bbs-list.acco .bbs-gen-list .list-txt p{margin-top:1rem;}
+    .bbs-list.acco .bbs-gen-list .list-txt{width:calc(100% - 3rem); font-size:var(--font-size-16);}
+    .bbs-list.acco .bbs-gen-list .list-division + .list-txt{width:100%;}
+    .bbs-list.acco .bbs-gen-list .list-txt p{margin-top:0; padding-left:4rem;}
+    .bbs-list.acco .bbs-gen-list .list-division + .list-txt p{margin-top:1rem; padding-left:0;}
     .bbs-list.acco .bbs-gen-list .list-txt > i{position:absolute; top:2rem; left:1.5rem; width:2.8rem; height:2.8rem; font-size:var(--font-size-16);}
     .bbs-list.acco .bbs-gen-list .icon-arrow{right:1.5rem;}
     .bbs-list.acco .bbs-gen-list .list-answer{position:relative; padding:0 1.5rem 2rem;}
