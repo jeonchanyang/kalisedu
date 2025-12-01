@@ -644,20 +644,12 @@ document.addEventListener('DOMContentLoaded', () => {
     accoOpenByAnchor();
     tabScrollFn();
 
-    // 최초 실행
     initByMode();
 });
 
 let isMobileMode = window.innerWidth < 1024;
 
 function initByMode() {
-    // 기존 이벤트 모두 제거
-    removeAllEvents('.btn-dropdown');
-    removeAllEvents('.dropdown-item');
-    removeAllEvents('.mo-btn-mnu');
-    removeAllEvents('.mo-btn-dropdown');
-    removeAllEvents('.mo-btn-search');
-    removeAllEvents('.gnb > li');
 
     if (isMobileMode) {
         // 모바일 초기화
@@ -669,16 +661,8 @@ function initByMode() {
     }
 }
 
-// 이벤트 초기화
-function removeAllEvents(selector) {
-    const elements = document.querySelectorAll(selector);
-    elements.forEach(el => {
-        const newEl = el.cloneNode(true);
-        el.parentNode.replaceChild(newEl, el);
-    });
-}
-
 // 리사이징 대응
+/*
 window.addEventListener("resize", () => {
     const nowMobile = window.innerWidth < 1024;
 
@@ -687,3 +671,4 @@ window.addEventListener("resize", () => {
         initByMode();
     }
 });
+*/
