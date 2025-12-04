@@ -1396,6 +1396,10 @@ span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
     .inner-wrap.fix .area-list > li .dl-grp .dl-cont > p{padding-right:2rem;}
 }
 
+@media(max-width:1240px){
+    .tab-container.full .tab-head li .tab-menu{font-size:2rem;}
+}
+
 @media(max-width:1024px){
     .inner-wrap{padding:0 2rem;}
     .inner-wrap .inner + .inner{margin-top:4rem;}
@@ -2221,4 +2225,8 @@ span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
 
     .mission-wrap > strong{font-size:2.6rem;}
     .vision-wrap .target .txt-grp p{font-size:1.8rem;}
+}
+
+@media(hover:hover){
+
 }
