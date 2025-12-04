@@ -2033,5 +2033,43 @@
     </div>
 
     <script src="/js/common.js"></script>
+    <script>
+    // 탭 클릭시 하위 sub탭으로 스크롤 이동 및 포커스처리
+    function schFocusFn(){
+        const btnSch = document.querySelectorAll('.btn-search-area .btn-sch');
+
+        btnSch.forEach((el)=>{
+            el.addEventListener('click', (e)=>{
+                
+                const tabContent = el.closest('.tab-content');
+                if(!tabContent) return;
+
+                const subTab = tabContent.querySelector('.tab-container.sub');
+                if(!subTab) return;
+
+                // scroll 이동
+                subTab.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start"
+                });
+
+                // focus 처리
+                if (!subTab.hasAttribute("tabindex")) {
+                    subTab.setAttribute("tabindex", "-1");
+                }
+
+                // focus 딜레이
+                setTimeout(()=>{
+                    subTab.focus();
+                }, 300);
+
+            });
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', ()=>{
+        schFocusFn();
+    });
+    </script>
 </body>
 </html>
