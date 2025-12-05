@@ -1600,6 +1600,7 @@ span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
 
     .card-list{flex-direction:column; gap:2rem;}
     .card-list li{width:100%;}
+    .card-list li:hover{transform:unset;}
     .card-list li .tit{height:8.8rem; font-size:var(--font-size-22);}
     .card-list li .card-inner{padding:0 2rem 2rem;}
     .card-list li .sub-tit{font-size:var(--font-size-16);}
