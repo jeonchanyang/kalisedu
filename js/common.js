@@ -258,44 +258,74 @@ const topClose = () => {
 
 // 메인배너 우측 Accordion list 토글
 const bnToggle = () => {
-    const isMobile = window.innerWidth < 1024;
+
+    const isMobile = () => window.innerWidth < 1024;
+
+    const getDefaultHeight = () => isMobile() ? "9rem" : "11rem";
 
     const setLiHeight = (li) => {
+        // scrollHeight rem 변환
         li.style.height = li.scrollHeight / 10 + 'rem';
     };
 
-    const activeList = document.querySelector(".acco-wrap li.active");
-    if(activeList){
-        setTimeout(()=>{
-            setLiHeight(activeList);
-        }, 200);
-    }
-    
-    const accoBtn = document.querySelectorAll(".acco-wrap li.item > button");
-    accoBtn.forEach((el)=>{
-        el.addEventListener("click", (e)=>{
-            e.preventDefault();
-            e.stopPropagation();
-            const li = el.parentElement;
-            const isActive = li.classList.contains('active');
-
-            if(isActive){
-                return
-            }else{
-                document.querySelectorAll(".acco-wrap li").forEach((el)=>{
-                    el.classList.remove('active');
-                    if(!isMobile){
-                        el.style.height = 11 + 'rem';
-                    }else{
-                        el.style.height = 9 + 'rem';
-                    }
-                });
-                li.classList.add('active');
-                setLiHeight(li);
+    const resetInactiveHeights = () => {
+        document.querySelectorAll(".acco-wrap li").forEach((el) => {
+            if (!el.classList.contains("active")) {
+                el.style.height = getDefaultHeight();
             }
         });
+    };
+
+    const recalcActiveHeight = () => {
+        const activeList = document.querySelector(".acco-wrap li.active");
+        if (activeList) setLiHeight(activeList);
+    };
+
+    // --------------------------
+    // 클릭 이벤트 (중복 방지)
+    // --------------------------
+    const accoBtn = document.querySelectorAll(".acco-wrap li.item > button");
+    accoBtn.forEach((btn) => {
+
+        // 기존 이벤트 제거 방지 → once로 제한
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            e.stopPropagation();
+
+            const li = btn.parentElement;
+            const isActive = li.classList.contains("active");
+
+            if (isActive) return;
+
+            // 전체 초기화
+            document.querySelectorAll(".acco-wrap li").forEach((el) => {
+                el.classList.remove("active");
+                el.style.height = getDefaultHeight();
+            });
+
+            // 활성화
+            li.classList.add("active");
+            setLiHeight(li);
+        });
     });
-}
+
+    let resizeTimer = null;
+
+    window.addEventListener("resize", () => {
+
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(() => {
+
+            // 1) 비활성 항목 height 초기화 (모바일/PC 기준 반영)
+            resetInactiveHeights();
+
+            // 2) active된 항목 다시 계산
+            recalcActiveHeight();
+
+        }, 150); // resize 끝난 후 처리 → 깜빡임 방지
+
+    });
+};
 
 // 검색영역 높이 초기화
 function setItemHeight(item){
