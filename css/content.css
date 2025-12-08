@@ -298,7 +298,7 @@ input[type="date"]{max-width:15rem; width:100%; font-weight:400; font-size:var(-
 
 /* card-list */
 .card-wrap{display:flex; flex-direction:column; gap:3rem; align-items:center;}
-.card-list{display:flex; gap:2.8rem; flex-wrap:wrap;}
+.card-list{display:flex; gap:2.8rem; flex-wrap:wrap; width:100%;}
 .card-list li{width:calc(100% / 4 - 2.8rem * 3 / 4); background:#fff; transition:box-shadow 0.3s, transform 0.3s; border-radius:1rem; box-shadow:.2rem .2rem 1.5rem 0 rgba(0, 0, 0, .1);}
 .card-list li:hover{transform:translateY(-.5rem); box-shadow:0 8px 20px rgba(0, 0, 0, 0.08);}
 .card-list li .card-inner{padding:0 4rem 2rem;}
