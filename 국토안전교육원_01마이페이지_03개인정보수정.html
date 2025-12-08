@@ -206,11 +206,19 @@
                                 </dd>
                                 <dt class="new-pw"><label for="userPwNew">새 비밀번호</label></dt>
                                 <dd class="new-pw">
-                                    <input type="password" id="userPwNew" name="userPwNew" class="ipt" placeholder="비밀번호를 입력해주세요." autocomplete="new-password">
+                                    <!-- <input type="password" id="userPwNew" name="userPwNew" class="ipt" placeholder="비밀번호를 입력해주세요." autocomplete="new-password"> -->
+                                    <div class="pw-wrap">
+                                        <input type="password" name="userPwNew" id="userPwNew" class="ipt w100p password" autocomplete="new-password" placeholder="비밀번호를 입력해주세요.">
+                                        <button type="button" class="btn-pw-toggle" aria-pressed="false" aria-label="비밀번호 보기"></button>
+                                    </div>
+
                                 </dd>
                                 <dt class="new-pw"><label for="userPwNewChk">새 비밀번호 확인</label></dt>
                                 <dd class="new-pw has-btn">
-                                    <input type="password" id="userPwNewChk" name="userPwNewChk" class="ipt" placeholder="비밀번호를 입력해주세요.">
+                                    <div class="pw-wrap">
+                                        <input type="password" name="userPwNewChk" id="userPwNewChk" class="ipt w100p password" autocomplete="new-password" placeholder="비밀번호를 입력해주세요.">
+                                        <button type="button" class="btn-pw-toggle" aria-pressed="false" aria-label="비밀번호 보기"></button>
+                                    </div>
                                     <button type="button" class="btn btn-cmn fwsb">확인</button>
                                 </dd>
                                 <dt><label for="userEmail">이메일</label></dt>
@@ -458,6 +466,25 @@
             }else{
                 return
             }
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll('.btn-pw-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const wrap = button.closest('.pw-wrap');
+                if (!wrap) return;
+                const input = wrap.querySelector('.ipt.password');
+                if (!input) return;
+
+                const isMasked = input.type === 'password';
+                // input status
+                input.type = isMasked ? 'text' : 'password';
+
+                // 접근성
+                button.setAttribute('aria-pressed', String(!isMasked));
+                button.setAttribute('aria-label', isMasked ? '비밀번호 숨기기' : '비밀번호 보이기');
+            });
         });
     });
     </script>
