@@ -58,6 +58,7 @@ span.bn-badge{display:inline-flex; align-items:center; padding:.8rem 2rem; color
 
 /* tab */
 .tab-content{display:none;}
+.tab-content .tab-container:focus-visible{outline:none;}
 .tab-content.is-active{display:block;}
 .tab-container.full .tab-head{display:flex; overflow:hidden; border-radius:1rem 1rem 0 0;}
 .tab-container.full .tab-head li{flex-grow:1; width:100%;}
@@ -1964,13 +1965,13 @@ span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
     .membership-form.correction fieldset dl dd .btn{height:5.2rem;}
     .membership-form.correction fieldset dl dd.cover{position:relative;}
     .membership-form.correction fieldset dl dd.cover .ipt{position:relative; padding-right:10rem;}
-    .membership-form.correction fieldset dl dd.cover .btn{position:absolute; top:0; right:0; min-width:unset; width:10rem; border-radius:0 1rem 1rem 0;}
+    .membership-form.correction fieldset dl dd.cover:not(.pw) .btn{position:absolute; top:0; right:0; min-width:unset; width:10rem; border-radius:0 1rem 1rem 0;}
     .membership-form.correction fieldset dl dd.has-btn .ipt{width:calc(100% - 12rem);}
     .membership-form.correction fieldset dl dd.has-btn .btn{width:10rem;}
     .membership-form.correction fieldset dl dt.auth{margin:0;}
 
     .cmp-modal .modal-container.secession{padding-top:7rem;}
-    .cmp-modal .modal-container.secession .h3-title{margin-bottom:2rem; font-size:var(--font-size-32);}
+    .cmp-modal .modal-container.secession .h3-title{flex-wrap:wrap; margin-bottom:2rem; font-size:var(--font-size-32);}
     .cmp-modal .bg-gray-box{padding:2.5rem 1rem;}
     .cmp-modal .bg-gray-box .txt18{font-size:var(--font-size-17);}
     .cmp-modal .modal-container.secession .modal-footer .btn-cmn{order:0;}
