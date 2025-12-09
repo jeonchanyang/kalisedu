@@ -474,7 +474,8 @@ function initTabs(containerSelector) {
 
         tabMenuWrap.addEventListener('click', handler);
 
-        if(container.classList.contains('sub')) {
+        // initTab중 PC, Mobile 동일하게 탭을 사용할경우 subTabRegistry에 추가 push
+        if(container.classList.contains('sub') || container.classList.contains('notice-wrap')) {
             subTabRegistry.push({ element: tabMenuWrap, handler });
         } else {
             parentTabRegistry.push({ element: tabMenuWrap, handler });
@@ -800,7 +801,7 @@ function initByMode() {
         // PC 이벤트 등록
         initTabs('.tab-container.full');
         initTabs('.tab-container.sub');
-        initTabs('.tab-container.notice-wrap');
+        // initTabs('.tab-container.notice-wrap');
     }
 }
 
