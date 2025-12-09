@@ -674,6 +674,9 @@ ol.num-box li .sub-tit::before{content:counter(cnt); display:inline-flex; justif
 .rating-list .rating-choice p + .choice-item{margin-top:1rem;}
 .rating-list .choice-item{display:flex; justify-content:space-between;}
 .rating-list .choice-item form .radio-group{height:100%;}
+.rating-list .choice-item .radio-group{gap:0;}
+.rating-list .choice-item .radio-group label{min-width:14rem;}
+
 
 /* cap-list */
 .cap-list.bg-type01 .bg{background:var(--primary-color);}
