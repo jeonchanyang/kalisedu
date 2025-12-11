@@ -218,13 +218,15 @@ span.bn-badge{display:inline-flex; align-items:center; padding:.8rem 2rem; color
 
 /* calendar-header */
 .calendar-header{display:flex; justify-content:space-between; align-items:center; position:absolute; top:0; left:0; width:calc(100% - 20rem); height:3.2rem;}
-.calendar-header .title{font-size:var(--font-size-32);}
+.calendar-header .title{display:inline-flex; gap:1rem; align-items:center; font-size:var(--font-size-32);}
+.calendar-header .title .badge-all{display:inline-block; padding:.6rem 1.2rem; font-weight:500; font-size:1.6rem; background:#DFE3EB; border-radius:1rem;}
 .badge-grp{display:flex; gap:2rem;}
 .badge-grp .badge{display:inline-flex; gap:.8rem; align-items:center; font-size:var(--font-size-16);}
 .badge-grp .badge::before{content:''; flex:0 0 auto; display:inline-block; width:1.6rem; height:1.6rem; border-radius:50%;}
 .badge-grp .badge.badge-type01::before{background:#50AAFF;}
 .badge-grp .badge.badge-type02::before{background:#FFCC00;}
 .badge-grp .badge.badge-type03::before{background:#8AC650;}
+.calendar-header .badge-grp .badge.active{font-weight:700;}
 
 /* full-calendar */
 .full-calendar.fc, .full-calendar.fc .fc-daygrid, .fc-scrollgrid, .fc .fc-scroller-harness, .fc .fc-scroller, .fc .fc-daygrid-body, .fc .fc-scrollgrid table{height:100%;}
@@ -1370,7 +1372,7 @@ span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
     .inner-wrap.contents{gap:2rem;}
     .full-calendar.fc .fc-toolbar{width:16rem;}
     .badge-grp{gap:1.5rem;}
-    .calendar-header{width:calc(100% - 17rem);}
+    .calendar-header{gap:2rem; width:calc(100% - 17rem);}
     .notice-wrap{width:40rem;}
     .card-list{gap:1.4rem;}
     .card-list li{width:calc(100% / 3 - 1.4rem * 2 / 3);}
@@ -1484,6 +1486,7 @@ span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
     .notice-wrap .tab-head li button.is-active{font-size:var(--font-size-30);}
 
     .calendar-header{flex-direction:column; gap:7rem; align-items:flex-start; width:100%;}
+    .calendar-header .title{font-size:3rem;}
     .full-calendar.fc{padding-top:6rem;}
     .full-calendar.fc .fc-toolbar{width:17.5rem; margin:0 auto 6.6rem;}
 
