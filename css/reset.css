@@ -292,7 +292,7 @@ a {
     /* 배경색 초기화 */
 }
 
-.ir-text, .sr-only{
+.ir-text, .sr-only, input[type="hidden"]{
     position: absolute;
     width: 1px;
     height: 1px;

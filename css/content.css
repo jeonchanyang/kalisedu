@@ -1044,7 +1044,8 @@ span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
 
 
 /* 통합검색 - integrated */
-.wrap.integrated{background:#f2f4f6 url(/images/common/img_integrated_bg.webp) center top / 100vw 42.4rem no-repeat;}
+.wrap.integrated{position:relative; background:#f2f4f6; z-index:0;}
+.wrap.integrated::before{content:''; display:block; position:absolute; top:0; width:100%; height:42.4rem; background:url(/images/common/img_integrated_bg.webp) top / 100%; z-index:-1;}
 .wrap.integrated .content-wrap{background:transparent;}
 .wrap.integrated header{flex-direction:row; gap:3rem; align-items:flex-end; width:100%; padding:2rem 1rem 0; background:transparent;}
 .wrap.integrated header .logo{display:inline-flex; width:23.9rem; height:5.8rem; text-indent:-9999px; background:url(/images/common/icon_main_logo2.svg) center center /  100% no-repeat;}

@@ -139,7 +139,7 @@ select.ipt{padding-right:4rem; background:#fff url(/images/common/icon_select_ar
 
 /* footer */
 .footer{background:#fff;}
-.max-width-inner{max-width:152rem; margin:0 auto;}
+.max-width-inner{max-width:158rem; margin:0 auto;}
 .bd-line-grp{border-top:.1rem solid #DFE3EB; border-bottom:.1rem solid #DFE3EB;}
 .footer-banner-slider{position:relative; padding:1.6rem 0;}
 .footer-banner-slider .swiper{max-width:131.2rem;}
@@ -367,7 +367,7 @@ body.modal-open{height:100vh; overflow:hidden;}
     
 
     .footer-cont{position:relative; padding-bottom:14rem;}
-    .footer-cont .txt-list{flex-direction:column;}
+    .footer-cont .txt-list{flex-direction:column; margin-top:1.2rem;}
     .footer-cont .family-grp .dropdown-wrap{width:100%; margin-top:2.5rem;}
     .address-grp address{position:absolute; bottom:6.5rem;}
     .footer-cont .link-area{position:absolute; top:2.7rem; padding-right:2rem;}
