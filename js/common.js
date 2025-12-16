@@ -595,13 +595,14 @@ function bbsAccoFn() {
 }
 
 // main intro bg(random)
-function bgRandomFn(){
+function bgRandomFn() {
     const banner = document.querySelector('.main-bn');
-    if(!banner) return;
+    if (!banner) return;
 
-    const randomBg = Math.random() < 0.5 ? 'bg1' : 'bg2';
-    if(randomBg) banner.classList.add(randomBg);
-    requestAnimationFrame(() => banner.classList.add('show'));
+    if (Math.random() < 0.5) {
+        banner.classList.replace('bg1', 'bg2');
+    }
+    banner.classList.add('show');
 }
 
 // mobile - 상단 검색버튼

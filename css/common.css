@@ -20,12 +20,12 @@ header{display:flex; flex-direction:column; background:#fff; z-index:999;}
 .noti-wrap .img-noti{flex:0 0 auto; position:absolute; bottom:0; width:11.2rem; height:9.2rem;}
 .noti-wrap .img-noti img{display:block; width:100%;}
 
-.noti-wrap .control-wrap.noti{display:flex; align-items:center; position:absolute; bottom:1rem; right:16.5rem; z-index:2;}
+.noti-wrap .control-wrap.noti{display:flex; align-items:center; position:absolute; bottom:0; right:16.5rem; z-index:2;}
 .noti-wrap .control-wrap.noti .count{color:#fff; font-size:var(--font-size-16);}
 .noti-wrap .control-wrap.noti .count .current{font-weight:700;}
 
 .noti-wrap .indicator{display:inline-flex;}
-.noti-wrap .indicator > button{height:1.4rem; padding:0 .8rem;}
+.noti-wrap .indicator > button{height:auto; padding:1rem .8rem;}
 .noti-wrap .indicator > button img{display:block; height:100%;}
 
 .btn-noti-close{display:inline-flex; justify-content:center; align-items:center; gap:.8rem; position:absolute; top:0; right:17rem; width:9rem; height:3rem; color:#121212; font-weight:500; font-size:var(--font-size-14); background:#fff; transition:all .3s ease; border:.1rem solid #D9D9D9; border-radius:0 0 1rem 1rem;}
@@ -39,7 +39,7 @@ header .head-top{display:flex; justify-content:space-between; align-items:center
 header .head-top .logo a{display:inline-flex; width:23.9rem; height:5.8rem; text-indent:-9999px; background:url(/images/common/icon_main_logo.svg) center center /  100% no-repeat;}
 header .head-top .sch-area{flex-basis:50%; align-self:flex-end; position:relative; margin-bottom:1.3rem;}
 header .head-top .sch-area input{width:100%; height:5.4rem; padding:1.8rem 5rem 1.8rem 4rem; font-size:var(--font-size-16); border-radius:2.7rem; border:none;}
-header .head-top .btn-sch{display:inline-flex; position:absolute; top:50%; right:1.6rem; width:2rem; height:2rem; padding:2rem; transform:translateY(-50%); background:url(/images/common/icon_serch.svg) center center / 2rem 2rem no-repeat;}
+header .head-top .btn-sch{display:inline-flex; position:absolute; top:50%; right:1.6rem; width:2rem; height:2rem; padding:2rem; text-indent:-9999px; transform:translateY(-50%); background:url(/images/common/icon_serch.svg) center center / 2rem 2rem no-repeat;}
 header .head-top .btn-sch.close{background-image:url(/images/common/icon_sch_close.svg); background-size:1.4rem 1.4rem;}
 header .head-bottom{display:flex; flex-wrap:wrap; justify-content:space-between; position:relative; padding:var(--pd-0-17); border-top:.1rem solid #DFE3EB;}
 
@@ -144,10 +144,12 @@ select.ipt{padding-right:4rem; background:#fff url(/images/common/icon_select_ar
 .footer-banner-slider{position:relative; padding:1.6rem 0;}
 .footer-banner-slider .swiper{max-width:131.2rem;}
 .footer-banner-slider .swiper .swiper-slide{width:auto;}
+.footer-banner-slider .swiper-button > button{width:4.5rem; height:4.6rem;}
+.footer-banner-slider .swiper-button > button > img{display:block; width:100%;}
 .footer-banner-slider .swiper-button-next:after, 
 .footer-banner-slider .swiper-button-prev:after{display:none;}
-.footer-banner-slider .swiper .swiper-slide > a{display:inline-block; height:5rem;}
-.footer-banner-slider .swiper .swiper-slide > a img{display:block; height:100%;}
+.footer-banner-slider .swiper .swiper-slide > a{display:inline-block; width:100%; height:5rem;}
+.footer-banner-slider .swiper .swiper-slide > a img{display:block; width:auto; height:100%;}
 
 .footer-cont{display:flex; gap:3.8rem; padding:3.2rem 0 4.4rem; font-size:var(--font-size-16);}
 .footer-cont .address-grp{flex-grow:1; max-width:96rem;}
@@ -166,6 +168,9 @@ select.ipt{padding-right:4rem; background:#fff url(/images/common/icon_select_ar
 .footer-cont .txt-list li dl dd{flex-basis:calc(100% - 12rem); flex-grow:1;}
 .footer-cont address{margin-top:2.6rem; color:var(--font-color-gray);}
 .footer-cont .family-grp .dropdown-wrap{width:24rem; margin-top:.8rem;}
+.footer-cont .logo-grp .footer-logo{display:inline-flex; width:23rem; height:5.8rem;}
+.footer-cont .logo-grp .footer-logo img{display:block; width:100%;}
+
 
 /* dropdown */
 .dropdown-wrap{min-width:24rem;}
