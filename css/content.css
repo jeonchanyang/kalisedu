@@ -170,6 +170,11 @@ span.bn-badge{display:inline-flex; align-items:center; padding:.8rem 2rem; color
 .tb-layout.bbs table td{padding-right:4rem;}
 .tb-layout.bbs table .ipt{height:4.8rem;}
 
+.tb-layout.demerit table td{padding:.5rem 2rem;}
+.tb-layout.demerit table td:first-child{text-align:left;}
+.tb-layout.demerit colgroup col:nth-of-type(2){width:20%;}
+.sub-inner + .desc{display:inline-block; margin-top:1rem;}
+
 /* contents */
 .inner-wrap{padding:0 1rem;}
 .max-width{max-width:160rem; margin:0 auto;}
@@ -297,6 +302,7 @@ input[type="date"]{max-width:15rem; width:100%; font-weight:400; font-size:var(-
 .edu-list li.case01 .dl-grp dl dt{background:rgba(138, 198, 80, 0.3);}
 .edu-list li.case02 .dl-grp dl dt{background:rgba(20, 100, 255, 0.3);}
 .edu-list li.case03 .dl-grp dl dt{background:rgba(0, 0, 0, 0.1);}
+.edu-list + .desc{display:inline-block; margin-top:1rem;}
 
 /* card-list */
 .card-wrap{display:flex; flex-direction:column; gap:3rem; align-items:center;}
