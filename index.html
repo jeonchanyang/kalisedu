@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>국토안전교육원 - KALIS</title>
-    <link rel="preload" href="/css/reset.css" as="style">
-    <link rel="preload" href="/css/common.css" as="style">
-    <link rel="preload" href="/css/content.css" as="style">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/content.css">
@@ -257,6 +254,16 @@
         </header>
         <main class="content-wrap" id="content">
             <section class="inner-wrap main-bn bg1">
+                <div class="main-bg">
+                    <div class="pc-only">
+                        <img class="type01" src="/images/common/img_main_banner.webp" alt="메인배너 이미지" fetchpriority=high>
+                        <img class="type02" src="/images/common/img_main_banner02.webp" alt="메인배너 이미지" fetchpriority=high>
+                    </div>
+                    <div class="mo-only" aria-hidden="true">
+                        <img class="type01" src="/images/mo/mo_img_main_banner.webp" aria-hidden="true" alt="메인배너 이미지" fetchpriority=high>
+                        <img class="type02" src="/images/mo/mo_img_main_banner02.webp" aria-hidden="true" alt="메인배너 이미지" fetchpriority=high>
+                    </div>
+                </div>
                 <div class="txt-grp mo-only" aria-hidden="true">
                     <h2 class="title">국토 안전 역량을 완성합니다!</h2>
                     <p class="disc">예방부터 대응까지, 안전한 국토를 위한 전문인력양성은 국토안전교육원에서!!</p>
@@ -315,7 +322,7 @@
                                     <button type="button" class="swiper-button-next"><img src="/images/common/icon_slide_next.svg" alt="다음 이미지 보기"></button>
                                 </div>
                                 <script>
-                                    const swiper1 = new Swiper(".type01", {
+                                    const swiper1 = new Swiper(".mySwiper.type01", {
                                     slidesPerView: "auto", // 한번에 보여지는 슬라이드 숫자
                                     slidesPerGroup: 1, // 한번에 이동되는 슬라이드 숫자
                                     spaceBetween: 1,
