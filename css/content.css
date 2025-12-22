@@ -585,13 +585,14 @@ span.badge.pri{display:inline-block; min-width:16rem; padding:.8rem 0; color:#ff
 .way-box.col-type dl p{line-height:2.6rem;}
 .way-box.col-type dl p + p{margin-top:1rem;}
 .way-box.col-type dd .num-type-box.type02{margin-top:1.5rem;}
-.way-box.col-type .btn-link > span{display:inline-flex; flex-wrap:wrap; align-items:center; gap:.5rem;}
+.way-box.col-type .btn-link > span{display:inline-flex; flex-wrap:wrap; align-items:center; gap:0 .5rem; line-height:2.4rem;}
 .way-box.col-type span.ico-badge{min-width:28rem;}
 
 span.ico-badge{display:inline-flex; justify-content:center; min-width:13rem; padding:.8rem 3.5rem; color:#fff; font-weight:600; font-size:var(--font-size-20); line-height:2.4rem; background:var(--primary-color); border-radius:5rem;}
 .btn-link{display:inline-flex; align-items:center; gap:1rem; color:#1464FF;}
 .h3-title + .way-box{margin-top:3rem;}
 p + strong.sub-tit{margin-top:2rem;}
+p.bullet + strong.sub-tit.txt-blue{margin:2rem 0 1rem;}
 .layout-col + .sub-tit{margin-top:2rem;}
 
 ol.num-box{counter-reset:cnt;}
@@ -1735,7 +1736,7 @@ span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
     .way-box.col-type dl p + p{margin-top:.5rem;}
 
     .num-type-box.type02{gap:2.8rem;}
-    .num-type-box.type02 li{padding:2rem; background:transparent; border:.1rem solid #D9D9D9;}
+    .num-type-box.type02 li{padding:2rem; background:#fff;}
     .num-type-box.type02 li::after{right:unset; top:unset; left:50%; bottom:-4.3rem; transform:rotate(90deg) translateX(-50%);}
     
     .mo-mt20{margin-top:2rem !important;}

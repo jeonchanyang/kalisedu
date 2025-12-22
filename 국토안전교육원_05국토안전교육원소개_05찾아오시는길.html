@@ -192,201 +192,65 @@
             </div>
             <section class="inner-wrap max-width">
                 <h2 class="h2-title">찾아오시는 길</h2>
-                <div class="tab-container full">
-                    <div class="mo-drop tab">
-                        <button type="button" class="btn mo-btn-dropdown">수도권(일산) 교육장</button>
-                        <div class="mo-dropdown-list">
-                            <ul class="tab-head">
-                                <li><button type="button" class="tab-menu" data-tab="tab1-con1">김천 교육장</button></li>
-                                <li><button type="button" class="tab-menu is-active" data-tab="tab1-con2">수도권(일산) 교육장</button></li>
-                            </ul>
+                <div class="inner map-wrap">
+                    <div class="map"><span style="display:inline-block; padding:2rem; font-size:3rem; background:#ddd;">지도 API 영역 width="100%" height="100%"로 사용 지도영역의 크기는 API를 감싼 class="map"에서 제어 해당 텍스트는 삭제</span></div>
+                    <div class="main-info">
+                        <div class="badge btn btn-cmn">교육장소</div>
+                        <div class="list-grp">
+                            <dl class="adress">
+                                <dt>주소</dt>
+                                <dd>(39660) 경상북도 김천시 혁신로 315-6<button type="button"><i class="ico icon-copy"></i></button></dd>
+                            </dl>
+                            <dl class="tel">
+                                <dt>연락처</dt>
+                                <dd>대표전화 1588-8788</dd>
+                            </dl>
+                            <a href="#" class="btn btn-map">지도 자세히보기  →</a>
                         </div>
                     </div>
-                    <div class="tab-content-wrap">
-                        <div class="tab-content" id="tab1-con1">
-                            <div class="inner map-wrap">
-                                <div class="map"><span style="display:inline-block; padding:2rem; font-size:3rem; background:#ddd;">지도 API 영역 width="100%" height="100%"로 사용 지도영역의 크기는 API를 감싼 class="map"에서 제어 해당 텍스트는 삭제</span></div>
-                                <div class="main-info">
-                                    <div class="badge btn btn-cmn">김천 교육장</div>
-                                    <div class="list-grp">
-                                        <dl class="adress">
-                                            <dt>주소</dt>
-                                            <dd>(우)39660 경북 김천시 혁신로 315-6(율곡동 1100)<button type="button"><i class="ico icon-copy"></i></button></dd>
-                                        </dl>
-                                        <dl class="tel">
-                                            <dt>연락처</dt>
-                                            <dd>대표전화 1588-8788</dd>
-                                        </dl>
-                                        <a href="#" class="btn btn-map">지도 자세히보기  →</a>
-                                    </div>
-                                </div>
+                </div>
+
+                <div class="inner">
+                    <h3 class="h3-title"><img src="/images/common/icon_h3_tit_logo.svg" alt="메뉴타이틀 로고">대중교통</h3>
+
+                    <ul class="transport-list">
+                        <li>
+                            <div class="img-frame">
+                                <img src="/images/common/icon_train.svg" alt="기차 아이콘">
                             </div>
-
-                            <div class="inner">
-                                <h3 class="h3-title"><img src="/images/common/icon_h3_tit_logo.svg" alt="메뉴타이틀 로고">교통편 안내</h3>
-
-                                <ul class="transport-list">
-                                    <li>
-                                        <div class="img-frame">
-                                            <img src="/images/common/icon_train.svg" alt="기차 아이콘">
-                                        </div>
-                                        <dl class="list">
-                                            <dt>기차 이용</dt>
-                                            <dd>
-                                                <p class="bullet">김천(구미)역(KTX) - 택시요금 약 5,000원 -> 김천교육장</p>
-                                            </dd>
-                                        </dl>
-                                    </li>
-                                    <li>
-                                        <div class="img-frame">
-                                            <img src="/images/common/icon_bus.svg" alt="버스 아이콘">
-                                        </div>
-                                        <dl class="list">
-                                            <dt>버스 이용</dt>
-                                            <dd>
-                                                <p class="bullet">김천시외버스터미널  →  12번 버스  →  한국전력기술 정류장 하차</p>
-                                                <p class="bullet">김천시외버스터미널  →  12-1번 버스  →  한국전력기술 정류장 하차</p>
-                                                <p class="bullet">김천시외버스터미널  →  12-3번 버스  →  한국전력기술 정류장 하차</p>
-                                            </dd>
-                                        </dl>
-                                    </li>
-                                    <li>
-                                        <div class="img-frame">
-                                            <img src="/images/common/icon_car.svg" alt="자가용 아이콘">
-                                        </div>
-                                        <dl class="list">
-                                            <dt>자가용 이용</dt>
-                                            <dd>
-                                                <p class="bullet">동김천IC  →  혁신로  →  김천 교육장</p>
-                                            </dd>
-                                        </dl>
-                                    </li>
-                                </ul>
+                            <dl class="list">
+                                <dt>기차 이용</dt>
+                                <dd>
+                                    <p class="bullet">김천(구미)역(KTX) → (택시이용) 택시요금 약 5,000원 -> 국토안전교육원</p>
+                                    <p class="bullet">김천(구미)역(KTX) → (버스이용) 일반 김천12-6 버스 -> 김천경찰서앞.첨/한국전력기술 건너 정류장 하차</p>
+                                    <p class="bullet">김천(구미)역(KTX) → (버스이용) 일반 KTX14-6 버스 -> 김천경찰서앞.첨/한국전력기술 건너 정류장 하차</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="img-frame">
+                                <img src="/images/common/icon_bus.svg" alt="버스 아이콘">
                             </div>
-
-                            <div class="inner">
-                                <h3 class="h3-title"><img src="/images/common/icon_h3_tit_logo.svg" alt="메뉴타이틀 로고">대구국제공항</h3>
-
-                                <ul class="transport-list">
-                                    <li>
-                                        <div class="img-frame">
-                                            <img src="/images/common/icon_bus.svg" alt="버스 아이콘">
-                                        </div>
-                                        <dl class="list">
-                                            <dt>버스 이용</dt>
-                                            <dd>
-                                                <p class="bullet">대구공항정류소  →  구미종합터미널  →  5000번 버스  →  한국전력기술 정류장 하차</p>
-                                                <p class="bullet">대구공항정류소  →  구미종합터미널  →  5200번 버스  →  한국전력기술 정류장 하차</p>
-                                            </dd>
-                                        </dl>
-                                    </li>
-                                    <li>
-                                        <div class="img-frame">
-                                            <img src="/images/common/icon_taxi.svg" alt="택시 아이콘">
-                                        </div>
-                                        <dl class="list">
-                                            <dt>택시 이용</dt>
-                                            <dd>
-                                                <p class="bullet">택시 이용시 대략 77,000원 예상(김천교육장)</p>
-                                            </dd>
-                                        </dl>
-                                    </li>
-                                </ul>
+                            <dl class="list">
+                                <dt>버스 이용</dt>
+                                <dd>
+                                    <p class="bullet">김천시외버스터미널  →  일반 53번 버스  →  용전 정류장 하차</p>
+                                    <p class="bullet">김천시외버스터미널  →  일반 55번 버스  →  용전 정류장 하차</p>
+                                </dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <div class="img-frame">
+                                <img src="/images/common/icon_car.svg" alt="자가용 아이콘">
                             </div>
-                        </div>
-
-                        <div class="tab-content is-active" id="tab1-con2">
-                            <div class="inner map-wrap">
-                                <div class="map"><span style="display:inline-block; padding:2rem; font-size:3rem; background:#ddd;">지도 API 영역 width="100%" height="100%"로 사용 지도영역의 크기는 API를 감싼 class="map"에서 제어 해당 텍스트는 삭제</span></div>
-                                <div class="main-info">
-                                    <div class="badge btn btn-cmn">수도권(일산) 교육장</div>
-                                    <div class="list-grp">
-                                        <dl class="adress">
-                                            <dt>주소</dt>
-                                            <dd>경기도 고양시 일산서구 고양대로 315 <button type="button"><i class="ico icon-copy"></i></button></dd>
-                                        </dl>
-                                        <dl class="tel">
-                                            <dt>연락처</dt>
-                                            <dd>대표전화 1588-8788</dd>
-                                        </dl>
-                                        <a href="#" class="btn btn-map">지도 자세히보기  →</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="inner">
-                                <h3 class="h3-title"><img src="/images/common/icon_h3_tit_logo.svg" alt="메뉴타이틀 로고">교통편 안내</h3>
-
-                                <ul class="transport-list">
-                                    <li>
-                                        <div class="img-frame">
-                                            <img src="/images/common/icon_subway.svg" alt="지하철 아이콘">
-                                        </div>
-                                        <dl class="list">
-                                            <dt>지하철 이용</dt>
-                                            <dd>
-                                                <p class="bullet">3호선 대화역(종점) 하차 3번출구</p>
-                                            </dd>
-                                        </dl>
-                                    </li>
-                                    <li>
-                                        <div class="img-frame">
-                                            <img src="/images/common/icon_bus.svg" alt="버스 아이콘">
-                                        </div>
-                                        <dl class="list">
-                                            <dt>버스 이용</dt>
-                                            <dd>
-                                                <p class="bullet">마을버스 058(구11-2), 080(구100), 082(구101), 090(구9), 091(구9-1), 092(구9-2), 093(구01)</p>
-                                                <p class="bullet">도시버스 15, 150(공항버스), 151, 55, 55-1, 55-2, 55-3, 550, 56, 57, 62, 72, 600, 605, 72, 82, 97</p>
-                                                <p class="bullet">직행버스 770, 870, 873</p>
-                                                <p class="bullet">
-                                                    직행버스 M7106, 1000, 1001, 2000, 3300, 8880, 9700, 9701, 9707, 9708, 9714<br>
-                                                    <span class="desc txt-red">※ 대화역에서 버스를 이용하시면 건설센터후문에 하차하시게 되어 정문까지의 진입이 어려움이 있으므로 도보 또는 택시를 이용하시기 바랍니다.</span>
-                                                </p>
-
-                                            </dd>
-                                        </dl>
-                                    </li>
-                                    <li>
-                                        <div class="img-frame">
-                                            <img src="/images/common/icon_bycle.svg" alt="자전거 아이콘">
-                                        </div>
-                                        <dl class="list">
-                                            <dt>도보 이용</dt>
-                                            <dd>
-                                                <p class="bullet">종합운동장 사거리에서 좌측(자유로) 방향으로 10분 소요</p>
-                                            </dd>
-                                        </dl>
-                                    </li>
-                                    <li>
-                                        <div class="img-frame">
-                                            <img src="/images/common/icon_taxi.svg" alt="택시 아이콘">
-                                        </div>
-                                        <dl class="list">
-                                            <dt>택시 이용</dt>
-                                            <dd>
-                                                <p class="bullet">킨텍스 5분 소요</p>
-                                            </dd>
-                                        </dl>
-                                    </li>
-                                    <li>
-                                        <div class="img-frame">
-                                            <img src="/images/common/icon_car.svg" alt="차량 아이콘">
-                                        </div>
-                                        <dl class="list">
-                                            <dt>개인차량 이용</dt>
-                                            <dd>
-                                                <p class="bullet">
-                                                    자유로 이산포 IC로 진입 98번 국가지원지방도 문산, 대화역, 킨텍스 방면 2.8km 킨텍스 서문 도로 맞은편 국토안전관리원 정문 진입<br class="pc-only">
-                                                    (강변북로에서 행주IC 다음 신평IC 다음 장항IC 다음 킨텍스IC 다음 이산포 IC 순)
-                                                </p>
-                                            </dd>
-                                        </dl>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                            <dl class="list">
+                                <dt>자가용 이용</dt>
+                                <dd>
+                                    <p class="bullet">동김천IC  →  국토안전교육원</p>
+                                </dd>
+                            </dl>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </main>
