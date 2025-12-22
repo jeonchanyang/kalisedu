@@ -768,7 +768,7 @@ ol.num-box li .sub-tit::before{content:counter(cnt); display:inline-flex; justif
 .page-list .num-list.pc-only{display:flex;}
 .page-list .count-grp.mo-only{display:none;}
 
-.bbs-emtpy{position:relative; min-height:60rem; border-bottom:.1rem solid #D9D9D9;}
+.bbs-emtpy{position:relative; min-height:60rem; border-top:.1rem solid #D9D9D9; border-bottom:.1rem solid #D9D9D9;}
 .bbs-emtpy p{position:absolute; top:50%; left:50%; font-weight:500; font-size:var(--font-size-20); transform:translate(-50%, -50%);}
 
 .bbs-view .tit-grp{padding:2rem 0; border-top:.2rem solid #0F2A43; border-bottom:.1rem solid #D9D9D9;}
@@ -857,7 +857,6 @@ ol.num-box li .sub-tit::before{content:counter(cnt); display:inline-flex; justif
 .bbs-list.qna .bbs-gen-list .list-answer,
 .bbs-list.qna .bbs-gen-list .list-owner{width:10%;}
 .bbs-list.qna .bbs-title .date, .bbs-list.qna .bbs-gen-list .list-date{width:12%}
-.bbs-list.qna .bbs-gen-list > li .list-txt{width:43%;}
 .bbs-list.qna .bbs-gen-list > li .list-txt > p.secret{position:relative; padding-left:2.3rem;}
 .bbs-list.qna .bbs-gen-list > li .list-txt > p.secret::before{content:''; display:inline-flex; position:absolute; top:.3rem; left:0; width:1.3rem; height:1.6rem; background:url(/images/common/icon_secret.svg) center center / 100% no-repeat;}
 .bbs-list.qna .bbs-gen-list > li .list-answer{color:#008B44; font-weight:500;}
@@ -1145,7 +1144,7 @@ span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
 .map-wrap .map{width:100%; height:53rem;}
 .map-wrap .map > *{display:block; width:100%; height:100%;}
 .map-wrap{border:.1rem solid #D9D9D9;}
-.map-wrap .main-info{display:flex; flex-wrap:wrap; gap:2rem 3.5rem; padding:2.5rem 3.5rem; background:#F7F8FB;}
+.map-wrap .main-info{display:flex; flex-wrap:wrap; gap:2rem 3.5rem; padding:2.5rem 3.5rem; background:#F7F8FB; border-top:.1rem solid #d9d9d9;}
 .map-wrap .main-info .btn-cmn{flex:0 0 auto; width:22rem; height:7rem; font-weight:700; font-size:2.2rem;}
 .map-wrap .main-info .list-grp{flex-grow:1; display:inline-flex; gap:6rem;}
 .map-wrap .main-info .list-grp dl{padding:.65rem 0 .65rem 9rem; line-height:2.6rem; font-size:1.8rem; background-position:left; background-size:7rem 7rem; background-repeat:no-repeat}
@@ -1154,7 +1153,7 @@ span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
 .map-wrap .main-info .list-grp dl dt{font-weight:700;}
 .map-wrap .main-info .list-grp dl dd{margin-top:.5rem; font-weight:300;}
 .map-wrap .main-info .list-grp dl dd .icon-copy{position:relative; top:.2rem; margin-left:1rem;}
-.map-wrap .main-info .btn-map{display:inline-flex; align-items:center; height:7rem; margin-left:auto; padding:2.3rem 2.5rem; color:#6C6C6C; font-weight:600; line-height:2.4rem; font-size:1.8rem; background:#fff; border-radius:1rem;}
+.map-wrap .main-info .btn-map{display:inline-flex; align-items:center; height:7rem; margin-left:auto; padding:2.3rem 2.5rem; color:#6C6C6C; font-weight:600; line-height:2.4rem; font-size:1.8rem; background:#fff; border:.1rem solid #D9D9D9; border-radius:1rem;}
 
 /* transport-list */
 .transport-list li{display:flex; gap:3rem; align-items:center;}
