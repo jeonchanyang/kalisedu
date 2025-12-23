@@ -1021,8 +1021,9 @@ span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
 .membership-form.correction fieldset .info-tit{display:flex; justify-content:space-between; align-items:center;}
 .membership-form.correction fieldset .info-tit strong{font-weight:inherit;}
 .membership-form.correction fieldset .info-tit .btn-secession{font-weight:400; font-size:var(--font-size-18); text-decoration:underline; text-underline-offset:.5rem;}
-.membership-form.correction fieldset dl dt{min-width:13.5rem;}
-.membership-form.correction fieldset dl dd{width:calc(100% - 18rem); line-height:2.4rem; font-size:var(--font-size-18);}
+.membership-form.correction fieldset dl dt{align-self:flex-start; min-width:13.5rem; margin-top:1.3rem;}
+
+.membership-form.correction fieldset dl dd{width:calc(100% - 18rem); min-height:5.2rem; line-height:2.4rem; font-size:var(--font-size-18);}
 .membership-form.correction fieldset dl dd .ipt{max-width:36rem;}
 .membership-form.correction fieldset dl dd .ipt.readonly{border-color:#D9D9D9;}
 .membership-form.correction fieldset dl dd.cover .ipt[readonly]{border-color:#A6A8AB;}
@@ -1030,6 +1031,8 @@ span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
 .membership-form.correction fieldset .chg-phone{display:none;}
 .membership-form.correction fieldset .new-pw.is-active,
 .membership-form.correction fieldset .chg-phone.is-active{display:flex;}
+.membership-form.correction .has-newtxt{flex-wrap:wrap;}
+.membership-form.correction .has-newtxt .new-txt{display:block; width:100%; color:#666; line-height:2rem; font-size:1.6rem;}
 
 /* edu-grp */
 .inner-wrap.edu{margin-bottom:11rem;}
@@ -2013,7 +2016,7 @@ span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
     .membership-form.correction fieldset dl dd.cover:not(.pw) .btn{position:absolute; top:0; right:0; min-width:unset; width:10rem; border-radius:0 1rem 1rem 0;}
     .membership-form.correction fieldset dl dd.has-btn .ipt{width:calc(100% - 12rem);}
     .membership-form.correction fieldset dl dd.has-btn .ipt[type="password"]{width:100%;}
-    .membership-form.correction fieldset dl dd.has-btn .btn{width:10rem;}
+    .membership-form.correction fieldset dl dd.has-btn .btn{width:14rem;}
     .membership-form.correction fieldset dl dt.auth{margin:0;}
 
     /* pw-wrap */
