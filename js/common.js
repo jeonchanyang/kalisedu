@@ -137,7 +137,7 @@ function initGnbState() {
 
 function bindMobileEvents() {
     const gnbList = document.querySelector(".gnb");
-    const anchors = gnbList.querySelectorAll(":scope > li > a");
+    const anchors = gnbList.querySelectorAll(":scope > li > .btn-tit");
 
     anchors.forEach(a => {
         a._mobileHandler = function(e) {
@@ -165,7 +165,7 @@ function bindMobileEvents() {
 
 function unbindMobileEvents() {
     const gnbList = document.querySelector(".gnb");
-    const anchors = gnbList.querySelectorAll(":scope > li > a");
+    const anchors = gnbList.querySelectorAll(":scope > li > .btn-tit");
 
     anchors.forEach(a => {
         if (a._mobileHandler) {
@@ -177,16 +177,32 @@ function unbindMobileEvents() {
 
 function bindPcEvents() {
     const gnbList = document.querySelector(".gnb");
+    if (!gnbList) return;
 
-    gnbList._pcEnter = function() {
-        if (currentMode === "pc") gnbList.classList.add("active");
-    };
-    gnbList._pcLeave = function() {
-        if (currentMode === "pc") gnbList.classList.remove("active");
+    gnbList._pcEnter = function () {
+        if (currentMode === "pc") {
+            gnbList.classList.add("active");
+        }
     };
 
+    gnbList._pcLeave = function () {
+        if (currentMode === "pc") {
+            gnbList.classList.remove("active");
+        }
+    };
+
+    // 마우스
     gnbList.addEventListener("mouseenter", gnbList._pcEnter);
     gnbList.addEventListener("mouseleave", gnbList._pcLeave);
+
+    // 키보드
+    gnbList.addEventListener("focusin", gnbList._pcEnter);
+    gnbList.addEventListener("focusout", (e) => {
+        // gnb 내부 포커스 이동이면 유지
+        if (!gnbList.contains(e.relatedTarget)) {
+            gnbList._pcLeave();
+        }
+    });
 }
 
 function unbindPcEvents() {
@@ -259,7 +275,7 @@ const topClose = () => {
 // 메인배너 우측 Accordion list 토글
 const bnToggle = () => {
 
-    const isMobile = () => window.innerWidth < 1024;
+    const isMobile = () => window.innerWidth < 1025;
 
     const getDefaultHeight = () => isMobile() ? "9rem" : "11rem";
 
@@ -269,7 +285,7 @@ const bnToggle = () => {
     };
 
     const resetInactiveHeights = () => {
-        document.querySelectorAll(".acco-wrap li").forEach((el) => {
+        document.querySelectorAll(".main-bn .acco-wrap li").forEach((el) => {
             if (!el.classList.contains("active")) {
                 el.style.height = getDefaultHeight();
             }
@@ -277,14 +293,14 @@ const bnToggle = () => {
     };
 
     const recalcActiveHeight = () => {
-        const activeList = document.querySelector(".acco-wrap li.active");
+        const activeList = document.querySelector(".main-bn .acco-wrap li.active");
         if (activeList) setLiHeight(activeList);
     };
 
     // --------------------------
     // 클릭 이벤트 (중복 방지)
     // --------------------------
-    const accoBtn = document.querySelectorAll(".acco-wrap li.item > button");
+    const accoBtn = document.querySelectorAll(".main-bn .acco-wrap li.item > button");
     accoBtn.forEach((btn) => {
 
         // 기존 이벤트 제거 방지 → once로 제한
@@ -298,7 +314,7 @@ const bnToggle = () => {
             if (isActive) return;
 
             // 전체 초기화
-            document.querySelectorAll(".acco-wrap li").forEach((el) => {
+            document.querySelectorAll(".main-bn .acco-wrap li").forEach((el) => {
                 el.classList.remove("active");
                 el.style.height = getDefaultHeight();
             });
@@ -384,6 +400,21 @@ const accoSch = () => {
     });
 }
 
+// 드롭다운 상태표시
+function setDropdownState(wrap, isOpen) {
+    const list = wrap.querySelector('.dropdown-list');
+
+    wrap.classList.toggle('is-open', isOpen);
+
+    if (isOpen) {
+        list.hidden = false;
+        list.removeAttribute('inert');
+    } else {
+        list.hidden = true;
+        list.setAttribute('inert', '');
+    }
+}
+
 // dropdown
 function DropdownMenus() {
     const dropdownButtons = document.querySelectorAll(".btn-dropdown");
@@ -399,11 +430,11 @@ function DropdownMenus() {
 
             // 모든 드롭다운 닫기
             document.querySelectorAll(".dropdown-wrap.is-open").forEach((openWrap) => {
-                openWrap.classList.remove("is-open");
+                setDropdownState(openWrap, false);
             });
 
             if (!isOpen) {
-                currentWrap.classList.add("is-open");
+                setDropdownState(currentWrap, true);
             }
         });
     });
@@ -418,7 +449,7 @@ function DropdownMenus() {
             const btn = wrap.querySelector(".btn-dropdown");
 
             btn.textContent = selectedText;
-            wrap.classList.remove("is-open");
+            setDropdownState(wrap, false);
         });
     });
 
@@ -426,15 +457,20 @@ function DropdownMenus() {
     document.querySelectorAll(".dropdown-link .dropdown-item").forEach((item) => {
         item.addEventListener("click", function () {
             const wrap = item.closest(".dropdown-wrap");
-            wrap.classList.remove("is-open");
+            setDropdownState(wrap, false);
         });
     });
 
     // 바깥 클릭 시 닫기
     document.addEventListener("click", function () {
         document.querySelectorAll(".dropdown-wrap.is-open").forEach((openWrap) => {
-            openWrap.classList.remove("is-open");
+            setDropdownState(openWrap, false);
         });
+    });
+
+    //페이지 로딩시
+    document.querySelectorAll(".dropdown-wrap").forEach(wrap => {
+        setDropdownState(wrap, false);
     });
 }
 
@@ -627,6 +663,8 @@ function moBtnSchFn(){
 
 // mobile - 상단 전체메뉴   
 function allMnuFn() {
+    const wrap = document.querySelector('.wrap') || document.getElementById('wrap');
+    const menu = document.querySelector('header .head-bottom');
     const header = document.querySelector('header');
     const btn = document.querySelector('.mo-btn-grp .mo-btn-mnu');
     const btnSch = document.querySelector('.mo-btn-grp .mo-btn-search');
@@ -637,13 +675,20 @@ function allMnuFn() {
     if(mobileMenuHandler) btn.removeEventListener('click', mobileMenuHandler);
 
     mobileMenuHandler = (e) => {
-        target.classList.toggle('mo-open');
+        const isOpen = target.classList.toggle('mo-open');
+
+        if(isOpen){
+            wrap.classList.add('menu-open');
+        }else{
+            wrap.classList.remove('menu-open');
+        }
+
         toggleClass(header,'bg');
         e.currentTarget.classList.toggle('close');
         if(e.currentTarget.classList.contains('close')){
             e.currentTarget.textContent = "메뉴닫기";
             btnSch.style.display = 'none';
-        } else {
+        }else{
             e.currentTarget.textContent = "메뉴열기";
             btnSch.style.display = 'block';
         }
@@ -765,6 +810,22 @@ const tabScrollFn = function(){
     }
 };
 
+const keyInit = function(){
+    let usingKeyboard = false;
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Tab') {
+        usingKeyboard = true;
+        document.body.classList.add('using-keyboard');
+        }
+    });
+
+    document.addEventListener('mousedown', () => {
+        usingKeyboard = false;
+        document.body.classList.remove('using-keyboard');
+    });
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     DropdownMenus();
     bnToggle();
@@ -779,6 +840,7 @@ document.addEventListener('DOMContentLoaded', () => {
     accoOpenByAnchor();
     tabScrollFn();
     gnbOpen();
+    keyInit();
 
     initByMode();
 });

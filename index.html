@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>국토안전교육원 - KALIS</title>
+    <!-- 전체 폰트 lcp개선 font preload -->
     <link rel="preload" href="/fonts/pretendard/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- 메인페이지 배너 이미지 lcp개선 -->
+    <link rel="preload" as="image" href="/images/common/img_main_banner.webp" media="(min-width: 1025px)">
+    <link rel="preload" as="image" href="/images/mo/mo_img_main_banner.webp" media="(max-width: 1024px)">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/content.css">
     <link rel="stylesheet" href="/css/swiper-bundle.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
     <script src="/js/swiper-bundle.min.js"></script>
 </head>
 <body>
@@ -74,9 +77,9 @@
                 </div>
                 <div class="indicator">
                     <button type="button" class="btn-prev"><img src="/images/common/icon_noti_slide_prev.svg" alt="이전 이미지 보기"></button>
-                    <button type="button" class="swiper-autoplay-button">
-                        <img src="/images/common/icon_noti_slide_pause.svg" alt="영상 자동재생 정지 버튼이미지" class="pause">
-                        <img src="/images/common/icon_slide_play.svg" alt="영상 자동재생 시작 버튼이미지" class="play" style="display:none;">
+                    <button type="button" class="swiper-autoplay-button" aria-label="자동재생 정지" aria-pressed="true">
+                        <img src="/images/common/icon_noti_slide_pause.svg" alt="" class="pause">
+                        <img src="/images/common/icon_slide_play.svg" alt="" class="play" hidden>
                     </button>
                     <button type="button" class="btn-next"><img src="/images/common/icon_noti_slide_next.svg" alt="다음 이미지 보기"></button>
                 </div>
@@ -103,17 +106,23 @@
                 },
             });
 
-            document.querySelector(".control-wrap.noti .swiper-autoplay-button .pause").addEventListener("click", function() {
-                notiSwiper.autoplay.stop();
-                this.style.display = "none";
-                document.querySelector(".control-wrap.noti .swiper-autoplay-button .play").style.display = "block";
-            });
+            const autoPlayBtn = document.querySelector(".control-wrap.noti .swiper-autoplay-button");
+            autoPlayBtn.addEventListener("click", function () {
+                const isPlaying = this.getAttribute("aria-pressed") === "true";
 
-            // 재생 버튼
-            document.querySelector(".control-wrap.noti .swiper-autoplay-button .play").addEventListener("click", function() {
-                notiSwiper.autoplay.start();
-                this.style.display = "none";
-                document.querySelector(".control-wrap.noti .swiper-autoplay-button .pause").style.display = "block";
+                if (isPlaying) {
+                    notiSwiper.autoplay.stop();
+                    this.setAttribute("aria-pressed", "false");
+                    this.setAttribute("aria-label", "자동재생 시작");
+                    this.querySelector(".pause").hidden = true;
+                    this.querySelector(".play").hidden = false;
+                } else {
+                    notiSwiper.autoplay.start();
+                    this.setAttribute("aria-pressed", "true");
+                    this.setAttribute("aria-label", "자동재생 정지");
+                    this.querySelector(".pause").hidden = false;
+                    this.querySelector(".play").hidden = true;
+                }
             });
         </script>
         <header>
@@ -135,7 +144,7 @@
                 <nav id="gnb">
                     <ul class="gnb">
                         <li>
-                            <a href="#">법정교육</a>
+                            <button type="button" class="btn-tit">법정교육</button>
                             <ul class="gnb-depth2">
                                 <li class="tit">법정교육</li>
                                 <li>
@@ -154,7 +163,7 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="#">대국민안전교육</a>
+                            <button type="button" class="btn-tit">대국민안전교육</button>
                             <ul class="gnb-depth2">
                                 <li class="tit">대국민안전교육</li>
                                 <li>
@@ -173,7 +182,7 @@
                         </li>
 
                         <li>
-                            <a href="#">수강안내</a>
+                            <button type="button" class="btn-tit">수강안내</button>
                             <ul class="gnb-depth2">
                                 <li class="tit">수강안내</li>
                                 <li>
@@ -189,7 +198,7 @@
                         </li>
 
                         <li>
-                            <a href="#">정보마당</a>
+                            <button type="button" class="btn-tit">정보마당</button>
                             <ul class="gnb-depth2">
                                 <li class="tit">정보마당</li>
                                 <li>
@@ -217,7 +226,7 @@
                         </li>
 
                         <li>
-                            <a href="#">국토안전교육원 소개</a>
+                            <button type="button" class="btn-tit">국토안전교육원 소개</button>
                             <ul class="gnb-depth2">
                                 <li class="tit">국토안전교육원 소개</li>
                                 <li>
@@ -257,12 +266,12 @@
             <section class="inner-wrap main-bn bg1">
                 <div class="main-bg">
                     <div class="pc-only">
-                        <img class="type01" src="/images/common/img_main_banner.webp" alt="메인배너 이미지" fetchpriority=high>
-                        <img class="type02" src="/images/common/img_main_banner02.webp" alt="메인배너 이미지" fetchpriority=high>
+                        <img class="type01" src="/images/common/img_main_banner.webp" alt="메인배너 랜덤 첫번째 이미지">
+                        <img class="type02" src="/images/common/img_main_banner02.webp" alt="메인배너 랜덤 두번째 이미지">
                     </div>
                     <div class="mo-only" aria-hidden="true">
-                        <img class="type01" src="/images/mo/mo_img_main_banner.webp" aria-hidden="true" alt="메인배너 이미지" fetchpriority=high>
-                        <img class="type02" src="/images/mo/mo_img_main_banner02.webp" aria-hidden="true" alt="메인배너 이미지" fetchpriority=high>
+                        <img class="type01" src="/images/mo/mo_img_main_banner.webp" alt="">
+                        <img class="type02" src="/images/mo/mo_img_main_banner02.webp" alt="">
                     </div>
                 </div>
                 <div class="txt-grp mo-only" aria-hidden="true">
@@ -316,9 +325,9 @@
                                 </div>
                                 <div class="swiper-button">
                                     <button type="button" class="swiper-button-prev"><img src="/images/common/icon_slide_prev.svg" alt="이전 이미지 보기"></button>
-                                    <button type="button" class="swiper-autoplay-button">
-                                        <img src="/images/common/icon_slide_pause.svg" alt="영상 자동재생 정지 버튼이미지" class="pause">
-                                        <img src="/images/common/icon_slide_play.svg" alt="영상 자동재생 시작 버튼이미지" class="play" style="display:none;">
+                                    <button type="button" class="swiper-autoplay-button" aria-label="자동재생 정지" aria-pressed="true">
+                                        <img src="/images/common/icon_slide_pause.svg" alt="" class="pause">
+                                        <img src="/images/common/icon_slide_play.svg" alt="" class="play" hidden>
                                     </button>
                                     <button type="button" class="swiper-button-next"><img src="/images/common/icon_slide_next.svg" alt="다음 이미지 보기"></button>
                                 </div>
@@ -343,18 +352,23 @@
                                     },
                                     autoplay: true,
                                     });
-                                    // 정지 버튼
-                                    document.querySelector(".type01 .swiper-autoplay-button .pause").addEventListener("click", function() {
-                                        swiper1.autoplay.stop();
-                                        this.style.display = "none";
-                                        document.querySelector(".type01 .swiper-autoplay-button .play").style.display = "block";
-                                    });
+                                    
+                                    document.querySelector(".type01 .swiper-button .swiper-autoplay-button").addEventListener("click", function () {
+                                        const isPlaying = this.getAttribute("aria-pressed") === "true";
 
-                                    // 재생 버튼
-                                    document.querySelector(".type01 .swiper-autoplay-button .play").addEventListener("click", function() {
-                                        swiper1.autoplay.start();
-                                        this.style.display = "none";
-                                        document.querySelector(".type01 .swiper-autoplay-button .pause").style.display = "block";
+                                        if (isPlaying) {
+                                            notiSwiper.autoplay.stop();
+                                            this.setAttribute("aria-pressed", "false");
+                                            this.setAttribute("aria-label", "자동재생 시작");
+                                            this.querySelector(".pause").hidden = true;
+                                            this.querySelector(".play").hidden = false;
+                                        } else {
+                                            notiSwiper.autoplay.start();
+                                            this.setAttribute("aria-pressed", "true");
+                                            this.setAttribute("aria-label", "자동재생 정지");
+                                            this.querySelector(".pause").hidden = false;
+                                            this.querySelector(".play").hidden = true;
+                                        }
                                     });
                                 </script>
                             </div>
@@ -425,7 +439,7 @@
                     <div class="calendar-header">
                         <h3 class="title">
                             연간교육일정
-                            <button type="button" class="badge-all">전체일정</button>
+                        <button type="button" class="badge-all">전체일정</button>
                         </h3>
                         <div class="badge-grp">
                             <button type="button" class="badge badge-type01">시설물안전법</button>
@@ -433,9 +447,9 @@
                             <button type="button" class="badge badge-type03">건축물관리법</button>
                         </div>
                     </div>
-                    <div id="calendar" class="full-calendar" aria-hidden="true">
+                    <div id="calendar" class="full-calendar" aria-hidden="false">
                     </div>
-                    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+                    <script src="/js/index.global.min.js"></script>
                     <script>
                     document.addEventListener('DOMContentLoaded', function () {
                         const calendarEl = document.getElementById('calendar');
@@ -503,10 +517,34 @@
                                 }
                             ]
                         });
+
+                        calendar.render();
+
                         setTimeout(() => {
                             calendar.updateSize();
                         }, 100);
-                        calendar.render();
+
+                        addCalendarCaption(calendarEl);
+
+                        // 접근성 대응 caption추가
+                        function addCalendarCaption(calendarEl) {
+                            const tables = calendarEl.querySelectorAll('table');
+
+                            tables.forEach((table, index) => {
+                                if (!table.querySelector('caption')) {
+                                    const caption = document.createElement('caption');
+                                    caption.className = 'sr-only';
+
+                                    // 최상위 scrollgrid / 내부 table 구분하여 caption적용
+                                    caption.textContent =
+                                        table.classList.contains('fc-scrollgrid')
+                                            ? '월간 일정 캘린더'
+                                            : '월간 일정 캘린더 상세 영역';
+
+                                    table.prepend(caption);
+                                }
+                            });
+                        }
                     });
                     </script>
                 </div>
@@ -741,21 +779,6 @@
                             prevEl: ".footer-banner-slider .swiper-button-prev",
                         },
                     });
-                    /* 자동재생 추후 적용 여부 확인 후 추가해서 적용
-                    // 정지 버튼 
-                    document.querySelector(".mySwiper.type02 .swiper-autoplay-button .pause").addEventListener("click", function() {
-                        swiper2.autoplay.stop();
-                        this.style.display = "none";
-                        document.querySelector(".mySwiper.type02 .swiper-autoplay-button .play").style.display = "block";
-                    });
-    
-                    // 재생 버튼
-                    document.querySelector(".mySwiper.type02 .swiper-autoplay-button .play").addEventListener("click", function() {
-                        swiper2.autoplay.start();
-                        this.style.display = "none";
-                        document.querySelector(".mySwiper.type02 .swiper-autoplay-button .pause").style.display = "block";
-                    });
-                    */
                     </script>
                 </div>
             </div>

@@ -158,14 +158,17 @@
             <div class="location"> 
                 <ol>
                     <li>
-                        <a href="/index.html" aria-label="메인화면으로 이동"><i class="ico icon-home"></i></a>
+                        <a href="/index.html">
+                            <span class="sr-only">메인화면으로 이동</span>
+                            <i class="ico icon-home" aria-hidden="true"></i>
+                        </a>
                     </li>
                     <li>
                         <div class="dropdown-wrap dropdown-select">
                             <button type="button" class="btn btn-dropdown">
                                 법정교육
                             </button>
-                            <div class="dropdown-list is-up is-open">
+                            <div class="dropdown-list is-up" hidden inert>
                                 <button type="button" class="dropdown-item">법정교육</button>
                                 <button type="button" class="dropdown-item">대국민안전교육</button>
                                 <button type="button" class="dropdown-item">이용안내</button>
@@ -179,7 +182,7 @@
                             <button type="button" class="btn btn-dropdown">
                                 법정교육 소개
                             </button>
-                            <div class="dropdown-list is-up is-open">
+                            <div class="dropdown-list is-up" hidden inert>
                                 <a href="/국토안전교육원_01법정교육_01법정교육소개.html" class="link" target="_blank">법정교육 소개</a>
                                 <a href="/국토안전교육원_02교육안내일정신청_01시설물안전법.html" class="link" target="_blank">시설물안전법</a>
                                 <a href="#" class="link" target="_blank">지하안전법</a>
@@ -651,7 +654,7 @@
                         <button type="button" class="btn btn-dropdown">
                             패밀리사이트
                         </button>
-                        <div class="dropdown-list is-up is-open">
+                        <div class="dropdown-list is-up" hidden inert>
                             <a href="#" class="footer-link" target="_blank">패밀리사이트1</a>
                             <a href="#" class="footer-link" target="_blank">패밀리사이트2</a>
                             <a href="#" class="footer-link" target="_blank">패밀리사이트3</a>
