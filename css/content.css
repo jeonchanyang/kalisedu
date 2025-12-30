@@ -1110,14 +1110,14 @@ span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
 .int-wrap .search-area{justify-content:center; margin:0; padding:4rem 0;}
 .int-wrap .search-area > form{display:flex; gap:1rem;}
 .int-wrap .search-area .search-ipt{width:50rem;}
-.int-wrap .popular-wrap{width:100%; padding:1.5rem 0; border-top:.1rem solid #D9D9D9;}
-.int-wrap .popular-wrap > .inner{display:flex; gap:2.5rem; max-width:135rem; margin:0 auto;}
-.int-wrap .popular-wrap > .inner h3{height:3.8rem; padding:.7rem 2rem; color:var(--primary-color); font-weight:600; font-size:var(--font-size-20); border:.1rem solid #D9D9D9; border-radius:5rem;}
-.int-wrap .popular-wrap > .inner .list{display:flex; gap:3rem; align-items:center; counter-reset:list-cnt;}
-.int-wrap .popular-wrap > .inner .list li{counter-increment:list-cnt; position:relative; font-weight:400; font-size:var(--font-size-18);}
+.int-wrap .popular-wrap{width:100%; padding:1.5rem; border-top:.1rem solid #D9D9D9;}
+.int-wrap .popular-wrap > .inner{display:flex; gap:2.5rem; max-width:138rem; margin:0 auto;}
+.int-wrap .popular-wrap > .inner h3{flex:0 0 auto; height:3.8rem; padding:.7rem 2rem; color:var(--primary-color); font-weight:600; font-size:var(--font-size-20); border:.1rem solid #D9D9D9; border-radius:5rem;}
+.int-wrap .popular-wrap > .inner .list{flex-grow:1; display:flex; flex-wrap:wrap; gap:1.5rem 3rem; align-items:center; counter-reset:list-cnt;}
+.int-wrap .popular-wrap > .inner .list li{counter-increment:list-cnt;  position:relative; max-width:15rem; font-weight:400; font-size:var(--font-size-18);}
+.int-wrap .popular-wrap > .inner .list li > a{display:inline-block; overflow:hidden; width:100%; white-space:nowrap; text-overflow:ellipsis;}
 .int-wrap .popular-wrap > .inner .list li > a::before{content:counter(list-cnt) "." ; margin-right:.3rem;}
 .int-wrap .popular-wrap > .inner .list li.rank{color:var(--primary-color);}
-
 
 .wrap.integrated .tab-container.full .tab-content-wrap{padding-top:3rem;}
 .top-area label{font-weight:400; line-height:2.4rem; font-size:1.8rem;}
@@ -1431,12 +1431,10 @@ span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
     .layout-col.half-5{flex-wrap:nowrap;}
     .bg-wh-box.type03.new{gap:2.5rem; padding:1.5rem;}
 
-
     .card-type-list li{width:calc(100% / 2 - 3rem);}
 
     .step-info{gap:6rem;}
     .step-info li + li::before{left:-4.5rem;}
-
 
     .cap-list ul li .bg{min-width:20%; font-size:var(--font-size-18);}
     .cap-list ul li .txt-grp .txt{padding:2.4rem 2.5rem;}
@@ -1444,17 +1442,12 @@ span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
     .cap-list ul li .txt-grp .txt dl dd + dt{margin-left:1.5rem;}
     .cap-list ul li .txt-grp .txt .title{font-size:var(--font-size-18);}
 
-    .int-wrap .popular-wrap > .inner h3{flex:0 0 auto;}
-    .int-wrap .popular-wrap > .inner .list{flex-wrap:wrap; row-gap:1.5rem;}
-    /* .int-wrap .popular-wrap > .inner .list li{font-size:1.6rem;} */
-
     .map-wrap .main-info{padding:2rem;}
     .map-wrap .main-info .list-grp{gap:4rem; align-items:center;}
     .map-wrap .main-info .btn-map{flex:0 0 auto;padding:2.3rem 2rem;}
     .map-wrap .main-info .btn-cmn{width:20rem; font-size:2rem;}
 
     .vision-wrap > div{max-width:95%;}
-
 
     .rabel-box{flex-wrap:wrap;}
     .rabel-box li{width:calc(100% / 3 - 1.2rem * 2 / 3);}
@@ -1850,7 +1843,7 @@ span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
 
     .bbs-view .tit-grp{padding:2rem 1rem;}
     .bbs-view .tit-grp .tit{justify-content:flex-start; font-size:var(--font-size-20);}
-    .bbs-view .tit-grp .tit.noti::before{width:1.85rem; height:2.1rem; margin-top:.1rem;}
+    .bbs-view .tit-grp .tit.noti::before{width:1.85rem; height:2.1rem; margin-top:.15rem;}
     .bbs-view .tit-grp .tit + .date-grp{margin-top:1rem;}
     .bbs-view .tit-grp .date-grp{flex-wrap:wrap; gap:.5rem 2rem; justify-content:flex-start;}
     .bbs-view .tit-grp .date-grp dl{font-size:var(--font-size-16);}
@@ -1863,7 +1856,7 @@ span.required .ico{flex:0 0 auto; width:2.4rem; height:2.4rem;}
     .bbs-view .attach-grp dl dt, .bbs-view .attach-grp .btn-attach{font-size:var(--font-size-16);}
     .bbs-view .attach-grp .btn-attach{align-items:flex-start; line-height:2.4rem;}
     .bbs-view .attach-grp .btn-attach + .btn-attach, .bbs-view .attach-grp dl pp+ p{margin-top:.5rem;}
-    .bbs-view .attach-grp .btn-attach .ico{flex:0 0 auto; width:1.6rem; height:1.6rem; margin-top:.3rem;}
+    .bbs-view .attach-grp .btn-attach .ico{flex:0 0 auto; width:1.6rem; height:1.6rem; margin-top:.4rem;}
     .bbs-view .txt-grp{padding:2rem 1rem; font-size:var(--font-size-16); line-height:2.6rem;}
     .bbs-view .prev-next-grp li > a{gap:2rem; padding:1.8rem 2rem 1.8rem 1rem; font-size:var(--font-size-16);}
     .bbs-view .prev-next-grp li > a .txt{width:calc(100% - 5.7rem); font-size:var(--font-size-16);}
