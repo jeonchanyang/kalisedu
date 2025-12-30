@@ -357,13 +357,13 @@
                                         const isPlaying = this.getAttribute("aria-pressed") === "true";
 
                                         if (isPlaying) {
-                                            notiSwiper.autoplay.stop();
+                                            swiper1.autoplay.stop();
                                             this.setAttribute("aria-pressed", "false");
                                             this.setAttribute("aria-label", "자동재생 시작");
                                             this.querySelector(".pause").hidden = true;
                                             this.querySelector(".play").hidden = false;
                                         } else {
-                                            notiSwiper.autoplay.start();
+                                            swiper1.autoplay.start();
                                             this.setAttribute("aria-pressed", "true");
                                             this.setAttribute("aria-label", "자동재생 정지");
                                             this.querySelector(".pause").hidden = false;
