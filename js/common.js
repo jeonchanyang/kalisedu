@@ -511,7 +511,7 @@ function initTabs(containerSelector) {
         tabMenuWrap.addEventListener('click', handler);
 
         // initTab중 PC, Mobile 동일하게 탭을 사용할경우 subTabRegistry에 추가 push
-        if(container.classList.contains('sub') || container.classList.contains('notice-wrap')) {
+        if(container.classList.contains('sub') || container.classList.contains('notice-wrap') || container.classList.contains('login')) {
             subTabRegistry.push({ element: tabMenuWrap, handler });
         } else {
             parentTabRegistry.push({ element: tabMenuWrap, handler });
